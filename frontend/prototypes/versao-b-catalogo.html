@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Castor — Catálogo de Casas de Madeira</title>
+  <meta name="description" content="47 modelos de casas de madeira em MG. Filtre por quartos, área e pavimentos. Solicite orçamento.">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: { 50: '#fffaf5', 100: '#fff0db', 200: '#ffe0b8', 300: '#ffc885', 400: '#ffa64d', 500: '#f9851a', 600: '#d4680c', 700: '#a84f0d', 800: '#883f10', 900: '#6f3512' },
+            wood: { 50: '#fbf7f3', 100: '#f5ece2', 200: '#ead6c2', 300: '#deb897', 400: '#d0966c', 500: '#c4784a', 600: '#b8643d', 700: '#994d31', 800: '#7d3f2d', 900: '#653527' },
+            moss: { 600: '#568428', 700: '#426523', 800: '#375020' }
+          }
+        }
+      }
+    }
+  </script>
+  <style>body{font-family:'Inter',sans-serif;}</style>
+</head>
+<body class="bg-stone-50 text-stone-800">
+
+  <!-- Header -->
+  <header class="sticky top-0 z-50 bg-white border-b border-stone-200 shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-16">
+        <a href="#" class="flex items-center gap-2">
+          <div class="w-9 h-9 bg-wood-700 rounded-lg flex items-center justify-center text-white font-bold">C</div>
+          <span class="font-bold text-stone-900">Castor</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm text-stone-600">
+          <a href="#" class="hover:text-wood-700">Catálogo</a>
+          <a href="#" class="hover:text-wood-700">Obras</a>
+          <a href="#" class="hover:text-wood-700">Sobre</a>
+          <a href="#" class="hover:text-wood-700">Contato</a>
+        </nav>
+        <a href="https://wa.me/5531999999999" class="bg-moss-700 hover:bg-moss-800 text-white px-4 py-2 rounded-full text-sm font-semibold transition">WhatsApp</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero compacto -->
+  <section class="bg-white border-b border-stone-200">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-6">
+        <div>
+          <h1 class="text-3xl md:text-4xl font-bold text-stone-900 mb-2">Catálogo de casas de madeira</h1>
+          <p class="text-stone-600">47 modelos prontos para personalizar. Filtre e encontre o projeto ideal.</p>
+        </div>
+        <div class="flex gap-3">
+          <span class="bg-wood-50 text-wood-800 px-4 py-2 rounded-lg text-sm font-medium border border-wood-100">103 m² a 306 m²</span>
+          <span class="bg-wood-50 text-wood-800 px-4 py-2 rounded-lg text-sm font-medium border border-wood-100">1 a 2 pavimentos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main -->
+  <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+    <div class="flex flex-col lg:flex-row gap-8">
+
+      <!-- Sidebar filters -->
+      <aside class="lg:w-64 shrink-0">
+        <div class="bg-white p-5 rounded-2xl border border-stone-200 sticky top-24">
+          <h2 class="font-bold text-stone-900 mb-4">Filtros</h2>
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-semibold text-stone-500 uppercase mb-2">Quartos</label>
+              <div class="flex flex-wrap gap-2">
+                <button class="filter-btn active px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 bg-wood-700 text-white" data-filter="quartos" data-value="all">Todos</button>
+                <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 text-stone-600" data-filter="quartos" data-value="1">1</button>
+                <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 text-stone-600" data-filter="quartos" data-value="2">2</button>
+                <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 text-stone-600" data-filter="quartos" data-value="3">3</button>
+                <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 text-stone-600" data-filter="quartos" data-value="4">4+</button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-500 uppercase mb-2">Pavimentos</label>
+              <div class="flex flex-wrap gap-2">
+                <button class="filter-btn active px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 bg-wood-700 text-white" data-filter="pavimentos" data-value="all">Todos</button>
+                <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 text-stone-600" data-filter="pavimentos" data-value="1">1</button>
+                <button class="filter-btn px-3 py-1.5 rounded-full text-sm border border-stone-200 hover:border-wood-500 hover:text-wood-700 text-stone-600" data-filter="pavimentos" data-value="2">2</button>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-500 uppercase mb-2">Área total (m²)</label>
+              <input type="range" min="100" max="310" value="310" class="w-full accent-wood-700" id="areaRange">
+              <div class="flex justify-between text-xs text-stone-500 mt-1">
+                <span>100</span>
+                <span id="areaValue">até 310 m²</span>
+              </div>
+            </div>
+            <div>
+              <label class="block text-xs font-semibold text-stone-500 uppercase mb-2">Recursos</label>
+              <div class="space-y-2">
+                <label class="flex items-center gap-2 text-sm text-stone-600"><input type="checkbox" class="accent-wood-700" data-filter="recurso" value="varanda"> Varanda</label>
+                <label class="flex items-center gap-2 text-sm text-stone-600"><input type="checkbox" class="accent-wood-700" data-filter="recurso" value="lavanderia"> Lavanderia</label>
+                <label class="flex items-center gap-2 text-sm text-stone-600"><input type="checkbox" class="accent-wood-700" data-filter="recurso" value="suite"> Suíte</label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Grid -->
+      <div class="flex-1">
+        <div class="flex items-center justify-between mb-6">
+          <p class="text-stone-600 text-sm"><span class="font-bold text-stone-900" id="resultCount">6</span> modelos encontrados</p>
+          <select class="text-sm border border-stone-200 rounded-lg px-3 py-2 focus:outline-none focus:ring-2 focus:ring-wood-500">
+            <option>Ordenar: menor área</option>
+            <option>Ordenar: maior área</option>
+            <option>Ordenar: mais quartos</option>
+          </select>
+        </div>
+
+        <div class="grid sm:grid-cols-2 xl:grid-cols-3 gap-6" id="modelGrid">
+          <!-- Modelo Chicago -->
+          <article class="model-card bg-white rounded-2xl overflow-hidden border border-stone-200 group hover:shadow-lg transition" data-quartos="2" data-pavimentos="1" data-area="103.13" data-recursos="varanda,suite">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-chicago-5-1-1024x1024.jpg" alt="Modelo Chicago" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute bottom-3 left-3 bg-white/95 text-stone-800 text-xs font-bold px-2 py-1 rounded">103,13 m²</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-bold text-lg text-stone-900">Modelo Chicago</h3>
+                <span class="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">1 pav.</span>
+              </div>
+              <div class="flex gap-4 text-sm text-stone-600 mb-4">
+                <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg> 2 quartos</span>
+                <span class="flex items-center gap-1"><svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/></svg> 1 banh.</span>
+              </div>
+              <a href="#" class="block w-full text-center bg-wood-700 hover:bg-wood-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Modelo Paris -->
+          <article class="model-card bg-white rounded-2xl overflow-hidden border border-stone-200 group hover:shadow-lg transition" data-quartos="2" data-pavimentos="1" data-area="103.83" data-recursos="varanda,suite,lavanderia">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-paris-5-1-1024x1024.jpg" alt="Modelo Paris" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute bottom-3 left-3 bg-white/95 text-stone-800 text-xs font-bold px-2 py-1 rounded">103,83 m²</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-bold text-lg text-stone-900">Modelo Paris</h3>
+                <span class="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">1 pav.</span>
+              </div>
+              <div class="flex gap-4 text-sm text-stone-600 mb-4">
+                <span>2 suítes</span>
+                <span>1 banheiro</span>
+              </div>
+              <a href="#" class="block w-full text-center bg-wood-700 hover:bg-wood-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Modelo Dallas -->
+          <article class="model-card bg-white rounded-2xl overflow-hidden border border-stone-200 group hover:shadow-lg transition" data-quartos="2" data-pavimentos="1" data-area="106.38" data-recursos="varanda,suite,lavanderia">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-dallas-5-1-1024x1024.jpg" alt="Modelo Dallas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute bottom-3 left-3 bg-white/95 text-stone-800 text-xs font-bold px-2 py-1 rounded">106,38 m²</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-bold text-lg text-stone-900">Modelo Dallas</h3>
+                <span class="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">1 pav.</span>
+              </div>
+              <div class="flex gap-4 text-sm text-stone-600 mb-4">
+                <span>2 quartos</span>
+                <span>1 banheiro</span>
+              </div>
+              <a href="#" class="block w-full text-center bg-wood-700 hover:bg-wood-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Modelo Boston -->
+          <article class="model-card bg-white rounded-2xl overflow-hidden border border-stone-200 group hover:shadow-lg transition" data-quartos="2" data-pavimentos="1" data-area="105.38" data-recursos="varanda,suite,lavanderia">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-boston-5-1024x1024.jpg" alt="Modelo Boston" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute bottom-3 left-3 bg-white/95 text-stone-800 text-xs font-bold px-2 py-1 rounded">105,38 m²</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-bold text-lg text-stone-900">Modelo Boston</h3>
+                <span class="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">1 pav.</span>
+              </div>
+              <div class="flex gap-4 text-sm text-stone-600 mb-4">
+                <span>2 quartos</span>
+                <span>1 banheiro</span>
+              </div>
+              <a href="#" class="block w-full text-center bg-wood-700 hover:bg-wood-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Modelo Brasil -->
+          <article class="model-card bg-white rounded-2xl overflow-hidden border border-stone-200 group hover:shadow-lg transition" data-quartos="3" data-pavimentos="1" data-area="139.30" data-recursos="varanda,suite,lavanderia">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-brasil-5-1024x1024.jpg" alt="Modelo Brasil" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute top-3 left-3 bg-wood-700 text-white text-xs font-bold px-2 py-1 rounded-full">Mais vendido</span>
+              <span class="absolute bottom-3 left-3 bg-white/95 text-stone-800 text-xs font-bold px-2 py-1 rounded">139,30 m²</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-bold text-lg text-stone-900">Modelo Brasil</h3>
+                <span class="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">1 pav.</span>
+              </div>
+              <div class="flex gap-4 text-sm text-stone-600 mb-4">
+                <span>3 quartos</span>
+                <span>1 banheiro</span>
+              </div>
+              <a href="#" class="block w-full text-center bg-wood-700 hover:bg-wood-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">Ver detalhes</a>
+            </div>
+          </article>
+
+          <!-- Modelo Mônaco -->
+          <article class="model-card bg-white rounded-2xl overflow-hidden border border-stone-200 group hover:shadow-lg transition" data-quartos="2" data-pavimentos="1" data-area="119.74" data-recursos="varanda,suite">
+            <div class="relative h-52 overflow-hidden">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-monaco-2-1-1024x1024.jpg" alt="Modelo Monaco" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+              <span class="absolute bottom-3 left-3 bg-white/95 text-stone-800 text-xs font-bold px-2 py-1 rounded">119,74 m²</span>
+            </div>
+            <div class="p-5">
+              <div class="flex items-start justify-between mb-2">
+                <h3 class="font-bold text-lg text-stone-900">Modelo Mônaco</h3>
+                <span class="text-xs bg-stone-100 text-stone-600 px-2 py-1 rounded">1 pav.</span>
+              </div>
+              <div class="flex gap-4 text-sm text-stone-600 mb-4">
+                <span>2 quartos</span>
+                <span>1 banheiro</span>
+              </div>
+              <a href="#" class="block w-full text-center bg-wood-700 hover:bg-wood-800 text-white py-2.5 rounded-xl text-sm font-semibold transition">Ver detalhes</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- CTA -->
+  <section class="bg-wood-800 text-white py-16">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="text-2xl md:text-3xl font-bold mb-4">Não encontrou o modelo ideal?</h2>
+      <p class="text-wood-100 mb-8">A Castor projeta casas sob medida. Envie suas ideias e receba uma proposta personalizada.</p>
+      <a href="#" class="inline-block bg-white text-wood-800 px-8 py-3 rounded-full font-bold hover:bg-wood-50 transition">Falar com um consultor</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-stone-900 text-stone-400 py-10 text-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <div class="flex items-center gap-2">
+          <div class="w-8 h-8 bg-wood-700 rounded flex items-center justify-center text-white font-bold">C</div>
+          <span class="text-white font-bold">Castor Casas de Madeira</span>
+        </div>
+        <div class="flex gap-6">
+          <a href="#" class="hover:text-white">Catálogo</a>
+          <a href="#" class="hover:text-white">Obras</a>
+          <a href="#" class="hover:text-white">Contato</a>
+        </div>
+        <p>© 2026 Castor. Todos os direitos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- WhatsApp -->
+  <a href="https://wa.me/5531999999999" class="fixed bottom-6 right-6 z-50 bg-moss-700 text-white p-4 rounded-full shadow-lg hover:bg-moss-800 transition">
+    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+
+  <script>
+    const range = document.getElementById('areaRange');
+    const areaValue = document.getElementById('areaValue');
+    range.addEventListener('input', () => {
+      areaValue.textContent = 'até ' + range.value + ' m²';
+      applyFilters();
+    });
+
+    let activeFilters = { quartos: 'all', pavimentos: 'all', area: 310, recursos: [] };
+
+    document.querySelectorAll('.filter-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const group = btn.dataset.filter;
+        document.querySelectorAll(`.filter-btn[data-filter="${group}"]`).forEach(b => {
+          b.classList.remove('bg-wood-700','text-white');
+          b.classList.add('text-stone-600');
+        });
+        btn.classList.add('bg-wood-700','text-white');
+        btn.classList.remove('text-stone-600');
+        activeFilters[group] = btn.dataset.value;
+        applyFilters();
+      });
+    });
+
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', () => {
+        activeFilters.recursos = Array.from(document.querySelectorAll('input[type="checkbox"]:checked')).map(c => c.value);
+        applyFilters();
+      });
+    });
+
+    function applyFilters() {
+      activeFilters.area = parseInt(range.value);
+      let visible = 0;
+      document.querySelectorAll('.model-card').forEach(card => {
+        const q = parseInt(card.dataset.quartos);
+        const p = parseInt(card.dataset.pavimentos);
+        const a = parseFloat(card.dataset.area);
+        const rec = card.dataset.recursos.split(',');
+        const okQ = activeFilters.quartos === 'all' || q === parseInt(activeFilters.quartos) || (activeFilters.quartos === '4' && q >= 4);
+        const okP = activeFilters.pavimentos === 'all' || p === parseInt(activeFilters.pavimentos);
+        const okA = a <= activeFilters.area;
+        const okR = activeFilters.recursos.length === 0 || activeFilters.recursos.every(r => rec.includes(r));
+        if (okQ && okP && okA && okR) {
+          card.style.display = 'block';
+          visible++;
+        } else {
+          card.style.display = 'none';
+        }
+      });
+      document.getElementById('resultCount').textContent = visible;
+    }
+  </script>
+
+</body>
+</html>
