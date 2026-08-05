@@ -1,0 +1,212 @@
+{
+  "Diamond House": {
+    "base": "https://www.casaprefabricada.com.br",
+    "checked": [
+      {
+        "url": "https://www.casaprefabricada.com.br/casa-prefabricada/",
+        "status": 406,
+        "len": 226
+      },
+      {
+        "url": "https://www.casaprefabricada.com.br/modelos/",
+        "status": 406,
+        "len": 226
+      },
+      {
+        "url": "https://www.casaprefabricada.com.br/produtos/",
+        "status": 406,
+        "len": 226
+      }
+    ],
+    "model_links": []
+  },
+  "Madecasa": {
+    "base": "https://madecasa.com.br",
+    "checked": [
+      {
+        "url": "https://madecasa.com.br/modelos/",
+        "status": 200,
+        "len": 119915
+      },
+      {
+        "url": "https://madecasa.com.br/produtos/",
+        "status": 404,
+        "len": 58959
+      },
+      {
+        "url": "https://madecasa.com.br/casas/",
+        "status": 200,
+        "len": 115212
+      }
+    ],
+    "model_links": [
+      {
+        "url": "https://madecasa.com.br/como-construir-uma-casa-de-madeira-passo-a-passo/",
+        "text": "AnteriorPreviousComo Construir uma Casa de Madeira Passo a Passo"
+      },
+      {
+        "url": "https://madecasa.com.br/tipos-de-madeira-qual-escolher-para-sua-casa/",
+        "text": "NextTipos de madeira: Qual escolher para sua casa?Próximo"
+      },
+      {
+        "url": "https://madecasa.com.br/modelos-de-casas-de-madeira/",
+        "text": ""
+      },
+      {
+        "url": "https://madecasa.com.br/casa-de-madeira-cuidados-e-manutencoes/",
+        "text": "AnteriorPreviousCasa de Madeira: Cuidados e Manutenções"
+      },
+      {
+        "url": "https://madecasa.com.br/mitos-e-verdades-sobre-casas-em-madeira-desvendando-os-segredos-da-construcao-sustentavel/",
+        "text": "NextMitos e Verdades sobre Casas em Madeira: Desvendando os Segredos da Construção SustentávelPróximo"
+      }
+    ]
+  },
+  "Chalé de Madeira": {
+    "base": "https://chaledemadeira.com",
+    "checked": [
+      {
+        "url": "https://chaledemadeira.com/modelos/",
+        "status": 404,
+        "len": 68384
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/",
+        "status": 200,
+        "len": 122960
+      },
+      {
+        "url": "https://chaledemadeira.com/loja/",
+        "status": 200,
+        "len": 176805
+      },
+      {
+        "url": "https://chaledemadeira.com/catalogo/",
+        "status": 200,
+        "len": 176805
+      }
+    ],
+    "model_links": [
+      {
+        "url": "https://chaledemadeira.com/casas/casa-de-madeira/",
+        "text": "Casas"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas/sobrado-de-madeira/",
+        "text": "Sobrados"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas/tiny-house/",
+        "text": "Tiny Houses"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas-pre-fabricadas-em-promocao/",
+        "text": "Promoções"
+      },
+      {
+        "url": "https://chaledemadeira.com/tag/kit-pre-fabricado/",
+        "text": "Kit Pré-Fabricado"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/kit-de-casa-pre-fabricada-modelo-xxxxxxxxxxxxxxxxxx-xxx-m2/",
+        "text": "Kit de Casa Pré-Fabricada Modelo XXXXXXXXXXXXXXXXXX | XXX m²"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/kit-de-casa-pre-fabricada-modelo-xxxxxxxxxxxxxxxxxx-xxx-m2/#respond",
+        "text": "Deixe um comentário"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/",
+        "text": "Casas com 1 quarto"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas-pre-fabricadas-exportacao/casas-t1/",
+        "text": "Casas T1"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas-pre-fabricadas-exportacao/casas-t2/",
+        "text": "Casas T2"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-2-quartos/",
+        "text": "Casas com 2 quartos"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas/",
+        "text": "Casas"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-3-quartos/",
+        "text": "Casas com 3 quartos"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-4-quartos/",
+        "text": "Casas com 4 quartos"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-5-quartos-ou-mais/",
+        "text": "Casas com 5 quartos ou mais"
+      },
+      {
+        "url": "https://chaledemadeira.com/casas-pre-fabricadas-exportacao/",
+        "text": "Casas Pré-Fabricadas Exportação"
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-super-pop-1-22-m%C2%B2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-super-pop-2-33-m%C2%B2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-pop-1-5-30-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-pop-1-0-36-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-pop-1-1-31-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-pop-1-4-37-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-pop-1-6-36-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-1-quarto/kit-de-casa-pre-fabricada-modelo-ilhota-27-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-2-quartos/kit-de-casa-pre-fabricada-modelo-joinville-45-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-2-quartos/kit-de-casa-pre-fabricada-modelo-cascavel-88-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-2-quartos/kit-de-casa-pre-fabricada-modelo-pop-2-1-68-m2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/kit-de-casa-pre-fabricada-modelo-pop-2-12-31-m%C2%B2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-2-quartos/kit-de-casa-pre-fabricada-modelo-pop-2-8-73-m%C2%B2/",
+        "text": ""
+      },
+      {
+        "url": "https://chaledemadeira.com/produtos/casas-com-2-quartos/kit-de-casa-pre-fabricada-modelo-pop-2-0-60-m2/",
+        "text": ""
+      }
+    ]
+  }
+}
