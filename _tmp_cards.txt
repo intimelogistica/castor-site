@@ -1,0 +1,360 @@
+          <article class="card" data-slug="casa-de-madeira-modelo-chicago" data-name="Modelo Chicago" data-dorm="2" data-pav="1" data-tipo="chale" data-area="103.13" data-varanda="1" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-chicago/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-chicago-5-1-1024x1024.jpg" alt="Modelo Chicago — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">103,13 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-chicago/">Modelo Chicago</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Chicago%20%28103%2C13%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-chicago/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-paris" data-name="Modelo Paris" data-dorm="2" data-pav="1" data-tipo="casa" data-area="103.83" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-paris/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-paris-5-1-1024x1024.jpg" alt="Modelo Paris — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">103,83 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-paris/">Modelo Paris</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">2 suítes · 3 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Paris%20%28103%2C83%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-paris/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-boston" data-name="Modelo Boston" data-dorm="2" data-pav="1" data-tipo="chale" data-area="105.38" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-boston/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-boston-5-1024x1024.jpg" alt="Modelo Boston — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">105,38 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-boston/">Modelo Boston</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Boston%20%28105%2C38%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-boston/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-dallas" data-name="Modelo Dallas" data-dorm="2" data-pav="1" data-tipo="casa" data-area="106.38" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-dallas/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-dallas-5-1-1024x1024.jpg" alt="Modelo Dallas — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">106,38 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-dallas/">Modelo Dallas</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Dallas%20%28106%2C38%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-dallas/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-cuba" data-name="Modelo Cuba" data-dorm="3" data-pav="1" data-tipo="casa" data-area="107.98" data-varanda="1" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-cuba/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-cuba-5-1024x1024.jpg" alt="Modelo Cuba — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">107,98 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-cuba/">Modelo Cuba</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Cuba%20%28107%2C98%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-cuba/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-xangai" data-name="Modelo Xangai" data-dorm="2" data-pav="1" data-tipo="chale" data-area="109.3" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-xangai/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-xangai-5-1-1024x1024.jpg" alt="Modelo Xangai — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">109,3 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-xangai/">Modelo Xangai</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">2 quartos · 1 banheiro · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Xangai%20%28109%2C3%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-xangai/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-monaco" data-name="Modelo Boston" data-dorm="2" data-pav="1" data-tipo="chale" data-area="119.74" data-varanda="1" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-monaco/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-monaco-2-1-1024x1024.jpg" alt="Modelo Boston — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">119,74 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-monaco/">Modelo Boston</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Boston%20%28119%2C74%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-monaco/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-dubai" data-name="Modelo Dubai" data-dorm="3" data-pav="1" data-tipo="loft" data-area="120.66" data-varanda="0" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-dubai/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-dubai-5-1024x1024.jpg" alt="Modelo Dubai — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">120,66 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-dubai/">Modelo Dubai</a></h3>
+                <span class="card__tag">Loft</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen"></p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Dubai%20%28120%2C66%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-dubai/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-grecia" data-name="Modelo Grécia" data-dorm="2" data-pav="1" data-tipo="chale" data-area="123.34" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-grecia/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-grecia-5-1-1024x1024.jpg" alt="Modelo Grécia — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">123,34 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-grecia/">Modelo Grécia</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Gr%C3%A9cia%20%28123%2C34%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-grecia/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-newyork" data-name="Modelo New York" data-dorm="2" data-pav="1" data-tipo="chale" data-area="123.45" data-varanda="1" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-newyork/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-new-york-5-1-1024x1024.jpg" alt="Modelo New York — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">123,45 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-newyork/">Modelo New York</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20New%20York%20%28123%2C45%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-newyork/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-japao" data-name="Modelo Japão" data-dorm="2" data-pav="1" data-tipo="loft" data-area="125.45" data-varanda="0" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-japao/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-japao-5-1024x1024.jpg" alt="Modelo Japão — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">125,45 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-japao/">Modelo Japão</a></h3>
+                <span class="card__tag">Loft</span>
+              </div>
+              <p class="card__specs">1 suíte · 1 quarto · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen"></p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Jap%C3%A3o%20%28125%2C45%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-japao/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card card--featured" data-slug="casa-de-madeira-modelo-brasil" data-name="Modelo Brasil" data-dorm="3" data-pav="1" data-tipo="chale" data-area="139.3" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-brasil/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-brasil-5-1024x1024.jpg" alt="Modelo Brasil — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">139,3 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-brasil/">Modelo Brasil</a></h3>
+                <span class="card__tag">Chalé</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Brasil%20%28139%2C3%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-brasil/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-viena" data-name="Modelo Viena" data-dorm="3" data-pav="1" data-tipo="casa" data-area="141.3" data-varanda="1" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-viena/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-viena-5-1024x1024.jpg" alt="Modelo Viena — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">141,3 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-viena/">Modelo Viena</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Viena%20%28141%2C3%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-viena/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-australia" data-name="Modelo Austrália" data-dorm="3" data-pav="1" data-tipo="casa" data-area="144.31" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-australia/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-australia-5-1024x1024.jpg" alt="Modelo Austrália — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">144,31 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-australia/">Modelo Austrália</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Austr%C3%A1lia%20%28144%2C31%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-australia/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-sf" data-name="Modelo São Francisco" data-dorm="3" data-pav="1" data-tipo="casa" data-area="153.75" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-sf/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-sf-5-1024x1024.jpg" alt="Modelo São Francisco — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">153,75 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-sf/">Modelo São Francisco</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20S%C3%A3o%20Francisco%20%28153%2C75%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-sf/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-espanha" data-name="Modelo Espanha" data-dorm="3" data-pav="1" data-tipo="casa" data-area="155.86" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-espanha/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-espanha-5-1024x1024.jpg" alt="Modelo Espanha — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">155,86 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-espanha/">Modelo Espanha</a></h3>
+                <span class="card__tag">Casa</span>
+              </div>
+              <p class="card__specs">1 suíte · 2 quartos · 2 banheiros · 1 pavimento</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Espanha%20%28155%2C86%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-espanha/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-roma" data-name="Modelo Roma" data-dorm="4" data-pav="2" data-tipo="sobrado" data-area="211.91" data-varanda="1" data-lavanderia="0">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-roma/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-iroma-5-1024x1024.jpg" alt="Modelo Roma — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">211,91 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-roma/">Modelo Roma</a></h3>
+                <span class="card__tag">Sobrado</span>
+              </div>
+              <p class="card__specs">2 suítes · 2 quartos · 3 banheiros · 2 pavimentos</p>
+              <p class="card__amen">Varanda</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Roma%20%28211%2C91%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-roma/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-texas" data-name="Modelo Texas" data-dorm="5" data-pav="2" data-tipo="sobrado" data-area="210.81" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-texas/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-texas-5-1024x1024.jpg" alt="Modelo Texas — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">210,81 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-texas/">Modelo Texas</a></h3>
+                <span class="card__tag">Sobrado</span>
+              </div>
+              <p class="card__specs">1 suíte · 4 quartos · 2 banheiros · 2 pavimentos</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Texas%20%28210%2C81%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-texas/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-russia" data-name="Modelo Russia" data-dorm="4" data-pav="2" data-tipo="sobrado" data-area="242.5" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-russia/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-russia-5-1024x1024.jpg" alt="Modelo Russia — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">242,5 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-russia/">Modelo Russia</a></h3>
+                <span class="card__tag">Sobrado</span>
+              </div>
+              <p class="card__specs">4 suítes · 4 banheiros · 2 pavimentos</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Russia%20%28242%2C5%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-russia/">Ver modelo</a>
+              </div>
+            </div>
+          </article>
+          <article class="card" data-slug="casa-de-madeira-modelo-franca" data-name="Modelo França" data-dorm="5" data-pav="2" data-tipo="sobrado" data-area="247.51" data-varanda="1" data-lavanderia="1">
+            <a class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-franca/" tabindex="-1" aria-hidden="true">
+              <img src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-franca-1-1024x1024.jpg" alt="Modelo França — foto da fachada" loading="lazy" width="1024" height="1024">
+              <span class="card__area">247,51 m²</span>
+            </a>
+            <div class="card__body">
+              <div class="card__head">
+                <h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-franca/">Modelo França</a></h3>
+                <span class="card__tag">Sobrado</span>
+              </div>
+              <p class="card__specs">4 suítes · 1 quarto · 5 banheiros · 2 pavimentos</p>
+              <p class="card__amen">Varanda · Lavanderia</p>
+              <div class="card__cta">
+                <a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Fran%C3%A7a%20%28247%2C51%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" target="_blank" rel="noopener">Orçamento</a>
+                <a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-franca/">Ver modelo</a>
+              </div>
+            </div>
+          </article>

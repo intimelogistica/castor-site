@@ -3,51 +3,63 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Castor — Protótipos de Layout</title>
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
-  <style>body{font-family:'Inter',sans-serif;}</style>
+  <title>Castor — 3 Propostas de Layout (v2)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f2ec; --surface:#ffffff; --ink:#232019; --muted:#6f675c;
+      --accent:#3f4f38; --border:#e5ddd1; --shadow:0 1px 2px rgba(35,32,25,.06),0 8px 24px rgba(35,32,25,.08);
+    }
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--ink);min-height:100vh;padding:56px 20px}
+    .wrap{max-width:760px;margin:0 auto}
+    .brand{display:flex;align-items:baseline;gap:10px;margin-bottom:8px}
+    .brand strong{font-family:'Fraunces',serif;font-size:26px;font-weight:600;letter-spacing:-.01em}
+    .brand span{font-size:12px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--accent)}
+    h1{font-family:'Fraunces',serif;font-size:clamp(30px,5vw,42px);font-weight:500;line-height:1.1;letter-spacing:-.02em;margin-bottom:12px}
+    .sub{color:var(--muted);font-size:15px;line-height:1.6;margin-bottom:40px;max-width:56ch}
+    .cards{display:grid;gap:16px}
+    a.card{display:block;background:var(--surface);border:1px solid var(--border);border-radius:14px;padding:22px 24px;text-decoration:none;color:inherit;box-shadow:var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+    a.card:hover{transform:translateY(-2px);box-shadow:0 2px 4px rgba(35,32,25,.06),0 16px 32px rgba(35,32,25,.12)}
+    .tag{display:inline-block;font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:8px}
+    h2{font-family:'Fraunces',serif;font-size:21px;font-weight:500;letter-spacing:-.01em;margin-bottom:6px}
+    .card p{color:var(--muted);font-size:14px;line-height:1.55}
+    .go{float:right;margin-top:-4px;font-size:20px;color:#c9bda9;transition:transform .18s ease}
+    a.card:hover .go{transform:translateX(4px);color:var(--accent)}
+    .foot{margin-top:36px;color:#a89c8a;font-size:12.5px;line-height:1.6}
+    .foot b{color:var(--muted);font-weight:600}
+    @media (prefers-reduced-motion:reduce){a.card{transition:none}a.card:hover{transform:none}a.card:hover .go{transform:none}}
+  </style>
 </head>
-<body class="bg-stone-100 min-h-screen flex items-center justify-center p-6">
-  <div class="max-w-2xl w-full">
-    <div class="text-center mb-10">
-      <div class="w-16 h-16 bg-amber-800 rounded-2xl flex items-center justify-center text-white text-2xl font-bold mx-auto mb-4">C</div>
-      <h1 class="text-3xl font-bold text-stone-900 mb-2">Castor Casas de Madeira</h1>
-      <p class="text-stone-600">3 propostas de layout para o novo site. Abra cada versão localmente no navegador.</p>
-    </div>
-    <div class="space-y-4">
-      <a href="versao-a-premium.html" class="block bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition">
-        <div class="flex items-center justify-between">
-          <div>
-            <div class="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">Versão A</div>
-            <h2 class="text-xl font-bold text-stone-900">Premium / Institucional</h2>
-            <p class="text-stone-500 text-sm mt-1">Foco em credibilidade, processo e história da marca.</p>
-          </div>
-          <span class="text-2xl text-stone-300">→</span>
-        </div>
+<body>
+  <div class="wrap">
+    <div class="brand"><strong>Castor</strong><span>Casas de Madeira</span></div>
+    <h1>3 propostas de layout — 2ª rodada</h1>
+    <p class="sub">Versões refinadas com referências de design premium (Apple/SpaceX, Framer/Linear, Stripe) e dados reais dos 47 modelos. Abra cada arquivo localmente no navegador — são HTML standalone, sem instalação.</p>
+
+    <div class="cards">
+      <a class="card" href="v2-versao-a-premium.html">
+        <span class="go">→</span>
+        <div class="tag">Versão A</div>
+        <h2>Premium / Institucional</h2>
+        <p>Editorial de arquitetura: fotografia full-bleed, tipografia serifada grande, ritmo de seções sofisticado. Foco em credibilidade, processo e história.</p>
       </a>
-      <a href="versao-b-catalogo.html" class="block bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition">
-        <div class="flex items-center justify-between">
-          <div>
-            <div class="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">Versão B</div>
-            <h2 class="text-xl font-bold text-stone-900">Catálogo / Visual</h2>
-            <p class="text-stone-500 text-sm mt-1">Foco em descoberta de modelos com filtros interativos.</p>
-          </div>
-          <span class="text-2xl text-stone-300">→</span>
-        </div>
+      <a class="card" href="v2-versao-b-catalogo.html">
+        <span class="go">→</span>
+        <div class="tag">Versão B</div>
+        <h2>Catálogo / Visual</h2>
+        <p>Descoberta de modelos com filtros interativos funcionais (quartos, pavimentos, tipo) e grid refinado. Foco em explorar os 47 modelos.</p>
       </a>
-      <a href="versao-c-conversao.html" class="block bg-white p-6 rounded-2xl shadow-sm border border-stone-200 hover:shadow-md transition">
-        <div class="flex items-center justify-between">
-          <div>
-            <div class="text-xs font-bold text-amber-700 uppercase tracking-wide mb-1">Versão C</div>
-            <h2 class="text-xl font-bold text-stone-900">Conversão / Agressiva</h2>
-            <p class="text-stone-500 text-sm mt-1">Foco em formulário de orçamento e gatilhos de lead.</p>
-          </div>
-          <span class="text-2xl text-stone-300">→</span>
-        </div>
+      <a class="card" href="v2-versao-c-conversao.html">
+        <span class="go">→</span>
+        <div class="tag">Versão C</div>
+        <h2>Conversão / Agressiva</h2>
+        <p>Copy persuasiva, formulário de orçamento em destaque que envia pelo WhatsApp, prova social e FAQ. Foco em gerar leads.</p>
       </a>
     </div>
-    <p class="text-center text-stone-400 text-sm mt-10">Protótipos sem logo final. Paleta e imagens provisórias.</p>
+
+    <p class="foot"><b>Notas:</b> protótipos sem logo final (marca tipográfica provisória). Imagens dos modelos carregadas do site atual (requer internet). Depoimentos marcados como placeholders até receber os reais. Versões anteriores (1ª rodada) mantidas em <code>versao-a-premium.html</code>, <code>versao-b-catalogo.html</code> e <code>versao-c-conversao.html</code>.</p>
   </div>
 </body>
 </html>
