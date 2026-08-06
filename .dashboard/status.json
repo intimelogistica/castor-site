@@ -8,12 +8,10 @@
   "ultimas_alteracoes": [
     "2026-08-06 00:20 — protótipos v2 commitados (3 arquivos + hub index.html)",
     "2026-08-05 23:50 — concluída 2ª rodada dos 3 protótipos HTML v2 (claude-design + popular-web-designs: Apple/SpaceX, Framer/Linear/Airbnb, Stripe)",
-    "2026-08-05 23:15 — skill /salvar-sessao-dashboard realocada de AppData\\Local\\hermes para C:\\Users\\João Batista\\.hermes\\skills\\ após consolidação de home do Hermes",
-    "2026-08-05 22:45 — instalada a skill /salvar-sessao-dashboard no Hermes",
+    "2026-08-05 23:15 — skill /salvar-sessao-dashboard instalada e realocada para C:\\Users\\João Batista\\.hermes\\skills\\ (consolidação de home do Hermes)",
     "2026-08-05 22:30 — criado planning/github-references.md com repositórios GitHub selecionados e commitado no repo",
     "2026-08-05 17:30 — concluído mapeamento de campos dos modelos de casa em planning/model-fields-mapping.md",
-    "2026-08-05 17:00 — arquitetura de informação e keyword map salvos em planning/information-architecture.md",
-    "2026-08-05 16:00 — extraídos metadados dos 47 modelos Castor para research/castor-models-metadata.json"
+    "2026-08-05 17:00 — arquitetura de informação e keyword map salvos em planning/information-architecture.md"
   ],
   "pendencias_joao": [
     "Concluir acesso/administração de DNS/GSC/GA4/GTM para casademadeira.com.br",
