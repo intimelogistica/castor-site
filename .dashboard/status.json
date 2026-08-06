@@ -1,17 +1,17 @@
 {
   "projeto": "castor-site",
-  "atualizado_em": "2026-08-05T22:55:00-03:00",
+  "atualizado_em": "2026-08-05T23:20:00-03:00",
   "status": "desenvolvimento",
   "progresso_pct": 20,
   "etapa_atual": "segunda rodada de protótipos HTML com UX/UI moderno",
   "resumo": "Novo site para substituir casademadeira.com.br (Castor Casas de Madeira), reaproveitando a stack validada do InTime (Next.js 16 + Vercel + Strapi 5.50 + Resend + Turnstile). Planejamento estratégico, arquitetura de informação, mapeamento de campos dos modelos de casa e extração dos 47 modelos do site antigo já concluídos. A primeira rodada de protótipos HTML foi rejeitada por layout pobre; a segunda rodada está em andamento com referências de design systems premium (Apple, SpaceX, Stripe, Framer, Linear) e repositórios do GitHub selecionados.",
   "ultimas_alteracoes": [
+    "2026-08-05 23:15 — skill /salvar-sessao-dashboard realocada de AppData\\Local\\hermes para C:\\Users\\João Batista\\.hermes\\skills\\ após consolidação de home do Hermes",
     "2026-08-05 22:45 — instalada a skill /salvar-sessao-dashboard no Hermes",
     "2026-08-05 22:30 — criado planning/github-references.md com repositórios GitHub selecionados e commitado no repo",
     "2026-08-05 17:30 — concluído mapeamento de campos dos modelos de casa em planning/model-fields-mapping.md",
     "2026-08-05 17:00 — arquitetura de informação e keyword map salvos em planning/information-architecture.md",
-    "2026-08-05 16:00 — extraídos metadados dos 47 modelos Castor para research/castor-models-metadata.json",
-    "2026-08-05 15:00 — primeiro commit com protótipos iniciais (versao-a-premium, versao-b-catalogo, versao-c-conversao)"
+    "2026-08-05 16:00 — extraídos metadados dos 47 modelos Castor para research/castor-models-metadata.json"
   ],
   "pendencias_joao": [
     "Concluir acesso/administração de DNS/GSC/GA4/GTM para casademadeira.com.br",
