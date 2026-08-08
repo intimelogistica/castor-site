@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Wood House Models in MG | Castor Wood Houses</title>
+<meta content="Explore 47 wood house models em Minas Gerais: filtre por dormitórios, pavimentos e tipo. showroom in Lagoa Santa and Matozinhos. Tailor-made project." name="description"/>
+<meta content="#f5f1e9" name="theme-color"/>
+<meta content="Models de Wood Houses | Castor Wood Houses" property="og:title"/>
+<meta content="47 wood house models em MG. Filtre por dormitórios, pavimentos e tipo. showroom in Lagoa Santa and Matozinhos. Tailor-made project." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<meta content="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-brasil-5-1024x1024.jpg" property="og:image"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;600&amp;family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&amp;display=swap" rel="stylesheet"/>
+<style>
+/* ============================================================
+   CASTOR — VERSÃO B (CATÁLOGO) · Protótipo de interface
+   Sistema: EXPLORE — filtros + grid são a composição
+   Tipografia: Fraunces (serif editorial) + Archivo (sans técnica)
+   Accent único: verde-musgo. Fundo: papel quente neutro.
+   ============================================================ */
+:root{
+  --paper:#f5f1e9;          /* canvas quente, tipo papel */
+  --surface:#fffdf9;        /* cards */
+  --ink:#26241e;            /* texto principal — quase-preto quente */
+  --ink-2:#5d584c;          /* texto secundário */
+  --ink-3:#8d8777;          /* texto terciário */
+  --line:#e4ddd0;           /* bordas quentes */
+  --line-2:#d8d0c0;
+  --moss:#5c6b3c;           /* verde-musgo — único accent */
+  --moss-deep:#47552f;      /* hover / bandas */
+  --moss-tint:#eef1e3;      /* fundo do pill ativo */
+  --radius:16px;
+  --shadow-1:0 1px 2px rgba(38,36,30,.05), 0 4px 14px rgba(38,36,30,.06);
+  --shadow-2:0 2px 4px rgba(38,36,30,.06), 0 14px 34px rgba(38,36,30,.12);
+  --font-serif:"Fraunces", Georgia, "Times New Roman", serif;
+  --font-sans:"Archivo", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --header-h:68px;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--font-sans);font-size:16px;line-height:1.55;-webkit-font-smoothing:antialiased;text-rendering:optimize Legibility}
+img{max-width:100%;display:block}
+a{color:inherit}
+h1,h2,h3,h4{font-family:var(--font-serif);font-weight:500;line-height:1.12;margin:0;letter-spacing:-.01em}
+p{margin:0}
+:focus-visible{outline:2px solid var(--moss);outline-offset:2px;border-radius:4px}
+::selection{background:var(--moss);color:#fff}
+.num{font-variant-numeric:tabular-nums}
+.container{max-width:1180px;margin:0 auto;padding:0 24px}
+section[id]{scroll-margin-top:calc(var(--header-h) + 16px)}
+
+/* ---------- Header sticky ---------- */
+.site-header{position:sticky;top:0;z-index:60;height:var(--header-h);background:transparent;transition:background .25s ease, box-shadow .25s ease, border-color .25s ease;border-bottom:1px solid transparent}
+.site-header.is-scrolled{background:rgba(245,241,233,.92);backdrop-filter:blur(6px);border-bottom-color:var(--line);box-shadow:0 1px 0 rgba(38,36,30,.02)}
+.header-in{display:flex;align-items:center;justify-content:space-between;gap:24px;height:var(--header-h)}
+.brand{display:flex;flex-direction:column;line-height:1;text-decoration:none}
+.brand__name{font-family:var(--font-serif);font-size:1.28rem;font-weight:600;letter-spacing:-.02em}
+.brand__sub{font-size:.62rem;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--ink-2);margin-top:4px}
+.nav{display:flex;align-items:center;gap:6px}
+.nav a{padding:11px 14px;font-size:.9rem;font-weight:500;color:var(--ink-2);text-decoration:none;border-radius:10px;transition:color .15s ease, background .15s ease}
+.nav a:hover{color:var(--ink);background:rgba(38,36,30,.05)}
+.nav a.is-active{color:var(--ink)}
+.nav-cta{display:flex;align-items:center;gap:10px}
+.nav-toggle{display:none;width:46px;height:46px;border:1px solid var(--line-2);border-radius:12px;background:var(--surface);cursor:pointer;align-items:center;justify-content:center}
+.nav-toggle span,.nav-toggle span::before,.nav-toggle span::after{display:block;width:18px;height:2px;background:var(--ink);border-radius:2px;content:"";position:relative;transition:transform .2s ease}
+.nav-toggle span::before{position:absolute;top:-5px}
+.nav-toggle span::after{position:absolute;top:5px}
+.nav-toggle[aria-expanded="true"] span{background:transparent}
+.nav-toggle[aria-expanded="true"] span::before{transform:translateY(5px) rotate(45deg)}
+.nav-toggle[aria-expanded="true"] span::after{transform:translateY(-5px) rotate(-45deg)}
+.mobile-nav{display:none;position:absolute;top:var(--header-h);left:0;right:0;background:var(--surface);border-bottom:1px solid var(--line);padding:10px 24px 18px;flex-direction:column;gap:2px}
+.mobile-nav a{padding:14px 10px;font-weight:500;text-decoration:none;border-radius:10px}
+.mobile-nav a:hover{background:var(--moss-tint)}
+.mobile-nav .btn{margin-top:10px;justify-content:center}
+
+/* ---------- Botões ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:46px;padding:0 22px;border-radius:12px;border:1px solid transparent;font-family:var(--font-sans);font-size:.92rem;font-weight:600;text-decoration:none;cursor:pointer;transition:background .18s ease, border-color .18s ease, transform .18s ease, box-shadow .18s ease;white-space:nowrap}
+.btn--primary{background:var(--moss);color:#fff}
+.btn--primary:hover{background:var(--moss-deep);box-shadow:0 6px 18px rgba(71,85,47,.28)}
+.btn--primary:active{transform:translateY(1px)}
+.btn--ghost{background:var(--surface);color:var(--ink);border-color:var(--line-2)}
+.btn--ghost:hover{border-color:var(--moss);color:var(--moss-deep)}
+.btn--light{background:#fff;color:var(--moss-deep)}
+.btn--light:hover{background:var(--moss-tint)}
+.btn--sm{min-height:44px;padding:0 18px;font-size:.88rem}
+.link{display:inline-flex;align-items:center;gap:6px;min-height:44px;padding:0 6px;font-size:.9rem;font-weight:600;color:var(--ink);text-decoration:none;border-bottom:1.5px solid var(--moss);transition:color .15s ease,border-color .15s ease}
+.link:hover{color:var(--moss-deep);border-color:var(--moss-deep)}
+.link::after{content:"→";transition:transform .18s ease}
+.link:hover::after{transform:translateX(3px)}
+
+/* ---------- Hero compacto ---------- */
+.hero{padding:56px 0 34px}
+.hero__over{display:inline-flex;align-items:center;gap:10px;font-size:.74rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;color:var(--moss-deep);margin-bottom:18px}
+.hero__over::before{content:"";width:26px;height:1.5px;background:var(--moss)}
+.hero h1{font-size:clamp(2.1rem,4.6vw,3.35rem);max-width:15ch;letter-spacing:-.02em}
+.hero__sub{max-width:52ch;color:var(--ink-2);font-size:1.02rem;margin-top:16px}
+.hero__facts{display:flex;flex-wrap:wrap;gap:8px 26px;margin-top:24px;padding-top:20px;border-top:1px solid var(--line)}
+.hero__fact{font-size:.85rem;font-weight:500;color:var(--ink-2)}
+.hero__fact strong{color:var(--ink);font-weight:600}
+
+/* ---------- Toolbar de filtros ---------- */
+.toolbar{position:sticky;top:var(--header-h);z-index:50;background:var(--paper);border-bottom:1px solid var(--line);margin:0 -24px;padding:14px 24px 16px;display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:14px}
+.filters{display:flex;flex-wrap:wrap;gap:12px 30px}
+.fgroup{display:flex;flex-direction:column;gap:7px}
+.fgroup__label{font-size:.66rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.pills{display:flex;flex-wrap:wrap;gap:6px}
+.pill{min-height:42px;padding:9px 16px;border-radius:999px;border:1px solid var(--line-2);background:transparent;color:var(--ink-2);font-family:var(--font-sans);font-size:.86rem;font-weight:500;cursor:pointer;transition:all .16s ease}
+.pill:hover{border-color:var(--moss);color:var(--moss-deep)}
+.pill.is-active{background:var(--moss);border-color:var(--moss);color:#fff}
+.pill.is-active:hover{background:var(--moss-deep)}
+.pill--reset{display:inline-flex;align-items:center;gap:6px;color:var(--moss-deep);border-color:var(--moss)}
+.toolbar__meta{display:flex;align-items:center;gap:18px}
+.count{font-size:.88rem;color:var(--ink-2)}
+.count strong{color:var(--ink);font-weight:600;font-variant-numeric:tabular-nums}
+.sort{display:flex;align-items:center;gap:9px;font-size:.8rem;font-weight:600;color:var(--ink-3);text-transform:uppercase;letter-spacing:.08em}
+.sort select{appearance:none;min-height:44px;padding:8px 34px 8px 14px;border:1px solid var(--line-2);border-radius:12px;background:var(--surface) url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' view Box='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%235d584c' stroke-width='1.6' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat right 14px center;font-family:var(--font-sans);font-size:.88rem;font-weight:500;color:var(--ink);cursor:pointer}
+.sort select:hover{border-color:var(--moss)}
+
+/* ---------- Grid do catálogo ---------- */
+.catalog{padding:34px 0 10px}
+.grid{display:grid;grid-template-columns:repeat(12,1fr);gap:26px 22px;align-items:start}
+.card{grid-column:span 4;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);overflow:hidden;box-shadow:var(--shadow-1);transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease}
+.card--featured{grid-column:span 8}
+.card--aside{grid-column:span 4;background:var(--moss-tint);border-color:transparent;display:flex}
+.card:hover{transform:translateY(-4px);box-shadow:var(--shadow-2);border-color:var(--line-2)}
+.card__media{position:relative;display:block;overflow:hidden;aspect-ratio:1/1;background:#ded8ca}
+.card--featured .card__media{aspect-ratio:16/10}
+.card__media img{width:100%;height:100%;object-fit:cover;transform:scale(1.001);transition:transform .6s cubic-bezier(.2,.6,.2,1)}
+.card:hover .card__media img{transform:scale(1.05)}
+.card__area{position:absolute;left:14px;bottom:14px;background:rgba(245,241,233,.94);color:var(--ink);font-size:.8rem;font-weight:600;font-variant-numeric:tabular-nums;padding:7px 11px;border-radius:999px;letter-spacing:.01em}
+.card__body{padding:18px 20px 20px;display:flex;flex-direction:column;gap:9px}
+.card__head{display:flex;align-items:baseline;justify-content:space-between;gap:12px}
+.card__name{font-size:1.24rem}
+.card--featured .card__name{font-size:1.55rem}
+.card__name a{text-decoration:none;transition:color .15s ease}
+.card__name a:hover{color:var(--moss-deep)}
+.card__tag{flex-shrink:0;font-size:.68rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--moss-deep);background:var(--moss-tint);border:1px solid rgba(92,107,60,.28);padding:5px 10px;border-radius:999px}
+.card__specs{font-size:.87rem;font-weight:500;color:var(--ink-2);font-variant-numeric:tabular-nums}
+.card__amen{font-size:.78rem;font-weight:500;color:var(--ink-3);margin-top:-2px}
+.card__cta{display:flex;align-items:center;gap:14px;margin-top:auto;padding-top:12px}
+.card__cta .btn{flex:1;min-height:44px;padding:0 12px}
+
+/* Card lateral — navegar por tipo */
+.card__kicker{font-size:.68rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3)}
+.tipo-list{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-direction:column}
+.tipo-list li{border-top:1px solid rgba(92,107,60,.22)}
+.tipo-link{width:100%;display:flex;align-items:center;justify-content:space-between;gap:10px;min-height:52px;padding:0 4px;background:none;border:0;font-family:var(--font-serif);font-size:1.05rem;font-weight:500;color:var(--ink);cursor:pointer;text-align:left;transition:color .15s ease}
+.tipo-link:hover{color:var(--moss-deep)}
+.tipo-link span{font-family:var(--font-sans);font-size:.76rem;font-weight:600;color:var(--ink-3);font-variant-numeric:tabular-nums}
+.tipo-link .num-big{font-family:var(--font-sans)}
+.card__aside-note{font-size:.76rem;color:var(--ink-3);margin-top:14px;line-height:1.5}
+
+/* Empty state */
+.empty{grid-column:1/-1;text-align:center;padding:72px 24px;border:1px dashed var(--line-2);border-radius:var(--radius);background:rgba(255,253,249,.5)}
+.empty h3{font-size:1.5rem}
+.empty p{color:var(--ink-2);margin:10px 0 24px;max-width:42ch;margin-left:auto;margin-right:auto}
+
+/* Animação de cards ao filtrar */
+@keyframes card In{from{opacity:0;transform:translateY(10px) scale(.985)}to{opacity:1;transform:none}}
+.card.is-anim{animation:card In .38s cubic-bezier(.2,.6,.2,1) both}
+.card.is-hidden{display:none}
+
+/* ---------- Por que a Castor ---------- */
+.why{padding:78px 0 20px}
+.why__head{display:flex;align-items:baseline;gap:26px;flex-wrap:wrap;margin-bottom:44px}
+.why__head h2{font-size:clamp(1.7rem,3.2vw,2.3rem);max-width:18ch}
+.why__head p{max-width:44ch;color:var(--ink-2);font-size:.98rem}
+.why-list{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;border-top:1px solid var(--line)}
+.why-item{padding:26px 4px 8px;border-top:2px solid var(--ink)}
+.why-item__num{font-family:var(--font-serif);font-size:1rem;color:var(--moss-deep);font-variant-numeric:tabular-nums}
+.why-item h3{font-size:1.18rem;margin:12px 0 8px}
+.why-item p{font-size:.9rem;color:var(--ink-2);line-height:1.6}
+
+/* ---------- FAQ ---------- */
+.faq{padding:70px 0 20px}
+.faq__wrap{max-width:760px;margin:0 auto}
+.faq h2{font-size:clamp(1.7rem,3.2vw,2.3rem);text-align:center;margin-bottom:8px}
+.faq__intro{text-align:center;color:var(--ink-2);font-size:.98rem;margin-bottom:36px}
+.faq details{border-bottom:1px solid var(--line)}
+.faq details:first-of-type{border-top:1px solid var(--line)}
+.faq summary{list-style:none;display:flex;align-items:center;justify-content:space-between;gap:18px;min-height:64px;padding:14px 6px;cursor:pointer;font-family:var(--font-serif);font-size:1.08rem;font-weight:500}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{content:"+";font-family:var(--font-sans);font-size:1.3rem;font-weight:400;color:var(--moss-deep);transition:transform .2s ease;flex-shrink:0}
+.faq details[open] summary::after{transform:rotate(45deg)}
+.faq .faq__a{padding:0 6px 20px;color:var(--ink-2);font-size:.93rem;line-height:1.65;max-width:62ch}
+
+/* ---------- CTA final ---------- */
+.final-cta{margin-top:70px;background:var(--moss-deep);color:#fff;padding:84px 0;border-radius:24px;position:relative;overflow:hidden}
+.final-cta .container{display:flex;flex-direction:column;align-items:center;text-align:center;gap:18px;position:relative;z-index:1}
+.final-cta h2{font-size:clamp(1.8rem,3.6vw,2.6rem);max-width:20ch}
+.final-cta p{color:rgba(255,255,255,.82);max-width:46ch;font-size:1rem}
+.final-cta .btn{margin-top:8px}
+.final-cta__phone{margin-top:4px;font-size:.85rem;color:rgba(255,255,255,.75)}
+
+/* ---------- Footer ---------- */
+.site-footer{margin-top:90px;border-top:1px solid var(--line);padding:56px 0 32px;background:var(--surface)}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1.2fr;gap:36px}
+.footer-brand p{color:var(--ink-2);font-size:.88rem;max-width:30ch;margin-top:12px}
+.footer-col h4{font-size:.7rem;font-weight:600;letter-spacing:.16em;text-transform:uppercase;color:var(--ink-3);margin-bottom:14px;font-family:var(--font-sans)}
+.footer-col ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px}
+.footer-col a{color:var(--ink-2);text-decoration:none;font-size:.9rem;transition:color .15s ease}
+.footer-col a:hover{color:var(--moss-deep)}
+.footer-col p{font-size:.86rem;color:var(--ink-2);line-height:1.6}
+.footer-col p strong{display:block;color:var(--ink);font-weight:600}
+.footer-bottom{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:12px;margin-top:48px;padding-top:22px;border-top:1px solid var(--line);font-size:.78rem;color:var(--ink-3)}
+.footer-bottom a{color:var(--ink-3)}
+.footer-bottom a:hover{color:var(--moss-deep)}
+
+/* ---------- Whats App float ---------- */
+.wa-float{position:fixed;right:22px;bottom:22px;z-index:70;width:58px;height:58px;border-radius:50%;background:#2f6b3c;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(38,36,30,.28);transition:transform .2s ease;text-decoration:none}
+.wa-float:hover{transform:translateY(-3px)}
+
+/* ---------- Responsivo ---------- */
+@media (max-width:1024px){
+  .card{grid-column:span 6}
+  .card--featured{grid-column:span 12}
+  .card--aside{grid-column:span 12}
+  .why-list{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+}
+@media (max-width:860px){
+  .nav{display:none}
+  .nav-toggle{display:inline-flex}
+  .mobile-nav.open{display:flex}
+  .toolbar{position:static;margin:0;padding:14px 0 4px}
+  .filters{gap:14px 22px}
+}
+@media (max-width:640px){
+  .container{padding:0 18px}
+  .hero{padding:40px 0 26px}
+  .card,.card--featured,.card--aside{grid-column:span 12}
+  .grid{gap:20px}
+  .why-list{grid-template-columns:1fr}
+  .footer-grid{grid-template-columns:1fr;gap:30px}
+  .toolbar__meta{width:100%;justify-content:space-between}
+  .count{order:1}
+  .sort{order:2}
+  .catalog{padding:26px 0 8px}
+}
+
+/* ---------- Acessibilidade: reduzir movimento ---------- */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation-duration:.001s!important;animation-iteration-count:1!important;transition-duration:.001s!important;scroll-behavior:auto!important}
+}
+</style>
+<style>#lang-bar a:hover{text-decoration:underline;}</style></head><body>
+<div id="lang-bar" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#29241c;color:#faf6ef;font-family:system-ui,sans-serif;font-size:13px;padding:8px 16px;display:flex;justify-content:center;gap:16px;align-items:center;">
+<span style="opacity:.8;">Idioma / Language / Idioma:</span>
+<a href="../v2-versao-b-catalogo.html" style="color:#faf6ef;text-decoration:none;font-weight:600;">PT-BR</a>
+<a href="v2-versao-b-catalogo.html" style="color:#b8ac97;text-decoration:none;font-weight:600;">EN</a>
+<a href="../es/v2-versao-b-catalogo.html" style="color:#faf6ef;text-decoration:none;font-weight:600;">ES</a>
+</div>
+<div style="height:36px;"></div>
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="site Header">
+<div class="container header-in">
+<a aria-label="Castor Wood Houses — início" class="brand" href="#catalogo">
+<span class="brand__name">Castor</span>
+<span class="brand__sub">Wood Houses · MG</span>
+</a>
+<nav aria-label="Navigation principal" class="nav">
+<a class="is-active" href="#catalogo">Catalog</a>
+<a href="#por-que">Por que a Castor</a>
+<a href="#duvidas">Doubts</a>
+<a href="#showrooms">showrooms</a>
+<a class="btn btn--primary btn--sm" href="https://wa.me/5531971406090" rel="noopener" target="_blank">Budget</a>
+</nav>
+<div class="nav-cta">
+<a class="btn btn--primary btn--sm" href="https://wa.me/5531971406090" rel="noopener" target="_blank">Budget</a>
+<button aria-controls="mobile Nav" aria-expanded="false" aria-label="Abrir menu" class="nav-toggle" id="nav Toggle"><span></span></button>
+</div>
+</div>
+<nav aria-label="Navigation móvel" class="mobile-nav" id="mobile Nav">
+<a href="#catalogo">Catalog</a>
+<a href="#por-que">Por que a Castor</a>
+<a href="#duvidas">Doubts</a>
+<a href="#showrooms">showrooms</a>
+<a class="btn btn--primary" href="https://wa.me/5531971406090" rel="noopener" target="_blank">Budget on Whats App</a>
+</nav>
+</header>
+<main>
+<!-- ================= HERO COMPACTO ================= -->
+<section class="hero">
+<div class="container">
+<p class="hero__over">Model catalog · 47 projects</p>
+<h1>Wood houses to call your own</h1>
+<p class="hero__sub">Explore Castor's ready-made models, filter by what matters to you and customize until your project becomes yours. They are all a starting point for a bespoke home.</p>
+<div class="hero__facts">
+<p class="hero__fact"><strong>47</strong> ready-made models</p>
+<p class="hero__fact"><strong>103 to 306 m²</strong> of total area</p>
+<p class="hero__fact"><strong>showroom</strong> in Lagoa Santa and Matozinhos</p>
+<p class="hero__fact"><strong>Project</strong> tailor-made</p>
+</div>
+</div>
+</section>
+<!-- ================= CATÁLOGO ================= -->
+<section class="catalog" id="catalogo">
+<div class="container">
+<!-- Toolbar de filtros: dormitórios, pavimentos, tipo + ordenação -->
+<div class="toolbar">
+<div class="filters">
+<div aria-label="Filtrar por dormitórios" class="fgroup" role="group">
+<span class="fgroup__label">Dormitories</span>
+<div class="pills">
+<button aria-pressed="true" class="pill is-active" data-group="dorm" data-value="all">All</button>
+<button aria-pressed="false" class="pill" data-group="dorm" data-value="1">1</button>
+<button aria-pressed="false" class="pill" data-group="dorm" data-value="2">2</button>
+<button aria-pressed="false" class="pill" data-group="dorm" data-value="3">3</button>
+<button aria-pressed="false" class="pill" data-group="dorm" data-value="4">4+</button>
+</div>
+</div>
+<div aria-label="Filtrar por pavimentos" class="fgroup" role="group">
+<span class="fgroup__label">Flooring</span>
+<div class="pills">
+<button aria-pressed="true" class="pill is-active" data-group="pav" data-value="all">All</button>
+<button aria-pressed="false" class="pill" data-group="pav" data-value="1">1</button>
+<button aria-pressed="false" class="pill" data-group="pav" data-value="2">2</button>
+</div>
+</div>
+<div aria-label="Filtrar por tipo de casa" class="fgroup" role="group">
+<span class="fgroup__label">Type</span>
+<div class="pills">
+<button aria-pressed="true" class="pill is-active" data-group="tipo" data-value="all">All</button>
+<button aria-pressed="false" class="pill" data-group="tipo" data-value="casa">Home</button>
+<button aria-pressed="false" class="pill" data-group="tipo" data-value="chale">Chalet</button>
+<button aria-pressed="false" class="pill" data-group="tipo" data-value="sobrado">Townhouse</button>
+<button aria-pressed="false" class="pill" data-group="tipo" data-value="loft">loft</button>
+</div>
+</div>
+</div>
+<div class="toolbar__meta">
+<p aria-live="polite" class="count"><strong id="count Num">20</strong> 20 models</p>
+<button aria-label="Limpar todos os filtros" class="pill pill--reset" hidden="" id="reset Btn">Clear filters</button>
+<label class="sort" for="sort Select">Sort
+          <select id="sort Select">
+<option value="area-asc">Smallest area</option>
+<option selected="" value="area-desc">Largest area</option>
+<option value="dorm-desc">More bedrooms</option>
+</select>
+</label>
+</div>
+</div>
+<!-- Grid de modelos (20 modelos reais do catálogo Castor) -->
+<div class="grid" id="model Grid">
+<article class="card" data-area="103.13" data-dorm="2" data-lavanderia="0" data-name="Chicago Model" data-pav="1" data-slug="casa-de-madeira-modelo-chicago" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-chicago/" tabindex="-1">
+<img alt="Chicago Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-chicago-5-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">103.13 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-chicago/">Chicago Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Chicago%20%28103%2C13%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-chicago/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="103.83" data-dorm="2" data-lavanderia="1" data-name="Paris Model" data-pav="1" data-slug="casa-de-madeira-modelo-paris" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-paris/" tabindex="-1">
+<img alt="Paris Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-paris-5-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">103.83 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-paris/">Paris Model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">2 suites · 3 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Paris%20%28103%2C83%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-paris/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="105.38" data-dorm="2" data-lavanderia="1" data-name="Boston Model" data-pav="1" data-slug="casa-de-madeira-modelo-boston" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-boston/" tabindex="-1">
+<img alt="Boston Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-boston-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">105,38 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-boston/">Boston Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Boston%20%28105%2C38%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-boston/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="106.38" data-dorm="2" data-lavanderia="1" data-name="Dallas Model" data-pav="1" data-slug="casa-de-madeira-modelo-dallas" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-dallas/" tabindex="-1">
+<img alt="Dallas Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-dallas-5-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">106.38 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-dallas/">Dallas Model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Dallas%20%28106%2C38%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-dallas/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="107.98" data-dorm="3" data-lavanderia="0" data-name="Cuba Model" data-pav="1" data-slug="casa-de-madeira-modelo-cuba" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-cuba/" tabindex="-1">
+<img alt="Cuba Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-cuba-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">107.98 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-cuba/">Cuba Model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Cuba%20%28107%2C98%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-cuba/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="109.3" data-dorm="2" data-lavanderia="1" data-name="Shanghai Model" data-pav="1" data-slug="casa-de-madeira-modelo-xangai" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-xangai/" tabindex="-1">
+<img alt="Shanghai Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-xangai-5-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">109.3 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-xangai/">Shanghai Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">2 bedrooms · 1 bathroom · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Xangai%20%28109%2C3%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-xangai/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="119.74" data-dorm="2" data-lavanderia="0" data-name="Boston Model" data-pav="1" data-slug="casa-de-madeira-modelo-monaco" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-monaco/" tabindex="-1">
+<img alt="Boston Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-monaco-2-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">119.74 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-monaco/">Boston Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Boston%20%28119%2C74%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-monaco/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="120.66" data-dorm="3" data-lavanderia="0" data-name="Dubai Model" data-pav="1" data-slug="casa-de-madeira-modelo-dubai" data-tipo="loft" data-varanda="0">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-dubai/" tabindex="-1">
+<img alt="Dubai Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-dubai-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">120.66 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-dubai/">Dubai Model</a></h3>
+<span class="card__tag">loft</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen"></p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Dubai%20%28120%2C66%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-dubai/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="123.34" data-dorm="2" data-lavanderia="1" data-name="Greece Model" data-pav="1" data-slug="casa-de-madeira-modelo-grecia" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-grecia/" tabindex="-1">
+<img alt="Greece Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-grecia-5-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">123.34 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-grecia/">Greece Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Gr%C3%A9cia%20%28123%2C34%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-grecia/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="123.45" data-dorm="2" data-lavanderia="0" data-name="New York Model" data-pav="1" data-slug="casa-de-madeira-modelo-newyork" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-newyork/" tabindex="-1">
+<img alt="New York Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-new-york-5-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">123.45 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-newyork/">New York Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20New%20York%20%28123%2C45%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-newyork/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="125.45" data-dorm="2" data-lavanderia="0" data-name="Japan Model" data-pav="1" data-slug="casa-de-madeira-modelo-japao" data-tipo="loft" data-varanda="0">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-japao/" tabindex="-1">
+<img alt="Japan Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-japao-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">125.45 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-japao/">Japan Model</a></h3>
+<span class="card__tag">loft</span>
+</div>
+<p class="card__specs">1 suite · 1 bedroom · 2 bathrooms · 1 floor</p>
+<p class="card__amen"></p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Jap%C3%A3o%20%28125%2C45%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-japao/">See model</a>
+</div>
+</div>
+</article>
+<article class="card card--featured" data-area="139.3" data-dorm="3" data-lavanderia="1" data-name="Brazil Model" data-pav="1" data-slug="casa-de-madeira-modelo-brasil" data-tipo="chale" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-brasil/" tabindex="-1">
+<img alt="Brazil Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-brasil-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">139.3 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-brasil/">Brazil Model</a></h3>
+<span class="card__tag">Chalet</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Brasil%20%28139%2C3%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-brasil/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="141.3" data-dorm="3" data-lavanderia="0" data-name="Vienna Model" data-pav="1" data-slug="casa-de-madeira-modelo-viena" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-viena/" tabindex="-1">
+<img alt="Vienna Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-viena-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">141.3 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-viena/">Vienna Model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Viena%20%28141%2C3%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-viena/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="144.31" data-dorm="3" data-lavanderia="1" data-name="Australia Model" data-pav="1" data-slug="casa-de-madeira-modelo-australia" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-australia/" tabindex="-1">
+<img alt="Australia Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-australia-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">144.31 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-australia/">Australia Model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Austr%C3%A1lia%20%28144%2C31%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-australia/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="153.75" data-dorm="3" data-lavanderia="1" data-name="San Francisco model" data-pav="1" data-slug="casa-de-madeira-modelo-sf" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-sf/" tabindex="-1">
+<img alt="San Francisco model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-sf-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">153.75 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-sf/">San Francisco model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20S%C3%A3o%20Francisco%20%28153%2C75%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-sf/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="155.86" data-dorm="3" data-lavanderia="1" data-name="Spain Model" data-pav="1" data-slug="casa-de-madeira-modelo-espanha" data-tipo="casa" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-espanha/" tabindex="-1">
+<img alt="Spain Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-espanha-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">155.86 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-espanha/">Spain Model</a></h3>
+<span class="card__tag">Home</span>
+</div>
+<p class="card__specs">1 suite · 2 bedrooms · 2 bathrooms · 1 floor</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Espanha%20%28155%2C86%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-espanha/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="211.91" data-dorm="4" data-lavanderia="0" data-name="Rome Model" data-pav="2" data-slug="casa-de-madeira-modelo-roma" data-tipo="sobrado" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-roma/" tabindex="-1">
+<img alt="Rome Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-iroma-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">211.91 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-roma/">Rome Model</a></h3>
+<span class="card__tag">Townhouse</span>
+</div>
+<p class="card__specs">2 suites · 2 bedrooms · 3 bathrooms · 2 floors</p>
+<p class="card__amen">Balcony</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Roma%20%28211%2C91%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-roma/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="210.81" data-dorm="5" data-lavanderia="1" data-name="Texas Model" data-pav="2" data-slug="casa-de-madeira-modelo-texas" data-tipo="sobrado" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-texas/" tabindex="-1">
+<img alt="Texas Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-texas-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">210.81 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-texas/">Texas Model</a></h3>
+<span class="card__tag">Townhouse</span>
+</div>
+<p class="card__specs">1 suite · 4 bedrooms · 2 bathrooms · 2 floors</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Texas%20%28210%2C81%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-texas/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="242.5" data-dorm="4" data-lavanderia="1" data-name="Russia Model" data-pav="2" data-slug="casa-de-madeira-modelo-russia" data-tipo="sobrado" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-russia/" tabindex="-1">
+<img alt="Russia Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-russia-5-1024x1024.jpg" width="1024"/>
+<span class="card__area">242.5 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-russia/">Russia Model</a></h3>
+<span class="card__tag">Townhouse</span>
+</div>
+<p class="card__specs">4 suites · 4 bathrooms · 2 floors</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Russia%20%28242%2C5%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-russia/">See model</a>
+</div>
+</div>
+</article>
+<article class="card" data-area="247.51" data-dorm="5" data-lavanderia="1" data-name="France Model" data-pav="2" data-slug="casa-de-madeira-modelo-franca" data-tipo="sobrado" data-varanda="1">
+<a aria-hidden="true" class="card__media" href="https://casademadeira.com.br/casa-de-madeira-modelo-franca/" tabindex="-1">
+<img alt="France Model — foto da fachada" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-franca-1-1024x1024.jpg" width="1024"/>
+<span class="card__area">247.51 m²</span>
+</a>
+<div class="card__body">
+<div class="card__head">
+<h3 class="card__name"><a href="https://casademadeira.com.br/casa-de-madeira-modelo-franca/">France Model</a></h3>
+<span class="card__tag">Townhouse</span>
+</div>
+<p class="card__specs">4 suites · 1 bedroom · 5 bathrooms · 2 floors</p>
+<p class="card__amen">Balcony · Laundry</p>
+<div class="card__cta">
+<a class="btn btn--primary" href="https://wa.me/5531971406090?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Modelo%20Fran%C3%A7a%20%28247%2C51%20m%C2%B2%29.%20Podem%20me%20enviar%20mais%20informa%C3%A7%C3%B5es%3F" rel="noopener" target="_blank">Budget</a>
+<a class="link" href="https://casademadeira.com.br/casa-de-madeira-modelo-franca/">See model</a>
+</div>
+</div>
+</article>
+<!-- Card lateral: atalhos por tipo (contagens reais dos 47 models; classificação de tipo provisória de protótipo) -->
+<article aria-label="Atalhos de navegação por tipo" class="card card--aside" id="tipos Card">
+<div class="card__body">
+<p class="card__kicker">Browse by type</p>
+<h3 class="card__name">Townhouses, chalets, lofts and houses</h3>
+<ul class="tipo-list">
+<li><button class="tipo-link" data-tipo="sobrado">Townhouse <span>13 models</span></button></li>
+<li><button class="tipo-link" data-tipo="chale">Chalet <span>8 models</span></button></li>
+<li><button class="tipo-link" data-tipo="loft">loft <span>2 models</span></button></li>
+<li><button class="tipo-link" data-tipo="casa">Home <span>24 models</span></button></li>
+</ul>
+<p class="card__aside-note">47 models in total. Shortcuts apply the same catalog type filter.</p>
+</div>
+</article>
+<!-- Empty state -->
+<div class="empty" hidden="" id="empty State">
+<h3>No models with these filters</h3>
+<p>None of the models meet the chosen combination. Try broadening your search or clearing your filters.</p>
+<button class="btn btn--primary" id="empty Reset">Clear filters</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= POR QUE A CASTOR ================= -->
+<section class="why" id="por-que">
+<div class="container">
+<div class="why__head">
+<h2>Why choose Castor</h2>
+<p>47 ready-made projects, construction using reforested wood and a team that designs the house with you, from the first sketch to delivery.</p>
+</div>
+<div class="why-list">
+<div class="why-item">
+<p class="why-item__num">01</p>
+<h3>47 ready-to-customize models</h3>
+<p>Each plan is an initial suggestion: rooms, balconies, laundry and areas are adjusted to your needs before construction.</p>
+</div>
+<div class="why-item">
+<p class="why-item__num">02</p>
+<h3>Tailor-made project</h3>
+<p>If no model fits, Castor develops a new project based on your ideas, measurements and budget.</p>
+</div>
+<div class="why-item">
+<p class="why-item__num">03</p>
+<h3>Visit before building</h3>
+<p>showrooms in Lagoa Santa and Matozinhos to see the wood, finishes and structure of the houses up close.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- ================= FAQ ================= -->
+<section class="faq" id="duvidas">
+<div class="container faq__wrap">
+<h2>Frequently asked questions</h2>
+<p class="faq__intro">Direct answers about the models and the process.</p>
+<details>
+<summary>Can I adapt a model from the catalogue?</summary>
+<p class="faq__a">Yes. The projects are initial suggestions: Castor develops a new project according to the needs of each client, adjusting areas, rooms and balconies.</p>
+</details>
+<details>
+<summary>Where is the showroom and can I visit?</summary>
+<p class="faq__a">There are two: Lagoa Santa (Av. Prefeito João Daher, 1530) and Matozinhos (Rodovia MG-424, km 25). In both, you can see the houses built and talk to the team.</p>
+</details>
+<details>
+<summary>How much does a wood house cost?</summary>
+<p class="faq__a">Each project is quoted individually: the value depends on the area, finishes, foundation and land. Speak to the team via Whats App for an estimate of your case.</p>
+</details>
+<details>
+<summary>What are the construction deadlines?</summary>
+<p class="faq__a">The deadline varies depending on the project and land preparation. In the budget, Castor presents the complete schedule of its work, stage by stage.</p>
+</details>
+</div>
+</section>
+<!-- ================= CTA FINAL ================= -->
+<section class="final-cta">
+<div class="container">
+<h2>Haven't found the ideal model?</h2>
+<p>Tell us what you dream of — Castor designs your custom-made house, from the sketch to handing over the keys.</p>
+<a class="btn btn--light" href="https://wa.me/5531971406090" rel="noopener" target="_blank">Speak to a consultant on Whats App</a>
+<p class="final-cta__phone">or call: (31) 3607-0778 (Lagoa Santa) · (31) 3712-7449 (Matozinhos)</p>
+</div>
+</section>
+</main>
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="showrooms">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<a aria-label="Castor Wood Houses" class="brand" href="#catalogo">
+<span class="brand__name">Castor</span>
+<span class="brand__sub">Wood Houses · MG</span>
+</a>
+<p>Wood houses in Minas Gerais: 47 ready-made models, bespoke projects and showroom for visits.</p>
+</div>
+<div class="footer-col">
+<h4>Models</h4>
+<ul>
+<li><a href="#catalogo">Complete catalog</a></li>
+<li><a data-navtipo="sobrado" href="#catalogo">Townhouses</a></li>
+<li><a data-navtipo="chale" href="#catalogo">Cottages</a></li>
+<li><a data-navtipo="loft" href="#catalogo">lofts</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>Enterprise</h4>
+<ul>
+<li><a href="#por-que">Por que a Castor</a></li>
+<li><a href="#duvidas">Frequently asked questions</a></li>
+<li><a href="https://wa.me/5531971406090" rel="noopener" target="_blank">Budget</a></li>
+</ul>
+</div>
+<div class="footer-col">
+<h4>showrooms</h4>
+<p><strong>Lagoa Santa</strong>Av. Mayor João Daher, 1530 · Lundcéa<br/>(31) 3607-0778</p>
+<p style="margin-top:14px"><strong>Matozinhos</strong>Rod. MG-424, km 25, nº 689 · Industrial District<br/>(31) 3712-7449</p>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 Castor Wood Houses · Wood houses in Minas Gerais</p>
+<p>Interface prototype — Version B (catalog)</p>
+</div>
+</div>
+</footer>
+<!-- Whats App flutuante -->
+<a aria-label="Falar com a Castor no Whats App" class="wa-float" href="https://wa.me/5531971406090" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="#fff" height="28" viewbox="0 0 24 24" width="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+</a>
+<script>
+/* ============================================================
+   Filtros do catálogo — Vanilla JS (data-attributes + query Selector All)
+   - 3 grupos de filtro (dorm/pav/tipo) + ordenação por área/dormitórios
+   - Feedback imediato: contagem, empty state, fade/scale nos cards
+   - Dados: data-* nos cards (áreas, quartos, banheiros, imagens = dados REAIS do
+     catálogo Castor; tipo/pavimento = classificação provisória do protótipo)
+   ============================================================ */
+(function () {
+  "use strict";
+  var grid = document.get Element By Id("model Grid");
+  var cards = Array.prototype.slice.call(grid.query Selector All(".card[data-slug]"));
+  var featured = grid.query Selector(".card--featured");
+  var tipos Card = document.get Element By Id("tipos Card");
+  var count Num = document.get Element By Id("count Num");
+  var total = cards.length;
+  var empty State = document.get Element By Id("empty State");
+  var reset Btn = document.get Element By Id("reset Btn");
+  var sort Select = document.get Element By Id("sort Select");
+  var reduced Motion = window.match Media("(prefers-reduced-motion: reduce)").matches;
+
+  var state = { dorm: "all", pav: "all", tipo: "all" };
+
+  function matches(card) {
+    if (state.dorm !== "all") {
+      var d = parse Int(card.dataset.dorm, 10);
+      var f = parse Int(state.dorm, 10);
+      if (state.dorm === "4" ? d < 4 : d !== f) return false;
+    }
+    if (state.pav !== "all" && card.dataset.pav !== state.pav) return false;
+    if (state.tipo !== "all" && card.dataset.tipo !== state.tipo) return false;
+    return true;
+  }
+
+  function sort Key(card, mode) {
+    if (mode === "area-asc") return [parse Float(card.dataset.area), -parse Int(card.dataset.dorm, 10)];
+    if (mode === "area-desc") return [-parse Float(card.dataset.area), -parse Int(card.dataset.dorm, 10)];
+    return [-parse Int(card.dataset.dorm, 10), -parse Float(card.dataset.area)]; /* dorm-desc */
+  }
+
+  function is Filtered() {
+    return state.dorm !== "all" || state.pav !== "all" || state.tipo !== "all";
+  }
+
+  function apply(sort Mode) {
+    var mode = sort Mode || sort Select.value;
+    var visible = cards.filter(matches).sort(function (a, b) {
+      var ka = sort Key(a, mode), kb = sort Key(b, mode);
+      return ka[0] - kb[0] || ka[1] - kb[1];
+    });
+
+    cards.for Each(function (card) { card.class List.add("is-hidden"); card.class List.remove("is-anim"); });
+
+    visible.for Each(function (card, i) {
+      card.class List.remove("is-hidden");
+      if (!reduced Motion) {
+        card.style.animation Delay = (i * 28) + "ms";
+        card.class List.add("is-anim");
+      }
+    });
+
+    /* reordena o DOM conforme a ordenação escolhida */
+    visible.for Each(function (card) { grid.append Child(card); });
+
+    /* card em destaque: ocupa 2 colunas apenas quando é o primeiro visível */
+    var first Visible = visible[0];
+    if (featured && first Visible === featured) featured.class List.add("card--featured");
+    else if (featured) featured.class List.remove("card--featured");
+    /* atalhos de tipo: aparecem apenas com o catálogo sem filtros */
+    if (tipos Card) tipos Card.class List.toggle("is-hidden", is Filtered() || first Visible !== featured);
+
+    count Num.text Content = visible.length;
+    empty State.hidden = visible.length > 0;
+    reset Btn.hidden = !is Filtered();
+  }
+
+  function set Pill(group, value) {
+    state[group] = value;
+    document.query Selector All('.pill[data-group="' + group + '"]').for Each(function (pill) {
+      var active = pill.dataset.value === value;
+      pill.class List.toggle("is-active", active);
+      pill.set Attribute("aria-pressed", active ? "true" : "false");
+    });
+  }
+
+  /* pills de filtro */
+  document.query Selector All(".pill[data-group]").for Each(function (pill) {
+    pill.add Event Listener("click", function () {
+      set Pill(pill.dataset.group, pill.dataset.value);
+      apply();
+    });
+  });
+
+  /* atalhos do card lateral "navegue por tipo" */
+  document.query Selector All(".tipo-link").for Each(function (link) {
+    link.add Event Listener("click", function () {
+      set Pill("tipo", link.dataset.tipo);
+      apply();
+      document.get Element By Id("catalogo").scroll Into View({ behavior: reduced Motion ? "auto" : "smooth", block: "start" });
+    });
+  });
+
+  /* atalhos de tipo no footer */
+  document.query Selector All("[data-navtipo]").for Each(function (link) {
+    link.add Event Listener("click", function () {
+      set Pill("tipo", link.dataset.navtipo);
+      apply();
+    });
+  });
+
+  /* ordenação */
+  sort Select.add Event Listener("change", function () { apply(sort Select.value); });
+
+  /* limpar filtros */
+  function reset() {
+    set Pill("dorm", "all");
+    set Pill("pav", "all");
+    set Pill("tipo", "all");
+    sort Select.value = "area-desc";
+    apply("area-desc");
+  }
+  reset Btn.add Event Listener("click", reset);
+  document.get Element By Id("empty Reset").add Event Listener("click", reset);
+
+  /* header ganha fundo ao rolar */
+  var header = document.get Element By Id("site Header");
+  function on Scroll() { header.class List.toggle("is-scrolled", window.scrollY > 10); }
+  window.add Event Listener("scroll", on Scroll, { passive: true });
+  on Scroll();
+
+  /* menu móvel */
+  var nav Toggle = document.get Element By Id("nav Toggle");
+  var mobile Nav = document.get Element By Id("mobile Nav");
+  nav Toggle.add Event Listener("click", function () {
+    var open = mobile Nav.class List.toggle("open");
+    nav Toggle.set Attribute("aria-expanded", open ? "true" : "false");
+  });
+  mobile Nav.query Selector All("a").for Each(function (a) {
+    a.add Event Listener("click", function () {
+      mobile Nav.class List.remove("open");
+      nav Toggle.set Attribute("aria-expanded", "false");
+    });
+  });
+
+  apply("area-desc");
+})();
+</script>
+</body>
+</html>

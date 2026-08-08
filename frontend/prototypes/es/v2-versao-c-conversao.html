@@ -1,0 +1,1408 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hogar de Madera en MG | Castor Casas de Madera</title>
+<meta content="Solicite presupuesto sin compromiso de casa de madeira em MG. 47 modelos, 2 showrooms (Lagoa Santa e Matozinhos), projeto hecho a medida e garantia estrutural." name="description"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Work+Sans:wght@300;400;500;600&amp;display=swap" rel="stylesheet"/>
+<style>
+    /* ============================================================
+       TOKENS — paleta madeira/terra (clara e quente) + accent moss
+       ============================================================ */
+    :root{
+      --bg:        #FAF7F1;   /* creme quente — fundo geral */
+      --surface:   #FFFFFF;   /* superfícies elevadas */
+      --ink:       #2C241B;   /* marrom quase-preto — títulos */
+      --ink-2:     #6E6355;   /* texto secundário */
+      --ink-3:     #9C907F;   /* texto terciário */
+      --line:      #E7DFD2;   /* borda padrão */
+      --line-2:    #D8CDBC;   /* borda forte */
+      --moss:      #3E5A34;   /* accent profundo — CTA */
+      --moss-2:    #33492B;   /* accent hover */
+      --moss-ring: rgba(62,90,52,.16);
+      --oak:       #402E1F;   /* carvalho escuro — superfícies escuras */
+      --oak-deep:  #2C2014;   /* fundo escuro (footer/CTA final) */
+      --terra:     #B0562E;   /* urgência — badges */
+      --whats:     #128C7E;   /* verde Whats App */
+      --radius:    12px;
+      --radius-sm: 6px;
+      --shadow-card: 0 1px 2px rgba(44,36,27,.05), 0 14px 36px -14px rgba(44,36,27,.20);
+      --shadow-cta:  0 1px 2px rgba(44,36,27,.16), 0 12px 26px -12px rgba(62,90,52,.55);
+      --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-sans:  'Work Sans', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    /* ============================================================
+       BASE
+       ============================================================ */
+    *,*::before,*::after{ box-sizing:border-box; }
+    html{ scroll-behavior:smooth; }
+    body{
+      margin:0;
+      font-family:var(--font-sans);
+      font-weight:300;
+      font-size:1rem;
+      line-height:1.6;
+      color:var(--ink);
+      background:var(--bg);
+      -webkit-font-smoothing:antialiased;
+      text-wrap:pretty;
+    }
+    img{ display:block; max-width:100%; }
+    a{ color:inherit; }
+    .container{ max-width:1160px; margin:0 auto; padding:0 24px; }
+    section{ scroll-margin-top:96px; }
+
+    h1,h2,h3{
+      font-family:var(--font-serif);
+      font-weight:500;
+      line-height:1.08;
+      letter-spacing:-0.02em;
+      margin:0;
+      text-wrap:balance;
+    }
+
+    /* Eyebrow / kicker */
+    .kicker{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+      font-size:.75rem;
+      font-weight:600;
+      letter-spacing:.16em;
+      text-transform:uppercase;
+      color:var(--moss);
+      margin:0 0 18px;
+    }
+    .kicker::before{
+      content:"";
+      width:26px; height:1px;
+      background:var(--moss);
+      opacity:.5;
+    }
+
+    /* ============================================================
+       BOTÕES — mínimo 52px de altura, sombra com tinta da marca
+       ============================================================ */
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      min-height:52px;
+      padding:14px 26px;
+      border:1px solid transparent;
+      border-radius:var(--radius-sm);
+      font-family:var(--font-sans);
+      font-size:1rem;
+      font-weight:600;
+      letter-spacing:.01em;
+      text-decoration:none;
+      cursor:pointer;
+      transition:background .18s ease, transform .12s ease, box-shadow .18s ease, border-color .18s ease;
+    }
+    .btn:active{ transform:translateY(1px) scale(.99); }
+    .btn:focus-visible{ outline:3px solid var(--moss-ring); outline-offset:2px; }
+
+    .btn-primary{
+      background:var(--moss);
+      color:#FFF;
+      box-shadow:var(--shadow-cta);
+    }
+    .btn-primary:hover{ background:var(--moss-2); transform:translateY(-1px); }
+
+    .btn-whats{
+      background:var(--whats);
+      color:#FFF;
+      box-shadow:0 1px 2px rgba(44,36,27,.14), 0 10px 24px -10px rgba(18,140,126,.5);
+    }
+    .btn-whats:hover{ filter:brightness(.94); transform:translateY(-1px); }
+
+    .btn-ghost{
+      background:transparent;
+      color:var(--ink);
+      border-color:var(--line-2);
+      font-weight:500;
+    }
+    .btn-ghost:hover{ border-color:var(--ink-2); background:rgba(44,36,27,.03); }
+
+    .btn-block{ width:100%; }
+
+    /* ============================================================
+       BARRA SUPERIOR — oferta + CTA
+       ============================================================ */
+    .topbar{
+      background:var(--oak);
+      color:rgba(255,255,255,.85);
+      font-size:.83rem;
+      font-weight:400;
+    }
+    .topbar .container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      min-height:40px;
+      padding-top:6px;
+      padding-bottom:6px;
+    }
+    .topbar b{ color:#FFF; font-weight:600; }
+    .topbar a{
+      color:#FFF;
+      font-weight:600;
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .topbar a:hover{ text-decoration:underline; }
+
+    /* ============================================================
+       HEADER STICKY — CTA encolhe ao rolar
+       ============================================================ */
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:60;
+      background:var(--bg);
+      border-bottom:1px solid var(--line);
+      transition:box-shadow .2s ease;
+    }
+    .site-header.is-scrolled{ box-shadow:0 8px 24px -16px rgba(44,36,27,.28); }
+    .site-header .container{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:24px;
+      min-height:76px;
+      transition:min-height .2s ease;
+    }
+    .site-header.is-scrolled .container{ min-height:62px; }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:11px;
+      text-decoration:none;
+    }
+    .brand-mark{
+      width:38px; height:38px;
+      border-radius:var(--radius-sm);
+      background:var(--oak);
+      color:#FFF;
+      font-family:var(--font-serif);
+      font-weight:600;
+      font-size:1.25rem;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      flex-shrink:0;
+    }
+    .brand-name{
+      font-family:var(--font-serif);
+      font-weight:600;
+      font-size:1.18rem;
+      letter-spacing:-.01em;
+      line-height:1.1;
+    }
+    .brand-name small{
+      display:block;
+      font-family:var(--font-sans);
+      font-weight:400;
+      font-size:.66rem;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:var(--ink-3);
+    }
+
+    .main-nav{ display:flex; align-items:center; gap:28px; }
+    .main-nav a{
+      font-size:.92rem;
+      font-weight:500;
+      color:var(--ink-2);
+      text-decoration:none;
+      transition:color .15s ease;
+    }
+    .main-nav a:hover{ color:var(--ink); }
+    .header-cta{ display:flex; align-items:center; gap:18px; }
+    .header-phone{
+      font-weight:600;
+      font-size:.92rem;
+      color:var(--ink);
+      text-decoration:none;
+      white-space:nowrap;
+    }
+    .header-phone:hover{ color:var(--moss); }
+    .header-cta .btn{ min-height:46px; padding:10px 20px; transition:min-height .2s ease, padding .2s ease; }
+    .site-header.is-scrolled .header-cta .btn{ min-height:40px; padding:7px 16px; font-size:.92rem; }
+
+    @media (max-width:920px){
+      .main-nav{ display:none; }
+      .header-phone{ display:none; }
+    }
+
+    /* ============================================================
+       HERO — split: copy à esquerda, formulário à direita
+       ============================================================ */
+    .hero{
+      position:relative;
+      border-bottom:1px solid var(--line);
+      overflow:hidden;
+    }
+    .hero-inner{
+      display:grid;
+      grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);
+      gap:64px;
+      align-items:center;
+      padding:88px 24px 96px;
+    }
+    .hero h1{
+      font-size:clamp(2.45rem, 4.6vw, 3.7rem);
+      font-weight:500;
+      margin-bottom:22px;
+    }
+    .hero h1 em{
+      font-style:italic;
+      color:var(--moss);
+    }
+    .hero-sub{
+      font-size:1.12rem;
+      color:var(--ink-2);
+      max-width:34em;
+      margin:0 0 30px;
+    }
+    .hero-sub strong{ font-weight:500; color:var(--ink); }
+
+    .hero-ctas{ display:flex; flex-wrap:wrap; gap:14px; margin-bottom:34px; }
+
+    /* Prova social em linha — só fatos, sem números monumentais */
+    .hero-proof{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px 0;
+      padding-top:22px;
+      border-top:1px solid var(--line);
+      font-size:.86rem;
+      font-weight:500;
+      color:var(--ink-2);
+    }
+    .hero-proof span{
+      display:inline-flex;
+      align-items:center;
+      gap:10px;
+    }
+    .hero-proof span + span::before{
+      content:"·";
+      margin-right:10px;
+      color:var(--line-2);
+    }
+
+    /* ---- Card do formulário ---- */
+    .quote-card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow:var(--shadow-card);
+      padding:34px 32px 30px;
+    }
+    .quote-card h2{
+      font-size:1.5rem;
+      margin-bottom:6px;
+    }
+    .quote-card .quote-note{
+      font-size:.88rem;
+      color:var(--ink-2);
+      margin:0 0 24px;
+    }
+
+    .field{ margin-bottom:16px; }
+    .field label{
+      display:block;
+      font-size:.78rem;
+      font-weight:600;
+      letter-spacing:.04em;
+      text-transform:uppercase;
+      color:var(--ink-2);
+      margin-bottom:6px;
+    }
+    .field input,
+    .field select{
+      width:100%;
+      min-height:48px;
+      padding:11px 14px;
+      border:1px solid var(--line-2);
+      border-radius:var(--radius-sm);
+      background:var(--surface);
+      font-family:var(--font-sans);
+      font-size:.98rem;
+      font-weight:400;
+      color:var(--ink);
+      transition:border-color .15s ease, box-shadow .15s ease;
+    }
+    .field select{ cursor:pointer; }
+    .field input::placeholder{ color:var(--ink-3); }
+    .field input:focus,
+    .field select:focus{
+      outline:none;
+      border-color:var(--moss);
+      box-shadow:0 0 0 3px var(--moss-ring);
+    }
+    .field.has-error input,
+    .field.has-error select{ border-color:var(--terra); }
+    .field-error{
+      display:none;
+      font-size:.78rem;
+      font-weight:500;
+      color:var(--terra);
+      margin-top:5px;
+    }
+    .field.has-error .field-error{ display:block; }
+
+    .quote-card .btn{ margin-top:6px; }
+    .quote-micro{
+      margin:14px 0 0;
+      font-size:.76rem;
+      color:var(--ink-3);
+      text-align:center;
+    }
+
+    /* Estado de sucesso simulado */
+    .quote-success{ display:none; }
+    .quote-success.show{ display:block; }
+    .quote-success .ok-icon{
+      width:52px; height:52px;
+      border-radius:50%;
+      background:var(--moss-ring);
+      color:var(--moss);
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      margin-bottom:16px;
+    }
+    .quote-success h3{ font-size:1.35rem; margin-bottom:8px; }
+    .quote-success p{ font-size:.9rem; color:var(--ink-2); margin:0 0 20px; }
+    .quote-success .btn{ margin-bottom:10px; }
+    .quote-success .reset-link{
+      display:block;
+      text-align:center;
+      font-size:.82rem;
+      font-weight:500;
+      color:var(--ink-3);
+      background:none;
+      border:none;
+      cursor:pointer;
+      text-decoration:underline;
+      margin-top:4px;
+    }
+    .quote-success .reset-link:hover{ color:var(--ink); }
+    .quote-form.hide{ display:none; }
+
+    @media (max-width:960px){
+      .hero-inner{ grid-template-columns:1fr; gap:44px; padding:56px 24px 72px; }
+    }
+
+    /* ============================================================
+       FAIXA DE FATOS — discreta, texto corrido (sem estatística falsa)
+       ============================================================ */
+    .facts-band{
+      background:var(--surface);
+      border-bottom:1px solid var(--line);
+      font-size:.9rem;
+      color:var(--ink-2);
+    }
+    .facts-band .container{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:10px 32px;
+      padding-top:18px;
+      padding-bottom:18px;
+    }
+    .facts-band b{ font-weight:600; color:var(--ink); }
+
+    /* ============================================================
+       DIFERENCIAIS — lista editorial numerada (não é grid de cards)
+       ============================================================ */
+    .diffs{ padding:104px 24px; }
+    .diffs-grid{
+      display:grid;
+      grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);
+      gap:72px;
+      align-items:start;
+    }
+    .diffs-intro{ position:sticky; top:120px; }
+    .diffs-intro h2{
+      font-size:clamp(2rem, 3.2vw, 2.7rem);
+      margin-bottom:18px;
+    }
+    .diffs-intro p{
+      color:var(--ink-2);
+      margin:0 0 26px;
+      max-width:30em;
+    }
+    .diffs-list{ list-style:none; margin:0; padding:0; }
+    .diffs-list li{
+      border-top:1px solid var(--line);
+      padding:30px 0 30px 0;
+      display:grid;
+      grid-template-columns:72px 1fr;
+      gap:20px;
+      align-items:start;
+    }
+    .diffs-list li:last-child{ border-bottom:1px solid var(--line); }
+    .diff-num{
+      font-family:var(--font-serif);
+      font-size:1.05rem;
+      font-weight:600;
+      color:var(--moss);
+      padding-top:6px;
+    }
+    .diff-body h3{
+      font-size:1.32rem;
+      margin-bottom:7px;
+    }
+    .diff-body p{
+      font-size:.95rem;
+      color:var(--ink-2);
+      margin:0;
+      max-width:38em;
+    }
+
+    @media (max-width:960px){
+      .diffs{ padding:72px 24px; }
+      .diffs-grid{ grid-template-columns:1fr; gap:36px; }
+      .diffs-intro{ position:static; }
+      .diffs-list li{ grid-template-columns:52px 1fr; gap:14px; }
+    }
+
+    /* ============================================================
+       MINI-CATÁLOGO — 3 modelos reais, ritmo offset (anti-grid genérico)
+       ============================================================ */
+    .catalog{ padding:104px 24px; background:var(--surface); border-top:1px solid var(--line); }
+    .catalog-head{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:end;
+      justify-content:space-between;
+      gap:24px;
+      margin-bottom:56px;
+    }
+    .catalog-head h2{
+      font-size:clamp(2rem, 3.2vw, 2.7rem);
+      max-width:16em;
+    }
+    .catalog-head .catalog-note{
+      max-width:24em;
+      color:var(--ink-2);
+      font-size:.95rem;
+      margin:0;
+    }
+
+    .model-grid{
+      display:grid;
+      grid-template-columns:repeat(3, 1fr);
+      gap:28px;
+      align-items:start;
+    }
+    .model-card{
+      background:var(--bg);
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      overflow:hidden;
+      display:flex;
+      flex-direction:column;
+      transition:transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+    }
+    .model-card.lift{ margin-top:32px; } /* ritmo assimétrico no desktop */
+    .model-card:hover{
+      transform:translateY(-4px);
+      box-shadow:var(--shadow-card);
+      border-color:var(--line-2);
+    }
+    .model-media{
+      position:relative;
+      aspect-ratio:4/3;
+      overflow:hidden;
+      background:var(--line);
+    }
+    .model-media img{
+      width:100%; height:100%;
+      object-fit:cover;
+      transition:transform .4s ease;
+    }
+    .model-card:hover .model-media img{ transform:scale(1.035); }
+    .model-badge{
+      position:absolute;
+      top:14px; left:14px;
+      background:var(--terra);
+      color:#FFF;
+      font-size:.7rem;
+      font-weight:600;
+      letter-spacing:.1em;
+      text-transform:uppercase;
+      padding:6px 10px;
+      border-radius:4px;
+    }
+    .model-body{
+      padding:22px 22px 24px;
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+      flex:1;
+    }
+    .model-body h3{ font-size:1.3rem; }
+    .model-specs{
+      font-size:.86rem;
+      color:var(--ink-2);
+      margin:0 0 6px;
+    }
+    .model-cta{
+      margin-top:auto;
+      padding-top:14px;
+    }
+    .model-cta .btn{ min-height:46px; padding:11px 18px; width:100%; font-size:.92rem; }
+
+    .catalog-foot{
+      margin-top:56px;
+      text-align:left;
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      justify-content:space-between;
+      gap:18px;
+      padding-top:26px;
+      border-top:1px solid var(--line);
+      font-size:.95rem;
+      color:var(--ink-2);
+    }
+    .catalog-foot b{ color:var(--ink); font-weight:600; }
+
+    @media (max-width:960px){
+      .catalog{ padding:72px 24px; }
+      .model-grid{ grid-template-columns:1fr; max-width:520px; margin:0 auto; }
+      .model-card.lift{ margin-top:0; }
+    }
+
+    /* ============================================================
+       DEPOIMENTOS — placeholders honestos, sem conteúdo inventado
+       ============================================================ */
+    .testimonials{ padding:104px 24px; }
+    .testimonials .container{ max-width:900px; }
+    .testimonials h2{
+      font-size:clamp(2rem, 3.2vw, 2.7rem);
+      margin-bottom:14px;
+    }
+    .testimonials .lead{
+      color:var(--ink-2);
+      font-size:1.02rem;
+      margin:0 0 44px;
+      max-width:32em;
+    }
+    .testi-grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:24px;
+    }
+    .testi-card{
+      border:1px dashed var(--line-2);
+      border-radius:var(--radius);
+      padding:28px;
+      background:var(--surface);
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+    }
+    .testi-card .tag{
+      font-size:.7rem;
+      font-weight:600;
+      letter-spacing:.12em;
+      text-transform:uppercase;
+      color:var(--ink-3);
+    }
+    .testi-card p{
+      font-family:var(--font-serif);
+      font-size:1.06rem;
+      font-style:italic;
+      color:var(--ink-2);
+      margin:0;
+    }
+    .testi-card .who{
+      font-size:.8rem;
+      color:var(--ink-3);
+      margin-top:auto;
+    }
+    .testimonials .honesty{
+      margin-top:28px;
+      font-size:.88rem;
+      color:var(--ink-3);
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:16px;
+    }
+    @media (max-width:760px){
+      .testi-grid{ grid-template-columns:1fr; }
+    }
+
+    /* ============================================================
+       FAQ — accordion nativo <details>, respostas honestas
+       ============================================================ */
+    .faq{ padding:104px 24px; background:var(--surface); border-top:1px solid var(--line); }
+    .faq .container{ max-width:820px; }
+    .faq h2{
+      font-size:clamp(2rem, 3.2vw, 2.7rem);
+      margin-bottom:14px;
+    }
+    .faq .lead{
+      color:var(--ink-2);
+      font-size:1.02rem;
+      margin:0 0 40px;
+      max-width:34em;
+    }
+    .faq-list{ border-top:1px solid var(--line); }
+    .faq-item{ border-bottom:1px solid var(--line); }
+    .faq-item summary{
+      list-style:none;
+      cursor:pointer;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:20px;
+      padding:22px 4px;
+      font-family:var(--font-serif);
+      font-size:1.12rem;
+      font-weight:500;
+      letter-spacing:-.01em;
+      color:var(--ink);
+      transition:color .15s ease;
+    }
+    .faq-item summary::-webkit-details-marker{ display:none; }
+    .faq-item summary:hover{ color:var(--moss); }
+    .faq-item summary::after{
+      content:"+";
+      font-family:var(--font-sans);
+      font-weight:300;
+      font-size:1.4rem;
+      color:var(--ink-3);
+      transition:transform .2s ease;
+      flex-shrink:0;
+    }
+    .faq-item[open] summary::after{ transform:rotate(45deg); }
+    .faq-item .answer{
+      padding:0 4px 24px;
+      font-size:.95rem;
+      color:var(--ink-2);
+      max-width:52em;
+    }
+    .faq-item .answer p{ margin:0 0 10px; }
+    .faq-item .answer p:last-child{ margin-bottom:0; }
+
+    /* ============================================================
+       CTA FINAL — faixa escura em carvalho
+       ============================================================ */
+    .final-cta{
+      background:var(--oak-deep);
+      color:rgba(255,255,255,.88);
+      padding:104px 24px;
+    }
+    .final-cta .container{
+      max-width:860px;
+      text-align:center;
+    }
+    .final-cta .kicker{ color:#B9A88F; }
+    .final-cta .kicker::before{ background:#B9A88F; }
+    .final-cta h2{
+      font-size:clamp(2.1rem, 3.6vw, 3rem);
+      color:#FFF;
+      margin-bottom:18px;
+    }
+    .final-cta p{
+      font-size:1.06rem;
+      max-width:36em;
+      margin:0 auto 34px;
+    }
+    .final-cta .btn-group{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:14px;
+      margin-bottom:28px;
+    }
+    .final-cta .btn-primary{ background:var(--moss); }
+    .final-cta .btn-primary:hover{ background:#4A6A3E; }
+    .final-cta .btn-ghost{ color:#FFF; border-color:rgba(255,255,255,.28); }
+    .final-cta .btn-ghost:hover{ border-color:rgba(255,255,255,.6); background:rgba(255,255,255,.05); }
+    .final-cta .shops{
+      font-size:.84rem;
+      color:rgba(255,255,255,.6);
+      margin:0;
+    }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .site-footer{
+      background:var(--oak);
+      color:rgba(255,255,255,.72);
+      font-size:.88rem;
+      padding:56px 24px 64px;
+    }
+    .site-footer .container{
+      display:grid;
+      grid-template-columns:1.3fr 1fr 1fr;
+      gap:40px;
+    }
+    .site-footer h4{
+      font-family:var(--font-sans);
+      font-size:.75rem;
+      font-weight:600;
+      letter-spacing:.14em;
+      text-transform:uppercase;
+      color:#FFF;
+      margin:0 0 14px;
+    }
+    .site-footer p{ margin:0 0 12px; max-width:30em; }
+    .site-footer ul{ list-style:none; margin:0; padding:0; }
+    .site-footer li{ margin-bottom:8px; }
+    .site-footer a{ color:rgba(255,255,255,.72); text-decoration:none; }
+    .site-footer a:hover{ color:#FFF; text-decoration:underline; }
+    .footer-bottom{
+      grid-column:1 / -1;
+      border-top:1px solid rgba(255,255,255,.14);
+      padding-top:22px;
+      margin-top:12px;
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:space-between;
+      gap:10px;
+      color:rgba(255,255,255,.5);
+      font-size:.8rem;
+    }
+    @media (max-width:820px){
+      .site-footer .container{ grid-template-columns:1fr; gap:28px; }
+    }
+
+    /* ============================================================
+       WHATSAPP FLOAT (desktop) + BARRA STICKY (mobile)
+       ============================================================ */
+    .wa-float{
+      position:fixed;
+      right:22px;
+      bottom:22px;
+      z-index:70;
+      width:58px; height:58px;
+      border-radius:50%;
+      background:var(--whats);
+      color:#FFF;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      box-shadow:0 1px 2px rgba(44,36,27,.16), 0 14px 30px -10px rgba(18,140,126,.55);
+      transition:transform .18s ease, background .18s ease;
+    }
+    .wa-float:hover{ transform:translateY(-3px); background:#0F7166; }
+    .wa-float:focus-visible{ outline:3px solid rgba(18,140,126,.35); outline-offset:2px; }
+    .wa-float .wa-label{
+      position:absolute;
+      right:calc(100% + 12px);
+      top:50%;
+      transform:translateY(-50%);
+      background:var(--ink);
+      color:#FFF;
+      font-size:.78rem;
+      font-weight:500;
+      white-space:nowrap;
+      padding:7px 12px;
+      border-radius:var(--radius-sm);
+      opacity:0;
+      pointer-events:none;
+      transition:opacity .18s ease;
+    }
+    .wa-float:hover .wa-label{ opacity:1; }
+
+    .mobile-bar{
+      display:none;
+      position:fixed;
+      left:0; right:0; bottom:0;
+      z-index:65;
+      background:var(--surface);
+      border-top:1px solid var(--line);
+      padding:10px 16px calc(10px + env(safe-area-inset-bottom));
+      gap:10px;
+    }
+    .mobile-bar .btn{ min-height:50px; flex:1; padding:12px 10px; font-size:.92rem; }
+
+    @media (max-width:760px){
+      .wa-float{ display:none; }
+      .mobile-bar{ display:flex; }
+      body{ padding-bottom:74px; }
+    }
+
+    /* ============================================================
+       SCROLL REVEAL + PREFERS-REDUCED-MOTION
+       ============================================================ */
+    [data-reveal]{
+      opacity:0;
+      transform:translateY(18px);
+      transition:opacity .6s ease, transform .6s ease;
+    }
+    [data-reveal].revealed{ opacity:1; transform:none; }
+
+    @media (prefers-reduced-motion: reduce){
+      html{ scroll-behavior:auto; }
+      *,*::before,*::after{
+        animation:none !important;
+        transition:none !important;
+      }
+      [data-reveal]{ opacity:1 !important; transform:none !important; }
+      .model-card.lift{ margin-top:0; }
+    }
+  </style>
+<style>#lang-bar a:hover{text-decoration:underline;}</style></head>
+<body>
+<div id="lang-bar" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#29241c;color:#faf6ef;font-family:system-ui,sans-serif;font-size:13px;padding:8px 16px;display:flex;justify-content:center;gap:16px;align-items:center;">
+<span style="opacity:.8;">Idioma / Language / Idioma:</span>
+<a href="../v2-versao-c-conversao.html" style="color:#faf6ef;text-decoration:none;font-weight:600;">PT-BR</a>
+<a href="../en/v2-versao-c-conversao.html" style="color:#faf6ef;text-decoration:none;font-weight:600;">EN</a>
+<a href="v2-versao-c-conversao.html" style="color:#b8ac97;text-decoration:none;font-weight:600;">ES</a>
+</div>
+<div style="height:36px;"></div>
+<!-- ============================================================
+       BARRA SUPERIOR — oferta constante + telefone
+       ============================================================ -->
+<div class="topbar">
+<div class="container">
+<span><b>Presupuesto sin compromiso</b> — Complete el formulario y reciba precios y plazos para su proyecto.</span>
+<a href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">Habla ahora por Whats App →</a>
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+</div>
+</div>
+<!-- ============================================================
+       HEADER STICKY
+       ============================================================ -->
+<header class="site-header" id="site Header">
+<div class="container">
+<a aria-label="Castor Casas de Madera — início" class="brand" href="#topo">
+<span aria-hidden="true" class="brand-mark">C</span>
+<span class="brand-name">Castor<small>Casas de Madera · MG</small></span>
+</a>
+<nav aria-label="Navegación principal" class="main-nav">
+<a href="#modelos">Modelos</a>
+<a href="#diferenciais">Diferencias</a>
+<a href="#faq">Dudas</a>
+</nav>
+<div class="header-cta">
+<a class="header-phone" href="tel:+5531999999999">(31) 99999-9999</a>
+<!-- TODO: trocar telefone exibido pelo número real -->
+<a class="btn btn-primary" href="#quote">Presupuesto gratuito</a>
+</div>
+</div>
+</header>
+<main id="topo">
+<!-- ============================================================
+         HERO — headline de valor + prova social real + formulário
+         ============================================================ -->
+<section aria-labelledby="hero-title" class="hero">
+<div class="container hero-inner">
+<div>
+<p class="kicker">Casas de madera en MG</p>
+<h1 id="hero-title">Tu casa de madera comienza con una <em>presupuesto sin compromiso</em>.</h1>
+<p class="hero-sub">
+            A <strong>Castor Casas de Madera</strong> diseña y construye casas de madera en Minas Gerais —
+            son <strong>47 modelos</strong> listo para cotizar, o un proyecto hecho a medida para usted.
+            quiero saber <strong>Cuánto cuesta</strong> ¿La casa de madera de tus sueños? Solicite una cotización y
+            Respondemos vía Whats App con precios y plazo.
+          </p>
+<div class="hero-ctas">
+<a class="btn btn-primary" href="#quote">Quiero mi cotización ↓</a>
+<a class="btn btn-ghost" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+<svg aria-hidden="true" fill="current Color" height="18" viewbox="0 0 24 24" width="18"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"></path></svg>
+              Hablar por Whats App
+            </a>
+</div>
+<!-- prueba social em linha: apenas fatos reais -->
+<div class="hero-proof">
+<span><b>47 modelos</b> en el catalogo</span>
+<span><b>2 showrooms</b>: Lagoa Santa y Matozinhos</span>
+<span><b>Garantía estructural</b></span>
+<span><b>Proyecto a medida</b></span>
+</div>
+</div>
+<!-- Formulário de orçamento — o coração da conversão -->
+<div aria-label="Formulário de orçamento" class="quote-card" id="quote">
+<form class="quote-form" id="quote Form" novalidate="">
+<h2>Receba seu orçamento</h2>
+<p class="quote-note">Complete 30 segundos. Respondemos vía Whats App con precios y plazos, sin compromiso.</p>
+<div class="field" data-field="nome">
+<label for="f Nombre">Nombre</label>
+<input autocomplete="name" id="f Nombre" name="nome" placeholder="Como podemos te chamar?" type="text"/>
+<p class="field-error">Digite seu nome para continuarmos.</p>
+</div>
+<div class="field" data-field="whatsapp">
+<label for="f Whats">Whats App</label>
+<input autocomplete="tel" id="f Whats" inputmode="tel" name="whatsapp" placeholder="(31) 99999-9999" type="tel"/>
+<p class="field-error">Ingresa un Whats App válido con código de área (solo números).</p>
+</div>
+<div class="field" data-field="cidade">
+<label for="f Ciudad">Ciudad</label>
+<input id="f Ciudad" name="cidade" placeholder="Onde a casa será construída?" type="text"/>
+<p class="field-error">Cuéntanos en qué ciudad se construirá el proyecto.</p>
+</div>
+<div class="field" data-field="tipo">
+<label for="f Tipo">Tipo de casa</label>
+<select id="f Tipo" name="tipo">
+<option value="">Seleccionar…</option>
+<option value="casa de una sola planta">casa de una sola planta</option>
+<option value="Hogar adosada">Hogar adosada</option>
+<option value="Chalet">Chalet</option>
+<option value="desván">desván</option>
+<option value="todavía no lo sé">todavía no lo sé</option>
+</select>
+<p class="field-error">Elija una opción (o "Aún no lo sé").</p>
+</div>
+<div class="field" data-field="metragem">
+<label for="f Metragem">Tamaño aproximado</label>
+<select id="f Metragem" name="metragem">
+<option value="">Seleccionar…</option>
+<option value="Hasta 70 m²">Hasta 70 m²</option>
+<option value="70 a 100 m²">70 a 100 m²</option>
+<option value="100 a 130 m²">100 a 130 m²</option>
+<option value="130 a 200 m²">130 a 200 m²</option>
+<option value="Más de 200 m²">Más de 200 m²</option>
+<option value="todavía no lo sé">todavía no lo sé</option>
+</select>
+<p class="field-error">Elija un rango aproximado (o "todavía no lo sé").</p>
+</div>
+<!-- Campo oculto: preenchido ao clicar em um modelo do catálogo -->
+<input id="f Modelo" name="modelo" type="hidden" value=""/>
+<button class="btn btn-primary btn-block" type="submit">Quero meu presupuesto sin compromiso</button>
+<p class="quote-micro">Tus datos sólo se utilizan para el contacto de presupuesto. Sin spam.</p>
+</form>
+<!-- Estado de sucesso simulado (sem backend) -->
+<div aria-live="polite" class="quote-success" id="quote Success" role="status">
+<div aria-hidden="true" class="ok-icon">
+<svg fill="none" height="26" stroke="current Color" stroke-linecap="round" stroke-linejoin="round" stroke-width="2.2" viewbox="0 0 24 24" width="26"><path d="M20 6 9 17l-5-5"></path></svg>
+</div>
+<h3>¡Casi llegamos! Confirmar en Whats App</h3>
+<p>Su solicitud de cotización ha sido creada. Toque el botón a continuación para enviarlo directamente al equipo de Castor; la conversación ya estará completa con sus datos.</p>
+<a class="btn btn-whats btn-block" href="#" id="wa Send" rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="current Color" height="18" viewbox="0 0 24 24" width="18"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"></path></svg>
+              Enviar por Whats App
+            </a>
+<button class="reset-link" id="quote Reset" type="button">Enviar otra cotización</button>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         FAIXA DE FATOS — reforço discreto da prova social real
+         ============================================================ -->
+<section aria-label="Fatos sobre a Castor" class="facts-band">
+<div class="container">
+<span><b>47 modelos</b> de casas de madera</span>
+<span><b>2 showrooms</b> — Lagoa Santa y Matozinhos, MG</span>
+<span><b>Garantía estructural</b> en cada casa</span>
+<span><b>Proyecto a medida</b> sin coste de adaptación</span>
+</div>
+</section>
+<!-- ============================================================
+         DIFERENCIAIS — lista editorial numerada, uma ideia por linha
+         ============================================================ -->
+<section aria-labelledby="diffs-title" class="diffs" id="diferenciais">
+<div class="container diffs-grid">
+<div class="diffs-intro" data-reveal="">
+<p class="kicker">Por qué Castor</p>
+<h2 id="diffs-title">Construir en madera es rápido y bonito. Construir con Castor no supone ningún dolor de cabeza.</h2>
+<p>No hay promesas vacías: hay cuatro compromisos que respaldan cada presupuesto que emitimos y cada casa que entregamos.</p>
+<a class="btn btn-ghost" href="#quote">Quiero mi cotización →</a>
+</div>
+<ol class="diffs-list" data-reveal="">
+<li>
+<span aria-hidden="true" class="diff-num">01</span>
+<div class="diff-body">
+<h3>Proyecto a medida</h3>
+<p>Los proyectos son sugerencias iniciales: creamos un nuevo proyecto según las necesidades de cada cliente. Tu hogar se adapta a ti y no al revés.</p>
+</div>
+</li>
+<li>
+<span aria-hidden="true" class="diff-num">02</span>
+<div class="diff-body">
+<h3>Garantía estructural</h3>
+<p>Cada casa Castor se entrega con garantía estructural. Ingeniería seria, madera tratada y montaje profesional: sin sorpresas después de la mudanza.</p>
+</div>
+</li>
+<li>
+<span aria-hidden="true" class="diff-num">03</span>
+<div class="diff-body">
+<h3>Plazo de construcción corto</h3>
+<p>Producción industrializada y montaje in situ, sin el desorden de la construcción convencional. En tu cotización recibes el plazo estimado para tu proyecto.</p>
+</div>
+</li>
+<li>
+<span aria-hidden="true" class="diff-num">04</span>
+<div class="diff-body">
+<h3>Mira antes de decidir</h3>
+<p>Dos showrooms en Minas (Lagoa Santa y Matozinhos) para ver los modelos de cerca, tocar la madera y hacer preguntas a quienes los construyen.</p>
+</div>
+</li>
+</ol>
+</div>
+</section>
+<!-- ============================================================
+         MINI-CATÁLOGO — 3 modelos reais "mais procurados"
+         ============================================================ -->
+<section aria-labelledby="catalog-title" class="catalog" id="modelos">
+<div class="container">
+<div class="catalog-head">
+<div data-reveal="">
+<p class="kicker">mas buscado</p>
+<h2 id="catalog-title">3 modelos que todo el mundo quiere comprar</h2>
+</div>
+<p class="catalog-note" data-reveal="">Haga clic en un modelo y ya llenará el formulario con el tamaño correcto; simplemente termine de enviarlo.</p>
+</div>
+<div class="model-grid">
+<!-- Modelo 1: chicago (real — castor-models-fields.json) -->
+<article class="model-card" data-reveal="">
+<div class="model-media">
+<img alt="Hogar de madeira modelo chicago — 103,13 m²" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-chicago-5-1-1024x1024.jpg" width="1024"/>
+<span class="model-badge">mas buscado</span>
+</div>
+<div class="model-body">
+<h3>chicago</h3>
+<p class="model-specs">103,13 m² de superficie total · 1 suite, 1 dormitorio, baño de visitas, cocina americana y balcones.</p>
+<div class="model-cta">
+<button class="btn btn-primary" data-metragem="100 a 130 m²" data-model="chicago" data-tipo="casa de una sola planta" type="button">Presupuesto chicago →</button>
+</div>
+</div>
+</article>
+<!-- Modelo 2: París (real) — cartão deslocado para ritmo assimétrico -->
+<article class="model-card lift" data-reveal="">
+<div class="model-media">
+<img alt="Hogar de madeira modelo París — 103,83 m²" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-paris-5-1-1024x1024.jpg" width="1024"/>
+</div>
+<div class="model-body">
+<h3>París</h3>
+<p class="model-specs">103,83 m² de superficie total · 2 suites, baño de visitas, cocina americana, lavadero y balcón.</p>
+<div class="model-cta">
+<button class="btn btn-primary" data-metragem="100 a 130 m²" data-model="París" data-tipo="casa de una sola planta" type="button">Presupuesto para París →</button>
+</div>
+</div>
+</article>
+<!-- Modelo 3: Bostón (real) -->
+<article class="model-card" data-reveal="">
+<div class="model-media">
+<img alt="Hogar de madeira modelo Bostón — 105,38 m²" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-boston-5-1024x1024.jpg" width="1024"/>
+</div>
+<div class="model-body">
+<h3>Bostón</h3>
+<p class="model-specs">105,38 m² de superficie total · 1 suite, 1 dormitorio, baño de visitas, lavadero, cocina americana y balcón en forma de L.</p>
+<div class="model-cta">
+<button class="btn btn-primary" data-metragem="100 a 130 m²" data-model="Bostón" data-tipo="casa de una sola planta" type="button">Presupuesto Bostón →</button>
+</div>
+</div>
+</article>
+</div>
+<div class="catalog-foot" data-reveal="">
+<p><b>Y 44 modelos más</b> en el catálogo completo, desde chalets compactos hasta amplias casas adosadas.</p>
+<a class="btn btn-ghost" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20ver%20o%20cat%C3%A1logo%20completo%20de%20modelos%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+            Solicita la lista completa en Whats App →
+          </a>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         DEPOIMENTOS — placeholders explícitos (nada inventado)
+         ============================================================ -->
+<section aria-labelledby="testi-title" class="testimonials" id="depoimentos">
+<div class="container">
+<p class="kicker" data-reveal="">prueba social</p>
+<h2 data-reveal="" id="testi-title">O que dizem quem construiu com a Castor</h2>
+<p class="lead" data-reveal="">Estamos recopilando testimonios reales de nuestros clientes. Preferimos esperar una declaración verdadera que publicar algo inventado, y usted merece saberlo.</p>
+<div class="testi-grid">
+<div class="testi-card" data-reveal="">
+<span class="tag">[declaración en preparación]</span>
+<p>Espacio reservado para la historia real de un cliente que construyó con Castor.</p>
+<span class="who">Cliente · Lagoa Santa, MG</span>
+</div>
+<div class="testi-card" data-reveal="">
+<span class="tag">[declaración en preparación]</span>
+<p>Espacio reservado para la historia real de un cliente que construyó con Castor.</p>
+<span class="who">Cliente · Matozinhos, MG</span>
+</div>
+</div>
+<div class="honesty" data-reveal="">
+<span>Mientras tanto, haz tus preguntas directamente al equipo:</span>
+<a class="btn btn-ghost" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20tirar%20d%C3%B Avidas%20sobre%20casas%20de%20madeira." rel="noopener" target="_blank">
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+            Hablar por Whats App
+          </a>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         FAQ — 7 perguntas reais do nicho, respostas honestas
+         ============================================================ -->
+<section aria-labelledby="faq-title" class="faq" id="faq">
+<div class="container">
+<p class="kicker" data-reveal="">Preguntas frecuentes</p>
+<h2 data-reveal="" id="faq-title">¿Cuánto cuesta? ¿Cuánto tiempo se tarda? Todo lo que quieres saber.</h2>
+<p class="lead" data-reveal="">Respuestas directas sobre el presupuesto de una casa de madera, sin letra pequeña.</p>
+<div class="faq-list" data-reveal="">
+<details class="faq-item">
+<summary>¿Cuánto cuesta una casa de madera?</summary>
+<div class="answer">
+<p>El valor depende del modelo, tamaño, acabado y lugar de entrega, por lo que no existe un precio fijo por m² que se adapte a todos los proyectos.</p>
+<p>La forma más precisa de saber cuánto cuesta la casa de madera que deseas es solicitar presupuesto: rellena el formulario y recibe precios y plazo sin compromiso.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary>¿Cuál es el plazo para construir mi casa?</summary>
+<div class="answer">
+<p>El plazo combina producción, transporte y montaje, y varía en función del proyecto y del lugar de realización de la obra. En tu cotización recibes el plazo estimado para tu caso específico.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary>Tem financiamento ou parcelamento?</summary>
+<div class="answer">
+<p>Sí, consulta condiciones de pago y opciones de financiación vía Whats App. Nuestro equipo te guía por el camino que mejor se adapta a tu plan.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary>¿Necesito tener el terreno listo?</summary>
+<div class="answer">
+<p>Sí, la casa está construida en tu terreno. En la conversación inicial, evaluamos la accesibilidad y la infraestructura del sitio para guiarlo sobre qué preparar antes del montaje.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary>¿Qué madera se utiliza en la construcción?</summary>
+<div class="answer">
+<p>Trabajamos con maderas de reforestación y frondosas seleccionadas, con el tratamiento adecuado para su uso estructural y durabilidad.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary>¿La casa tiene garantía?</summary>
+<div class="answer">
+<p>Sí. Todas las viviendas Castor se entregan con garantía estructural; los detalles de la cobertura se proporcionan en la cotización y el contrato.</p>
+</div>
+</details>
+<details class="faq-item">
+<summary>Posso personalizar ou mudar o projeto?</summary>
+<div class="answer">
+<p>Puede hacerlo, y es nuestro estándar. Los proyectos son sugerencias iniciales; Creamos un nuevo proyecto según las necesidades de cada cliente. Cuéntanos qué necesitas y lo diseñaremos juntos.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<!-- ============================================================
+         CTA FINAL — última chance de virar lead
+         ============================================================ -->
+<section aria-labelledby="final-title" class="final-cta">
+<div class="container" data-reveal="">
+<p class="kicker">último paso</p>
+<h2 id="final-title">¿Listo para saber cuánto cuesta tu casa de madera?</h2>
+<p>Pide presupuesto sin compromiso: te respondemos vía Whats App con precios y plazos de tu proyecto, e incluso puedes visitar los showrooms de Lagoa Santa y Matozinhos para ver los modelos de cerca.</p>
+<div class="btn-group">
+<a class="btn btn-primary" href="#quote">quiero mi presupuesto</a>
+<a class="btn btn-ghost" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+            Hablar por Whats App
+          </a>
+</div>
+<p class="shops">Salas de exposición: Lagoa Santa y Matozinhos · Atendemos todo el estado de MG</p>
+</div>
+</section>
+</main>
+<!-- ============================================================
+       FOOTER
+       ============================================================ -->
+<footer class="site-footer">
+<div class="container">
+<div>
+<h4>Castor Casas de Madera</h4>
+<p>Casas de madera en MG — 47 modelos listos para cotización o proyecto completamente a medida, con garantía estructural y cotización sin compromiso.</p>
+</div>
+<div>
+<h4>Salas de exposición</h4>
+<ul>
+<li>Lagoa Santa, MG</li>
+<li>Matozinhos, MG</li>
+<li><a href="https://wa.me/5531999999999" rel="noopener" target="_blank">Programe una visita vía Whats App</a></li>
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+</ul>
+</div>
+<div>
+<h4>Enlaces rápidos</h4>
+<ul>
+<li><a href="#modelos">Modelos más buscados</a></li>
+<li><a href="#diferenciais">Diferencias</a></li>
+<li><a href="#faq">Preguntas frecuentes</a></li>
+<li><a href="#quote">Presupuesto para una casa de madera</a></li>
+</ul>
+</div>
+<div class="footer-bottom">
+<span>© 2026 Castor Casas de Madera. Reservados todos los derechos.</span>
+<span>Hogar de madera presupuesto · Casas de madera en MG · Cuánto cuesta una casa de madera</span>
+</div>
+</div>
+</footer>
+<!-- ============================================================
+       WHATSAPP FLOAT (desktop)
+       ============================================================ -->
+<a aria-label="Llamar por whatsapp" class="wa-float" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+<span class="wa-label">Llamar por whatsapp</span>
+<svg aria-hidden="true" fill="current Color" height="28" viewbox="0 0 24 24" width="28"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 0 0 4.79 1.22h.01c5.46 0 9.9-4.45 9.9-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0 0 12.04 2zm0 18.15h-.01a8.2 8.2 0 0 1-4.19-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.25-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c0 4.54-3.7 8.23-8.23 8.23zm4.52-6.16c-.25-.13-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.8-.78.97-.14.16-.29.18-.54.06-.25-.13-1.05-.39-2-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.17.04-.31-.02-.43-.06-.13-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.06-.1-.23-.16-.48-.29z"></path></svg>
+</a>
+<!-- ============================================================
+       BARRA STICKY MOBILE — dois caminhos de conversão sempre visíveis
+       ============================================================ -->
+<div class="mobile-bar">
+<a class="btn btn-primary" href="#quote">Presupuesto gratuito</a>
+<a class="btn btn-whats" href="https://wa.me/5531999999999?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<!-- TODO: substituir 5531999999999 pelo número real da Castor -->
+      Whats App
+    </a>
+</div>
+<script>
+    (function () {
+      'use strict';
+
+      /* ============================================================
+         CONFIG — número do Whats App (placeholder)
+         TODO: substituir 5531999999999 pelo número real da Castor
+         ============================================================ */
+      var WHATSAPP_NUMBER = '5531999999999';
+
+      /* ============================================================
+         HEADER STICKY — CTA encolhe ao rolar
+         ============================================================ */
+      var header = document.get Element By Id('site Header');
+      function on Scroll() {
+        header.class List.toggle('is-scrolled', window.scrollY > 12);
+      }
+      window.add Event Listener('scroll', on Scroll, { passive: true });
+      on Scroll();
+
+      /* ============================================================
+         FORMULÁRIO — validação + estado de sucesso + link wa.me
+         ============================================================ */
+      var form      = document.get Element By Id('quote Form');
+      var success   = document.get Element By Id('quote Success');
+      var wa Send    = document.get Element By Id('wa Send');
+      var reset Btn  = document.get Element By Id('quote Reset');
+      var f Nome     = document.get Element By Id('f Nome');
+      var f Whats    = document.get Element By Id('f Whats');
+      var f Cidade   = document.get Element By Id('f Cidade');
+      var f Tipo     = document.get Element By Id('f Tipo');
+      var f Metragem = document.get Element By Id('f Metragem');
+      var f Modelo   = document.get Element By Id('f Modelo');
+
+      function set Error(field El, has Error) {
+        field El.class List.toggle('has-error', has Error);
+        return !has Error;
+      }
+
+      function validate() {
+        var ok = true;
+        ok = set Error(form.query Selector('[data-field="nome"]'), f Nome.value.trim() === '') && ok;
+        ok = set Error(form.query Selector('[data-field="cidade"]'), f Cidade.value.trim() === '') && ok;
+        ok = set Error(form.query Selector('[data-field="tipo"]'), f Tipo.value === '') && ok;
+        ok = set Error(form.query Selector('[data-field="metragem"]'), f Metragem.value === '') && ok;
+
+        // Whats App: apenas dígitos, com DDD (10 ou 11 dígitos)
+        var wa Clean = f Whats.value.replace(/\D/g, '');
+        var wa Invalid = wa Clean.length < 10 || wa Clean.length > 11;
+        ok = set Error(form.query Selector('[data-field="whatsapp"]'), wa Invalid) && ok;
+        return ok;
+      }
+
+      function build Message() {
+        var lines = [
+          'Olá! Quero um orçamento de casa de madeira.',
+          '',
+          'Nome: ' + f Nome.value.trim(),
+          'Whats App: ' + f Whats.value.trim(),
+          'Cidade: ' + f Cidade.value.trim(),
+          'Tipo de casa: ' + f Tipo.value,
+          'Metragem aproximada: ' + f Metragem.value
+        ];
+        if (f Modelo.value) {
+          lines.push('Modelo de interesse: ' + f Modelo.value);
+        }
+        return lines.join('\n');
+      }
+
+      form.add Event Listener('submit', function (e) {
+        e.prevent Default();
+        if (!validate()) {
+          var first Error = form.query Selector('.has-error input, .has-error select');
+          if (first Error) first Error.focus();
+          return;
+        }
+        // Estado de sucesso simulado (sem backend)
+        var msg = build Message();
+        wa Send.href = 'https://wa.me/' + WHATSAPP_NUMBER + '?text=' + encodeURI Component(msg);
+        form.class List.add('hide');
+        success.class List.add('show');
+        wa Send.focus();
+      });
+
+      reset Btn.add Event Listener('click', function () {
+        form.reset();
+        f Modelo.value = '';
+        form.class List.remove('hide');
+        success.class List.remove('show');
+        form.query Selector All('.has-error').for Each(function (el) {
+          el.class List.remove('has-error');
+        });
+        f Nome.focus();
+      });
+
+      // Limpa o erro assim que o usuário começa a corrigir o campo
+      form.query Selector All('input, select').for Each(function (el) {
+        el.add Event Listener('input', function () {
+          el.closest('.field').class List.remove('has-error');
+        });
+      });
+
+      /* ============================================================
+         CATÁLOGO — CTA do modelo pré-preenche o formulário
+         ============================================================ */
+      document.query Selector All('[data-model]').for Each(function (btn) {
+        btn.add Event Listener('click', function () {
+          f Modelo.value = btn.get Attribute('data-model');
+          if (btn.get Attribute('data-metragem')) f Metragem.value = btn.get Attribute('data-metragem');
+          if (btn.get Attribute('data-tipo')) f Tipo.value = btn.get Attribute('data-tipo');
+          document.get Element By Id('quote').scroll Into View({ behavior: 'smooth', block: 'center' });
+          set Timeout(function () { f Nome.focus(); }, 500);
+        });
+      });
+
+      /* ============================================================
+         SCROLL REVEAL leve — respeita prefers-reduced-motion
+         ============================================================ */
+      var reveal Els = document.query Selector All('[data-reveal]');
+      if (window.match Media('(prefers-reduced-motion: reduce)').matches) {
+        reveal Els.for Each(function (el) { el.class List.add('revealed'); });
+      } else if ('Intersection Observer' in window) {
+        var io = new Intersection Observer(function (entries) {
+          entries.for Each(function (entry) {
+            if (entry.is Intersecting) {
+              entry.target.class List.add('revealed');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, root Margin: '0px 0px -40px 0px' });
+        reveal Els.for Each(function (el) { io.observe(el); });
+      } else {
+        reveal Els.for Each(function (el) { el.class List.add('revealed'); });
+      }
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Castor Casas de Madera | Casas de Madera en MG — Lagoa Santa y Matozinhos</title>
+<meta content="Construtora de casas de madera em Minas Gerais: 47 modelos, projeto hecho a medida, garantia estrutural e presupuesto sin compromiso. Hogar de madeira em Belo Horizonte e Grande BH — showrooms en Lagoa Santa y Matozinhos." name="description"/>
+<meta content="Castor Casas de Madera — Casas de Madera em MG" property="og:title"/>
+<meta content="47 modelos de casas de madera, projeto hecho a medida e garantia estrutural. Salas de exposición en Lagoa Santa y Matozinhos. Presupuesto sin compromiso." property="og:description"/>
+<meta content="website" property="og:type"/>
+<meta content="pt_BR" property="og:locale"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<!-- Única dependência externa: Google Fonts (Fraunces + Karla) -->
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&amp;family=Karla:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet"/>
+<style>
+    /* ============================================================
+       TOKENS — paleta madeira/terra sóbria (neutros quentes + verde-musgo)
+       ============================================================ */
+    :root {
+      --paper:      #FAF6EF;   /* fundo principal — creme/stone quente */
+      --paper-2:    #F1EBDF;   /* superfície alternada */
+      --ink:        #29241C;   /* quase-preto quente */
+      --ink-soft:   #5C554A;   /* texto secundário */
+      --ink-faint:  #837A6C;   /* terciário/metadados */
+      --moss:       #414D31;   /* accent profundo — verde-musgo */
+      --moss-deep:  #323C24;   /* hover */
+      --wood:       #8A6B4A;   /* carvalho — apoio, kickers, detalhes */
+      --line:       #E4DCCD;   /* hairline */
+      --dark:       #221E17;   /* seções escuras */
+      --dark-2:     #2A251D;
+      --cream:      #F5F0E7;   /* texto claro sobre escuro */
+      --cream-soft: #B8AC97;   /* texto secundário sobre escuro */
+      --radius:     3px;
+      --shadow-1:   0 1px 2px rgba(41,36,28,.08), 0 10px 30px -12px rgba(41,36,28,.18);
+      --shadow-2:   0 2px 4px rgba(41,36,28,.10), 0 22px 44px -18px rgba(41,36,28,.30);
+      --font-serif: 'Fraunces', Georgia, 'Times New Roman', serif;
+      --font-sans:  'Karla', 'Helvetica Neue', Arial, sans-serif;
+      --wrap: 1200px;
+      --header-h: 76px;
+    }
+
+    /* ============================================================
+       RESET / BASE
+       ============================================================ */
+    *, *::before, *::after { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: calc(var(--header-h) + 16px); }
+    body {
+      margin: 0;
+      font-family: var(--font-sans);
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--ink);
+      background: var(--paper);
+      -webkit-font-smoothing: antialiased;
+      text-rendering: optimize Legibility;
+    }
+    img { display: block; max-width: 100%; height: auto; }
+    a { color: var(--moss); text-decoration: none; }
+    a:hover { color: var(--moss-deep); }
+    h1, h2, h3 { font-family: var(--font-serif); font-weight: 500; line-height: 1.08; letter-spacing: -0.015em; margin: 0; text-wrap: balance; }
+    p { margin: 0; }
+    ::selection { background: var(--moss); color: var(--cream); }
+
+    .wrap { max-width: var(--wrap); margin: 0 auto; padding: 0 24px; }
+    .section { padding: clamp(72px, 10vw, 132px) 0; }
+
+    /* Foco visível para teclado */
+    :focus-visible { outline: 2px solid var(--moss); outline-offset: 3px; border-radius: 2px; }
+
+    /* ============================================================
+       TIPOGRAFIA EDITORIAL — kicker / títulos / lede
+       ============================================================ */
+    .kicker {
+      font-family: var(--font-sans);
+      font-size: 12.5px;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+      color: var(--wood);
+      margin: 0 0 18px;
+    }
+    .kicker-light { color: var(--wood); }
+    h2 { font-size: clamp(2rem, 4.2vw, 3.2rem); margin-bottom: 22px; }
+    .section-lede { font-size: 1.12rem; line-height: 1.7; color: var(--ink-soft); max-width: 60ch; }
+    .section-head { max-width: 720px; margin-bottom: clamp(44px, 6vw, 72px); }
+
+    /* ============================================================
+       BOTÕES — profundidade real, hit target >= 44px
+       ============================================================ */
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 10px;
+      min-height: 48px; padding: 13px 30px;
+      font-family: var(--font-sans); font-size: 15.5px; font-weight: 700; letter-spacing: .01em;
+      border-radius: var(--radius); border: 1px solid transparent;
+      cursor: pointer; text-align: center;
+      transition: transform .18s ease, box-shadow .18s ease, background-color .18s ease, border-color .18s ease;
+    }
+    .btn:active { transform: translateY(1px); }
+    .btn-primary { background: var(--moss); color: var(--cream); box-shadow: var(--shadow-1); }
+    .btn-primary:hover { background: var(--moss-deep); color: var(--cream); transform: translateY(-1px); box-shadow: var(--shadow-2); }
+    .btn-light { background: var(--cream); color: var(--ink); box-shadow: var(--shadow-1); }
+    .btn-light:hover { background: #fff; color: var(--ink); transform: translateY(-1px); box-shadow: var(--shadow-2); }
+    .btn-ghost-light { background: transparent; color: var(--cream); border-color: rgba(245,240,231,.45); }
+    .btn-ghost-light:hover { background: rgba(245,240,231,.12); color: #fff; border-color: rgba(245,240,231,.8); }
+    .btn-sm { min-height: 44px; padding: 10px 22px; font-size: 14.5px; }
+
+    /* Link com seta (estilo editorial) */
+    .link-arrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      font-weight: 700; font-size: 15.5px; color: var(--moss);
+      padding: 8px 0; border-bottom: 1px solid transparent;
+      transition: border-color .18s ease;
+    }
+    .link-arrow:hover { color: var(--moss-deep); border-bottom-color: current Color; }
+    .link-arrow-light { color: var(--cream); }
+    .link-arrow-light:hover { color: #fff; }
+
+    /* ============================================================
+       HEADER — transparente sobre o hero, ganha fundo ao rolar
+       ============================================================ */
+    .site-header {
+      position: fixed; inset: 0 0 auto 0; z-index: 50;
+      background: transparent; border-bottom: 1px solid transparent;
+      transition: background-color .3s ease, border-color .3s ease;
+    }
+    .site-header.is-scrolled { background: rgba(250,246,239,.97); border-bottom-color: var(--line); }
+    .header-inner { display: flex; align-items: center; justify-content: space-between; gap: 24px; height: var(--header-h); }
+    .brand { display: flex; flex-direction: column; line-height: 1.1; padding: 6px 0; }
+    .brand-name { font-family: var(--font-serif); font-size: 26px; font-weight: 600; letter-spacing: -.01em; color: var(--ink); }
+    .site-header.is-scrolled .brand-name { color: var(--ink); }
+    .brand-badge {
+      font-size: 10px; font-weight: 700; letter-spacing: .3em; text-transform: uppercase;
+      color: var(--wood); margin-top: 3px;
+    .brand-name + .brand-badge { margin-left: 6px; }
+    }
+    .site-nav { display: flex; gap: clamp(18px, 2.4vw, 36px); }
+    .site-nav a {
+      font-size: 14.5px; font-weight: 600; color: rgba(250,246,239,.92);
+      padding: 10px 2px; border-bottom: 2px solid transparent;
+      transition: color .18s ease, border-color .18s ease;
+    }
+    .site-nav a:hover { color: #fff; border-bottom-color: rgba(255,255,255,.5); }
+    .site-header.is-scrolled .site-nav a { color: var(--ink-soft); }
+    .site-header.is-scrolled .site-nav a:hover { color: var(--ink); border-bottom-color: var(--moss); }
+    .header-cta { flex-shrink: 0; }
+
+    /* ============================================================
+       HERO — editorial full-bleed, texto à esquerda (nada centralizado)
+       ============================================================ */
+    .hero { position: relative; min-height: 94vh; display: flex; flex-direction: column; justify-content: flex-end; background: var(--dark); }
+    .hero-media {
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(28,23,16,.82) 0%, rgba(28,23,16,.52) 42%, rgba(28,23,16,.18) 75%, rgba(28,23,16,.35) 100%),
+        url('https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-brasil-5-1024x1024.jpg') center 62% / cover no-repeat;
+    }
+    .hero-inner { position: relative; z-index: 1; padding-top: calc(var(--header-h) + 48px); padding-bottom: 56px; max-width: var(--wrap); margin: 0 auto; width: 100%; padding-left: 24px; padding-right: 24px; }
+    .hero-kicker { color: var(--wood); margin-bottom: 22px; }
+    .hero h1 {
+      font-size: clamp(2.6rem, 6.4vw, 5.1rem);
+      line-height: 1.02; letter-spacing: -.02em;
+      color: var(--cream); max-width: 13ch; margin-bottom: 28px;
+    }
+    .hero h1 em { font-style: italic; color: #E9DFC8; }
+    .hero-lede { color: rgba(245,240,231,.88); font-size: 1.14rem; line-height: 1.7; max-width: 52ch; margin-bottom: 40px; }
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+    .hero-facts {
+      position: relative; z-index: 1;
+      border-top: 1px solid rgba(245,240,231,.16);
+      background: rgba(20,16,10,.42);
+    }
+    .facts-row { display: grid; grid-template-columns: repeat(4, 1fr); }
+    .fact { padding: 22px 24px 26px 0; }
+    .fact + .fact { border-left: 1px solid rgba(245,240,231,.16); padding-left: 24px; }
+    .fact-value { display: block; font-family: var(--font-serif); font-size: 1.55rem; font-weight: 500; color: var(--cream); line-height: 1.1; margin-bottom: 6px; }
+    .fact-label { font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: rgba(245,240,231,.62); font-weight: 600; }
+
+    /* ============================================================
+       SOBRE — grid assimétrico editorial (texto largo + imagem)
+       ============================================================ */
+    .sobre-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: clamp(40px, 6vw, 96px); align-items: start; }
+    .sobre-copy h2 { max-width: 15ch; }
+    .sobre-copy p { color: var(--ink-soft); max-width: 56ch; margin-bottom: 22px; }
+    .pull-quote {
+      margin: 38px 0; padding: 26px 0 26px 26px;
+      border-left: 2px solid var(--wood);
+      font-family: var(--font-serif); font-style: italic; font-weight: 400;
+      font-size: 1.45rem; line-height: 1.4; color: var(--ink);
+      max-width: 30ch;
+    }
+    .sobre-media { position: relative; }
+    .sobre-media img { width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: var(--radius); box-shadow: var(--shadow-1); }
+    .sobre-media figcaption { margin-top: 14px; font-size: 13px; color: var(--ink-faint); letter-spacing: .04em; }
+    .sobre-media::after {
+      content: ''; position: absolute; inset: auto -28px -28px auto; width: 46%; height: 46%;
+      border: 1px solid var(--line); border-radius: var(--radius); z-index: -1;
+    }
+
+    /* ============================================================
+       PROCESSO — lista editorial numerada (sem cards, sem ícones)
+       ============================================================ */
+    .section-alt { background: var(--paper-2); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+    .processo-list { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, 1fr); }
+    .processo-item { padding: 30px 32px 8px 0; border-top: 1px solid var(--line); }
+    .processo-item + .processo-item { border-left: 1px solid var(--line); padding-left: 32px; }
+    .processo-num { display: block; font-family: var(--font-serif); font-size: 2.6rem; font-weight: 400; color: var(--wood); line-height: 1; margin-bottom: 18px; }
+    .processo-item h3 { font-size: 1.3rem; margin-bottom: 10px; }
+    .processo-item p { font-size: 15px; color: var(--ink-soft); line-height: 1.6; }
+
+    /* ============================================================
+       MODELOS — grid de catálogo com ritmo staggered (2 colunas offset)
+       ============================================================ */
+    .modelos-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; flex-wrap: wrap; margin-bottom: clamp(44px, 6vw, 72px); }
+    .modelos-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: clamp(40px, 5vw, 72px) clamp(32px, 4vw, 64px); }
+    .modelo-card { display: flex; flex-direction: column; }
+    .modelo-card:nth-child(even) { margin-top: 56px; }  /* ritmo de revista */
+    .modelo-media {
+      position: relative; overflow: hidden; border-radius: var(--radius);
+      background: var(--paper-2);
+    }
+    .modelo-media img {
+      width: 100%; aspect-ratio: 1 / 1; object-fit: cover;
+      transition: transform .8s cubic-bezier(.22,.61,.36,1);
+    }
+    .modelo-card:hover .modelo-media img { transform: scale(1.045); }
+    .modelo-tag {
+      position: absolute; top: 16px; left: 16px;
+      font-size: 11px; font-weight: 700; letter-spacing: .14em; text-transform: uppercase;
+      background: rgba(250,246,239,.92); color: var(--ink);
+      padding: 6px 12px; border-radius: 2px;
+    }
+    .modelo-info { padding: 20px 2px 0; }
+    .modelo-info h3 { font-size: 1.5rem; margin-bottom: 6px; }
+    .modelo-specs { font-size: 13.5px; color: var(--ink-faint); margin-bottom: 14px; letter-spacing: .02em; }
+    .modelo-specs strong { color: var(--ink-soft); font-weight: 600; }
+    .modelo-nota { font-size: 12.5px; color: var(--ink-faint); font-style: italic; margin-top: 28px; }
+
+    /* ============================================================
+       OBRAS — cena escura full-bleed (ritmo Apple), mosaic de fotos
+       ============================================================ */
+    .obras { background: var(--dark); color: var(--cream); border-top: 1px solid rgba(245,240,231,.08); }
+    .obras .kicker { color: var(--wood); }
+    .obras-head { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: end; margin-bottom: clamp(44px, 6vw, 72px); }
+    .obras-head p { color: var(--cream-soft); max-width: 52ch; }
+    .obras-nota { margin-top: 18px; font-size: 13px; font-style: italic; color: rgba(245,240,231,.5); }
+    .obras-mosaic { display: grid; grid-template-columns: repeat(12, 1fr); gap: 16px; }
+    .obra-item { position: relative; overflow: hidden; border-radius: var(--radius); }
+    .obra-item img { width: 100%; height: 100%; object-fit: cover; transition: transform .8s cubic-bezier(.22,.61,.36,1); }
+    .obra-item:hover img { transform: scale(1.05); }
+    .obra-item figcaption {
+      position: absolute; inset: auto 0 0 0; padding: 40px 18px 14px;
+      background: linear-gradient(180deg, transparent, rgba(20,16,10,.78));
+      font-size: 12.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: rgba(245,240,231,.9);
+    }
+    .obra-1 { grid-column: span 5; aspect-ratio: 4 / 4.6; }
+    .obra-2 { grid-column: span 7; aspect-ratio: 16 / 9; }
+    .obra-3 { grid-column: span 7; aspect-ratio: 16 / 9; margin-top: -14%; }  /* sobreposição editorial */
+    .obra-4 { grid-column: span 5; aspect-ratio: 4 / 4.6; margin-top: -14%; }
+    .obras-cta { margin-top: clamp(44px, 6vw, 64px); display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+
+    /* ============================================================
+       DEPOIMENTOS — placeholders explícitos (sem textos inventados)
+       ============================================================ */
+    .depoimentos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+    .depoimento {
+      border: 1px solid var(--line); background: var(--paper);
+      padding: 34px 30px 28px; border-radius: var(--radius);
+      display: flex; flex-direction: column; gap: 18px;
+    }
+    .depoimento-mark { font-family: var(--font-serif); font-size: 3.4rem; line-height: .6; color: var(--wood); }
+    .depoimento p { font-size: 15.5px; color: var(--ink-soft); font-style: italic; line-height: 1.65; }
+    .depoimento footer { margin-top: auto; font-size: 13px; color: var(--ink-faint); letter-spacing: .06em; text-transform: uppercase; font-weight: 600; }
+    .depoimento-nota { margin-top: 34px; font-size: 13.5px; color: var(--ink-faint); font-style: italic; }
+
+    /* ============================================================
+       FAQ — accordion nativo (sem JS, acessível)
+       ============================================================ */
+    .faq-list { max-width: 860px; }
+    .faq-item { border-bottom: 1px solid var(--line); }
+    .faq-item:first-child { border-top: 1px solid var(--line); }
+    .faq-item summary {
+      list-style: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: 24px;
+      padding: 26px 4px; font-family: var(--font-serif); font-size: 1.22rem; font-weight: 500; color: var(--ink);
+      transition: color .18s ease;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary:hover { color: var(--moss); }
+    .faq-item summary::after {
+      content: '+'; font-family: var(--font-sans); font-weight: 400; font-size: 1.6rem; line-height: 1;
+      color: var(--wood); transition: transform .25s ease;
+    }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item .faq-body { padding: 0 4px 28px; max-width: 68ch; color: var(--ink-soft); font-size: 16px; line-height: 1.7; }
+    .faq-item .faq-body a { font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+
+    /* ============================================================
+       CONTATO — formulário de orçamento + canais diretos
+       ============================================================ */
+    .contato-grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(48px, 7vw, 110px); align-items: start; }
+    .form-card { background: var(--paper); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(28px, 4vw, 48px); box-shadow: var(--shadow-1); }
+    .form-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; }
+    .field { display: flex; flex-direction: column; gap: 7px; }
+    .field.full { grid-column: 1 / -1; }
+    .field label { font-size: 12.5px; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: var(--ink-soft); }
+    .field input, .field select, .field textarea {
+      font-family: var(--font-sans); font-size: 15.5px; color: var(--ink);
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 13px 15px; min-height: 48px; width: 100%;
+      transition: border-color .18s ease, box-shadow .18s ease;
+    }
+    .field textarea { min-height: 120px; resize: vertical; line-height: 1.55; }
+    .field input:focus, .field select:focus, .field textarea:focus {
+      outline: none; border-color: var(--moss); box-shadow: 0 0 0 3px rgba(65,77,49,.15);
+    }
+    .form-note { font-size: 13px; color: var(--ink-faint); margin-top: 16px; }
+    .form-success {
+      display: none; margin-top: 18px; padding: 14px 18px;
+      background: #EDF0E4; border: 1px solid #C9D2B0; border-radius: var(--radius);
+      font-size: 14.5px; color: #3D4A2B; font-weight: 600;
+    }
+    .contato-lado h3 { font-size: 1.5rem; margin-bottom: 14px; }
+    .contato-lado > p { color: var(--ink-soft); margin-bottom: 30px; max-width: 40ch; }
+    .canal { padding: 24px 0; border-top: 1px solid var(--line); }
+    .canal h4 { font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .18em; text-transform: uppercase; color: var(--wood); margin: 0 0 10px; }
+    .canal p { font-size: 15.5px; line-height: 1.55; color: var(--ink); }
+    .canal .muted { color: var(--ink-soft); font-size: 14.5px; }
+    .canal a.tel { color: var(--ink); font-weight: 600; }
+    .canal a.tel:hover { color: var(--moss); }
+    .whats-block { margin-top: 30px; }
+    .whats-block .btn { width: 100%; }
+
+    /* ============================================================
+       FOOTER
+       ============================================================ */
+    .footer { background: var(--dark); color: var(--cream-soft); }
+    .footer-top { display: grid; grid-template-columns: 1.2fr 1fr 1fr; gap: 48px; padding: clamp(56px, 8vw, 88px) 0 48px; }
+    .footer .brand-name { color: var(--cream); }
+    .footer .brand-badge { color: var(--wood); }
+    .footer-desc { margin-top: 18px; font-size: 14.5px; line-height: 1.65; max-width: 38ch; }
+    .footer h4 { font-family: var(--font-sans); font-size: 12px; font-weight: 700; letter-spacing: .2em; text-transform: uppercase; color: var(--cream); margin: 0 0 18px; }
+    .footer ul { list-style: none; margin: 0; padding: 0; }
+    .footer li { margin-bottom: 11px; font-size: 14.5px; line-height: 1.5; }
+    .footer a { color: var(--cream-soft); }
+    .footer a:hover { color: var(--cream); }
+    .footer .addr strong { color: var(--cream); font-weight: 600; }
+    .footer-bottom { border-top: 1px solid rgba(245,240,231,.1); padding: 26px 0 30px; display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap; font-size: 13px; color: rgba(245,240,231,.45); }
+
+    /* ============================================================
+       WHATSAPP FLUTUANTE
+       ============================================================ */
+    .whatsapp-float {
+      position: fixed; right: 22px; bottom: 22px; z-index: 60;
+      display: inline-flex; align-items: center; gap: 10px;
+      min-height: 52px; padding: 13px 20px;
+      background: var(--moss); color: var(--cream); border-radius: 999px;
+      font-weight: 700; font-size: 15px; box-shadow: var(--shadow-2);
+      transition: transform .18s ease, background-color .18s ease;
+    }
+    .whatsapp-float:hover { background: var(--moss-deep); color: var(--cream); transform: translateY(-2px); }
+    .whatsapp-float svg { width: 22px; height: 22px; flex-shrink: 0; }
+    .whatsapp-float .label { line-height: 1; }
+
+    /* ============================================================
+       SCROLL REVEAL — discreto, respeita prefers-reduced-motion
+       ============================================================ */
+    .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
+    .reveal.is-visible { opacity: 1; transform: none; }
+    .reveal-delay-1 { transition-delay: .08s; }
+    .reveal-delay-2 { transition-delay: .16s; }
+    .reveal-delay-3 { transition-delay: .24s; }
+
+    /* ============================================================
+       RESPONSIVO — mobile-first
+       ============================================================ */
+    @media (max-width: 1020px) {
+      .site-nav { display: none; }
+      .sobre-grid, .contato-grid { grid-template-columns: 1fr; }
+      .sobre-media::after { display: none; }
+      .obras-head { grid-template-columns: 1fr; gap: 20px; }
+      .obra-1, .obra-2, .obra-3, .obra-4 { grid-column: span 6; margin-top: 0; }
+      .obra-2, .obra-3 { aspect-ratio: 4 / 3; }
+      .depoimentos-grid { grid-template-columns: 1fr; }
+      .footer-top { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 720px) {
+      .facts-row { grid-template-columns: repeat(2, 1fr); }
+      .fact:nth-child(odd) { border-left: none; }
+      .fact:nth-child(n+3) { border-top: 1px solid rgba(245,240,231,.16); }
+      .processo-list { grid-template-columns: 1fr; }
+      .processo-item + .processo-item { border-left: none; border-top: none; padding-left: 0; }
+      .processo-item { padding: 8px 0 28px; }
+      .modelos-grid { grid-template-columns: 1fr; }
+      .modelo-card:nth-child(even) { margin-top: 0; }
+      .form-grid { grid-template-columns: 1fr; }
+      .hero h1 { max-width: 12ch; }
+      .footer-top { grid-template-columns: 1fr; gap: 36px; }
+      .whatsapp-float .label { display: none; }
+      .whatsapp-float { padding: 15px; }
+      .hero-facts { border-top-color: rgba(245,240,231,.16); }
+    }
+
+    /* Respeita a preferência de movimento reduzido */
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+      .reveal { opacity: 1; transform: none; }
+      .modelo-media img, .obra-item img { transition: none; }
+    }
+  </style>
+<style>#lang-bar a:hover{text-decoration:underline;}</style></head>
+<body id="topo">
+<div id="lang-bar" style="position:fixed;top:0;left:0;right:0;z-index:9999;background:#29241c;color:#faf6ef;font-family:system-ui,sans-serif;font-size:13px;padding:8px 16px;display:flex;justify-content:center;gap:16px;align-items:center;">
+<span style="opacity:.8;">Idioma / Language / Idioma:</span>
+<a href="../v2-versao-a-premium.html" style="color:#faf6ef;text-decoration:none;font-weight:600;">PT-BR</a>
+<a href="../en/v2-versao-a-premium.html" style="color:#faf6ef;text-decoration:none;font-weight:600;">EN</a>
+<a href="v2-versao-a-premium.html" style="color:#b8ac97;text-decoration:none;font-weight:600;">ES</a>
+</div>
+<div style="height:36px;"></div>
+<!-- ============================================================
+       HEADER — fixo, transparente, ganha fundo ao rolar
+       ============================================================ -->
+<header class="site-header" id="site-header">
+<div class="wrap header-inner">
+<a aria-label="Castor Casas de Madera — voltar ao início" class="brand" href="#topo">
+<span class="brand-name">Castor</span>
+<span class="brand-badge">Casas de Madera</span>
+</a>
+<nav aria-label="Navegación principal" class="site-nav">
+<a href="#sobre">Quienes somos</a>
+<a href="#processo">como funciona</a>
+<a href="#modelos">Modelos</a>
+<a href="#obras">Obras</a>
+<a href="#faq">Dudas</a>
+</nav>
+<a class="btn btn-primary btn-sm header-cta" href="#contato">Solicitar una cotización</a>
+</div>
+</header>
+<!-- ============================================================
+       HERO — editorial full-bleed com fotografia real (modelo Brasil)
+       ============================================================ -->
+<section aria-label="Apresentação" class="hero">
+<div aria-label="Hogar de madeira modelo Brasil, construída pela Castor em Minas Gerais" class="hero-media" role="img"></div>
+<div class="hero-inner">
+<p class="kicker kicker-light hero-kicker">Castor — Industria de Casas de Madera · MG</p>
+<h1>Casas de madera en <em>Minas Gerais</em>, construidos como deberían ser.</h1>
+<p class="hero-lede">Somos la constructora de casas de madera en MG que diseña, fabrica y monta su casa, desde el primer boceto hasta la entrega de llaves. Hay 47 modelos listos para que los descubras, o un proyecto 100% a medida de tu terreno. Atendemos a quienes buscan casas de madera en MG, desde Belo Horizonte y Lagoa Santa hasta Matozinhos y todo el Gran BH.</p>
+<div class="hero-actions">
+<a class="btn btn-light" href="#modelos">Descubre los 47 modelos</a>
+<a class="btn btn-ghost-light" href="#contato">Solicite presupuesto sin compromiso</a>
+</div>
+</div>
+<div class="hero-facts">
+<div class="wrap facts-row">
+<div class="fact">
+<span class="fact-value">47</span>
+<span class="fact-label">modelos de casas de madera</span>
+</div>
+<div class="fact">
+<span class="fact-value">2</span>
+<span class="fact-label">showrooms en Minas Gerais</span>
+</div>
+<div class="fact">
+<span class="fact-value">Hecho a medida</span>
+<span class="fact-label">proyecto adaptado a ti</span>
+</div>
+<div class="fact">
+<span class="fact-value">Garantizar</span>
+<span class="fact-label">estructural de fábrica</span>
+</div>
+</div>
+</div>
+</section>
+<!-- ============================================================
+       SOBRE / QUEM SOMOS — grid assimétrico com texto real do site
+       ============================================================ -->
+<section class="section" id="sobre">
+<div class="wrap sobre-grid">
+<div class="sobre-copy">
+<p class="kicker reveal">Quienes somos</p>
+<h2 class="reveal">Un constructor de casas de madera con estándares de fábrica y alto estándar de acabado.</h2>
+<p class="reveal">Castor Indústria de Casas de Madeira Ltda produce casas de alto estándar, con calidad garantizada y los mejores productos del mercado. Trabajando con un equipo capacitado y calificado, con amplia experiencia en el mercado, estamos capaces de ofrecer el mejor costo-beneficio para la construcción de su hogar.</p>
+<p class="reveal">Desde los cimientos hasta el techo, cada casa de madera Castor sale lista de fábrica: cortes precisos, madera seleccionada y garantía estructural. Sobre el terreno, nuestro equipo monta la casa en etapas organizadas, con trabajo limpio y plazos definidos en el proyecto.</p>
+<blockquote class="pull-quote reveal">
+          "Los proyectos son sugerencias iniciales: podemos crear un nuevo proyecto de acuerdo con las necesidades de cada cliente".
+        </blockquote>
+<a class="link-arrow reveal" href="#modelos">Explorar modelos destacados <span aria-hidden="true">→</span></a>
+</div>
+<figure class="sobre-media reveal">
+<img alt="Hogar de madeira modelo París da Castor, com 2 suites e 103,83 m² de área total" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-paris-5-1-1024x1024.jpg" width="1024"/>
+<figcaption>Hogar de madera modelo París — 103,83 m² · 2 suites</figcaption>
+</figure>
+</div>
+</section>
+<!-- ============================================================
+       COMO FUNCIONA — processo de construção em 4 etapas (editorial)
+       ============================================================ -->
+<section class="section section-alt" id="processo">
+<div class="wrap">
+<header class="section-head">
+<p class="kicker reveal">como funciona</p>
+<h2 class="reveal">Desde la primera conversación hasta la entrega de llaves</h2>
+<p class="section-lede reveal">Un proceso claro y transparente, en cuatro pasos, en el que tú sigues cada decisión.</p>
+</header>
+<ol class="processo-list">
+<li class="processo-item reveal">
+<span aria-hidden="true" class="processo-num">01</span>
+<h3>Instrucciones</h3>
+<p>Entendemos su terreno, las necesidades de su programa y su presupuesto. Visitas la sala de exposición y ves la casa por dentro.</p>
+</li>
+<li class="processo-item reveal reveal-delay-1">
+<span aria-hidden="true" class="processo-num">02</span>
+<h3>Proyecto a medida</h3>
+<p>Elige uno de los 47 modelos o encarga uno nuevo: los proyectos son sugerencias iniciales y lo adaptamos todo a tus necesidades.</p>
+</li>
+<li class="processo-item reveal reveal-delay-2">
+<span aria-hidden="true" class="processo-num">03</span>
+<h3>Fabricación</h3>
+<p>Producción industrializada en fábrica, con madera de calidad, cortes precisos y control de calidad en cada etapa.</p>
+</li>
+<li class="processo-item reveal reveal-delay-3">
+<span aria-hidden="true" class="processo-num">04</span>
+<h3>Montaje y entrega</h3>
+<p>Nuestro propio equipo monta la casa en tu terreno, con trabajo limpio, plazos definidos y garantía estructural.</p>
+</li>
+</ol>
+</div>
+</section>
+<!-- ============================================================
+       MODELOS EM DESTAQUE — 6 modelos reais com dados reais
+       ============================================================ -->
+<section class="section" id="modelos">
+<div class="wrap">
+<div class="modelos-head">
+<div>
+<p class="kicker reveal">Modelos destacados</p>
+<h2 class="reveal">Proyectos listos para transformar tu hogar</h2>
+</div>
+<p class="section-lede reveal" style="max-width:38ch;">Zonas, habitaciones y balcones reales del catálogo. Y recuerda: cualquier modelo se puede adaptar o recrear desde cero para ti.</p>
+</div>
+<div class="modelos-grid">
+<!-- Card 1: chicago -->
+<article class="modelo-card reveal">
+<div class="modelo-media">
+<img alt="Hogar de madeira modelo chicago — 103,13 m² de área total, com varanda e cozinha americana" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-chicago-5-1-1024x1024.jpg" width="1024"/>
+<span class="modelo-tag">Compacto</span>
+</div>
+<div class="modelo-info">
+<h3>chicago</h3>
+<p class="modelo-specs"><strong>103,13 m²</strong> total · 1 dormitorio · 1 baño · cocina americana · balcón</p>
+<a class="link-arrow" href="#contato">Quiero una cotización para este modelo. <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<!-- Card 2: París -->
+<article class="modelo-card reveal reveal-delay-1">
+<div class="modelo-media">
+<img alt="Hogar de madeira modelo París — 103,83 m² com 2 suites, lavanderia e varanda" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-paris-5-1-1024x1024.jpg" width="1024"/>
+<span class="modelo-tag">2 suites</span>
+</div>
+<div class="modelo-info">
+<h3>París</h3>
+<p class="modelo-specs"><strong>103,83 m²</strong> total · 2 suites · 1 baño de visitas · cuarto de lavado · balcón</p>
+<a class="link-arrow" href="#contato">Quiero una cotización para este modelo. <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<!-- Card 3: Bostón -->
+<article class="modelo-card reveal">
+<div class="modelo-media">
+<img alt="Hogar de madeira modelo Bostón — 105,38 m² com varanda em L, lavanderia e cozinha americana" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-boston-5-1024x1024.jpg" width="1024"/>
+<span class="modelo-tag">balcón en forma de L</span>
+</div>
+<div class="modelo-info">
+<h3>Bostón</h3>
+<p class="modelo-specs"><strong>105,38 m²</strong> total · 1 suite + 1 dormitorio · lavadero · cocina americana · balcón en forma de L</p>
+<a class="link-arrow" href="#contato">Quiero una cotización para este modelo. <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<!-- Card 4: dallas -->
+<article class="modelo-card reveal reveal-delay-1">
+<div class="modelo-media">
+<img alt="Hogar de madeira modelo dallas — 106,38 m² com despensa, lavanderia e varanda em L" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-dallas-5-1-1024x1024.jpg" width="1024"/>
+<span class="modelo-tag">Con despensa</span>
+</div>
+<div class="modelo-info">
+<h3>dallas</h3>
+<p class="modelo-specs"><strong>106,38 m²</strong> total · 1 suite + 1 dormitorio · despensa · lavadero · balcón en forma de L</p>
+<a class="link-arrow" href="#contato">Quiero una cotización para este modelo. <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<!-- Card 5: Grécia -->
+<article class="modelo-card reveal">
+<div class="modelo-media">
+<img alt="Hogar de madeira modelo Grécia — 123,34 m² com varanda em L e lavanderia" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-grecia-5-1-1024x1024.jpg" width="1024"/>
+<span class="modelo-tag">Espacioso</span>
+</div>
+<div class="modelo-info">
+<h3>Grécia</h3>
+<p class="modelo-specs"><strong>123,34 m²</strong> total · 1 suite + 1 dormitorio · lavadero · cocina americana · balcón en forma de L</p>
+<a class="link-arrow" href="#contato">Quiero una cotización para este modelo. <span aria-hidden="true">→</span></a>
+</div>
+</article>
+<!-- Card 6: Japón -->
+<article class="modelo-card reveal reveal-delay-1">
+<div class="modelo-media">
+<img alt="Hogar de madeira modelo Japón — 125,45 m² com sala de TV, despensa e cozinha americana" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-japao-5-1024x1024.jpg" width="1024"/>
+<span class="modelo-tag">sala de televisión</span>
+</div>
+<div class="modelo-info">
+<h3>Japón</h3>
+<p class="modelo-specs"><strong>125,45 m²</strong> total · 1 suite + 1 dormitorio · sala de TV · despensa · cocina</p>
+<a class="link-arrow" href="#contato">Quiero una cotización para este modelo. <span aria-hidden="true">→</span></a>
+</div>
+</article>
+</div>
+<p class="modelo-nota reveal">Los proyectos son sugerencias iniciales, podemos crear un nuevo proyecto según las necesidades de cada cliente. Imágenes sólo con fines ilustrativos.</p>
+</div>
+</section>
+<!-- ============================================================
+       OBRAS REALIZADAS — cena escura, mosaic editorial (placeholder honesto)
+       ============================================================ -->
+<section class="section obras" id="obras">
+<div class="wrap">
+<div class="obras-head">
+<div>
+<p class="kicker reveal">Trabajos realizados</p>
+<h2 class="reveal">El estándar de fábrica que llega a su sitio</h2>
+</div>
+<div>
+<p class="reveal">Cada casa Castor sale de fábrica lista para su montaje, y esto es lo que garantiza un acabado uniforme, un trabajo limpio y un plazo definido en cualquier región de Minas Gerais.</p>
+<p class="obras-nota reveal">[Galería de obras en preparación: las imágenes a continuación son ilustrativas y muestran modelos del catálogo de Castor.]</p>
+</div>
+</div>
+<div class="obras-mosaic">
+<figure class="obra-item obra-1 reveal">
+<img alt="Hogar de madeira modelo Toronto — 134,68 m² com área gourmet e varanda" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-toronto-5-1024x1024.jpg" width="1024"/>
+<figcaption>Modelo Toronto · 134,68 m²</figcaption>
+</figure>
+<figure class="obra-item obra-2 reveal reveal-delay-1">
+<img alt="Hogar de madeira modelo Espanha — 155,86 m² com varanda generosa" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-espanha-5-1024x1024.jpg" width="1024"/>
+<figcaption>Modelo España · 155,86 m²</figcaption>
+</figure>
+<figure class="obra-item obra-3 reveal">
+<img alt="Hogar de madeira modelo Miami — 132,18 m² com 2 suites" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-miami-5-1-1024x1024.jpg" width="1024"/>
+<figcaption>Modelo Miami · 132,18 m²</figcaption>
+</figure>
+<figure class="obra-item obra-4 reveal reveal-delay-1">
+<img alt="Hogar de madeira modelo Berlim — 136,47 m² com pergolado e 3 quartos" height="1024" loading="lazy" src="https://casademadeira.com.br/wp-content/uploads/2023/08/casa-de-madeira-berlim-5-1024x1024.jpg" width="1024"/>
+<figcaption>Modelo Berlín · 136,47 m²</figcaption>
+</figure>
+</div>
+<div class="obras-cta">
+<a class="btn btn-light" href="#contato">quiero una casa asi</a>
+<a class="link-arrow link-arrow-light" href="#modelos">Ver todos los modelos <span aria-hidden="true">→</span></a>
+</div>
+</div>
+</section>
+<!-- ============================================================
+       DEPOIMENTOS — placeholders explícitos (sem textos inventados)
+       ============================================================ -->
+<section class="section" id="depoimentos">
+<div class="wrap">
+<header class="section-head">
+<p class="kicker reveal">Testimonios</p>
+<h2 class="reveal">¿Quién construyó con Castor?</h2>
+<p class="section-lede reveal">Estamos recopilando testimonios reales de nuestros clientes. Mientras tanto, dejamos el espacio reservado, nada de historias inventadas.</p>
+</header>
+<div class="depoimentos-grid">
+<blockquote class="depoimento reveal">
+<span aria-hidden="true" class="depoimento-mark">“</span>
+<p>[Depoimento em preparação — texto real será publicado aqui.]</p>
+<footer>[Cliente Castor · Lagoa Santa]</footer>
+</blockquote>
+<blockquote class="depoimento reveal reveal-delay-1">
+<span aria-hidden="true" class="depoimento-mark">“</span>
+<p>[Depoimento em preparação — texto real será publicado aqui.]</p>
+<footer>[Cliente Castor · Matozinhos]</footer>
+</blockquote>
+<blockquote class="depoimento reveal reveal-delay-2">
+<span aria-hidden="true" class="depoimento-mark">“</span>
+<p>[Depoimento em preparação — texto real será publicado aqui.]</p>
+<footer>[Cliente Castor · Belo Horizonte]</footer>
+</blockquote>
+</div>
+<p class="depoimento-nota reveal">¿Construiste con Castor y quieres compartir tu experiencia? Háblanos por Whats App: nos encantaría publicar tu historia.</p>
+</div>
+</section>
+<!-- ============================================================
+       FAQ — dúvidas frequentes do nicho (accordion nativo)
+       ============================================================ -->
+<section class="section section-alt" id="faq">
+<div class="wrap">
+<header class="section-head">
+<p class="kicker reveal">Preguntas frecuentes</p>
+<h2 class="reveal">Todo lo que necesitas saber antes de pedir presupuesto</h2>
+</header>
+<div class="faq-list">
+<details class="faq-item reveal">
+<summary>¿Cuánto cuesta construir una casa de madera?</summary>
+<div class="faq-body">
+<p>Cada casa tiene un precio individual: el precio depende del modelo elegido, la zona, los acabados y las condiciones de su terreno. El presupuesto de la casa de madera es gratuito y sin compromiso: envíe sus datos en el siguiente formulario y nuestro equipo se comunicará con usted dentro de las 24 horas hábiles.</p>
+</div>
+</details>
+<details class="faq-item reveal">
+<summary>¿Es una casa de madera segura y duradera?</summary>
+<div class="faq-body">
+<p>Sí. Las casas de ruedas se producen en fábrica con madera de calidad, herrajes precisos y un alto nivel de acabado, y cuentan con garantía estructural. El proceso industrializado elimina improvisaciones de trabajo y garantiza uniformidad en cada unidad.</p>
+</div>
+</details>
+<details class="faq-item reveal">
+<summary>¿Puedo visitar una casa terminada antes de decidirme?</summary>
+<div class="faq-body">
+<p>¡Sí, y lo recomendamos! Contamos con dos showrooms en Minas Gerais: en Lagoa Santa (AV. Mayor João Daher, 1530 — Barrio Lundcea) y en Matozinhos (Rodovia MG-424, km 25 — Distrito Industrial). Agenda tu visita vía Whats App: <a href="https://wa.me/5531989201655" rel="noopener" target="_blank">(31) 9 8920-1655</a>.</p>
+</div>
+</details>
+<details class="faq-item reveal">
+<summary>¿Se pueden modificar los modelos del catálogo?</summary>
+<div class="faq-body">
+<p>Con seguridad. Los proyectos son sugerencias iniciales, podemos crear un nuevo proyecto según las necesidades de cada cliente. ¿Quiere otro dormitorio, otro balcón o una distribución completamente nueva? Diseñamos junto a ti.</p>
+</div>
+</details>
+<details class="faq-item reveal">
+<summary>¿Construyes fuera de Belo Horizonte?</summary>
+<div class="faq-body">
+<p>Sí. Atendemos Belo Horizonte, Gran BH y varias regiones de Minas Gerais. Quien busque una casa de madera en Belo Horizonte o en ciudades como Lagoa Santa, Matozinhos, Pedro Leopoldo y Sete Lagoas, encontrará en Castor un equipo acostumbrado a trabajar en condominios, zonas rurales y fraccionamientos.</p>
+</div>
+</details>
+<details class="faq-item reveal">
+<summary>¿Cuánto tiempo lleva la construcción?</summary>
+<div class="faq-body">
+<p>Al estar industrializada, la producción en la fábrica y el montaje en el terreno tienen plazos definidos en el proyecto, con un trabajo mucho más limpio y rápido que la construcción convencional. El plazo exacto depende del modelo y la zona y está indicado en el presupuesto.</p>
+</div>
+</details>
+</div>
+</div>
+</section>
+<!-- ============================================================
+       CONTATO — formulário de orçamento + Whats App + showrooms reais
+       ============================================================ -->
+<section class="section" id="contato">
+<div class="wrap contato-grid">
+<div class="form-card reveal">
+<p class="kicker">Presupuesto sin compromiso</p>
+<h2 style="font-size:clamp(1.8rem, 3vw, 2.4rem);">Solicita tu cotización de casa de madera</h2>
+<p class="section-lede" style="margin:16px 0 30px;">Complete el formulario y reciba comentarios de nuestro equipo dentro de las 24 horas hábiles. Si lo prefieres llama directamente por Whats App.</p>
+<form id="form-orcamento" novalidate="">
+<div class="form-grid">
+<div class="field">
+<label for="f-nome">nombre completo</label>
+<input autocomplete="name" id="f-nome" name="nome" placeholder="Seu nome" required="" type="text"/>
+</div>
+<div class="field">
+<label for="f-whats">Whats App</label>
+<input autocomplete="tel" id="f-whats" name="whatsapp" placeholder="(31) 9 0000-0000" required="" type="tel"/>
+</div>
+<div class="field full">
+<label for="f-email">Correo electrónico</label>
+<input autocomplete="email" id="f-email" name="email" placeholder="voce@email.com.br" type="email"/>
+</div>
+<div class="field full">
+<label for="f-regiao">Región terrestre</label>
+<select id="f-regiao" name="regiao">
+<option value="bh">Belo Horizonte / Grande BH</option>
+<option value="lagoa-santa">Lagoa Santa</option>
+<option value="matozinhos">Matozinhos</option>
+<option value="mg">Otra región de Minas Gerais</option>
+</select>
+</div>
+<div class="field full">
+<label for="f-msg">Cuéntanos tu proyecto</label>
+<textarea id="f-msg" name="mensagem" placeholder="Ex.: tenho um terreno de 300 m² em condomínio e gostaria de uma casa de 2 quartos com varanda…"></textarea>
+</div>
+</div>
+<button class="btn btn-primary" style="width:100%; margin-top:24px;" type="submit">Enviar solicitud de cotización</button>
+<p class="form-note">Al enviar, acepta que el equipo de Castor se comunique con usted para analizar su cotización. No se comparten datos con terceros.</p>
+<div class="form-success" id="form-success" role="status">✓ ¡Hemos recibido tu pedido! Nuestro equipo regresa dentro de las 24 horas hábiles. Mientras tanto, si quieres agilizar las cosas, llámanos por Whats App.</div>
+</form>
+</div>
+<aside class="contato-lado reveal reveal-delay-1">
+<h3>Habla con Castor</h3>
+<p>Estamos abiertos de lunes a sábado. Presupuesto de casa de madera gratuito, sin compromiso y con plazos de entrega rápidos.</p>
+<div class="whats-block">
+<a class="btn btn-primary" href="https://wa.me/5531989201655?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="current Color" height="20" viewbox="0 0 24 24" width="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+            Llame al Whats App — (31) 9 8920-1655
+          </a>
+</div>
+<div class="canal">
+<h4>Sala de exposición · Lagoa Santa</h4>
+<p>AV. Mayor João Daher, 1530 — Barrio Lundcea<br/>
+<span class="muted">Lagoa Santa · MG</span><br/>
+<a class="tel" href="tel:+553136070778">(31) 3607-0778</a> <span class="muted">|</span> <a class="tel" href="tel:+553136070780">(31) 3607-0780</a></p>
+</div>
+<div class="canal">
+<h4>Sala de exposición · Matozinhos</h4>
+<p>Carretera MG-424, km 25, nº 689 — Distrito Industrial<br/>
+<span class="muted">Matozinhos · MG</span><br/>
+<a class="tel" href="tel:+553137127449">(31) 3712-7449</a> <span class="muted">|</span> <a class="tel" href="tel:+553137121821">(31) 3712-1821</a></p>
+</div>
+<div class="canal">
+<h4>Horario de apertura</h4>
+<p>Lunes a viernes de 8 a 18 horas<br/><span class="muted">Sábado, de 8 a 13 horas</span></p>
+</div>
+</aside>
+</div>
+</section>
+<!-- ============================================================
+       FOOTER — marca, localização real e navegação
+       ============================================================ -->
+<footer class="footer">
+<div class="wrap footer-top">
+<div>
+<a aria-label="Castor Casas de Madera — voltar ao início" class="brand" href="#topo">
+<span class="brand-name">Castor</span>
+<span class="brand-badge">Casas de Madera</span>
+</a>
+<p class="footer-desc">Castor Indústria de Casas de Madeira Ltda - constructora de casas de madera en Minas Gerais. 47 modelos, diseño a medida y garantía estructural.</p>
+</div>
+<div>
+<h4>Navegación</h4>
+<ul>
+<li><a href="#sobre">Quienes somos</a></li>
+<li><a href="#processo">como funciona</a></li>
+<li><a href="#modelos">Modelos destacados</a></li>
+<li><a href="#obras">Trabajos realizados</a></li>
+<li><a href="#faq">Preguntas frecuentes</a></li>
+<li><a href="#contato">Presupuesto</a></li>
+</ul>
+</div>
+<div>
+<h4>Ubicación</h4>
+<ul>
+<li class="addr"><strong>Lagoa Santa · MG</strong><br/>AV. Alcalde João Daher, 1530 - Lundcea<br/>(31) 3607-0778 | 3607-0780</li>
+<li class="addr"><strong>Matozinhos · MG</strong><br/>Vara. MG-424, km 25, nº 689 — Distrito Industrial<br/>(31) 3712-7449 | 3712-1821</li>
+<li><a href="https://wa.me/5531989201655" rel="noopener" target="_blank">Whatsapp: (31) 9 8920-1655</a></li>
+</ul>
+</div>
+</div>
+<div class="wrap footer-bottom">
+<span>© 2026 Castor Indústria de Casas de Madeira Ltda. Todos os direitos reservados.</span>
+<span>Casas de madera MG · Hogar de madera en Belo Horizonte · Presupuesto sin compromiso</span>
+</div>
+</footer>
+<!-- Whats App flutuante -->
+<a aria-label="Chamar a Castor no Whats App" class="whatsapp-float" href="https://wa.me/5531989201655?text=Ol%C3%A1!%20Quero%20um%20or%C3%A7amento%20de%20casa%20de%20madeira." rel="noopener" target="_blank">
+<svg aria-hidden="true" fill="current Color" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"></path></svg>
+<span class="label">Whats App</span>
+</a>
+<!-- ============================================================
+       JS — header ao rolar, scroll reveal, submit do formulário
+       ============================================================ -->
+<script>
+    (function () {
+      'use strict';
+
+      var reduce Motion = window.match Media('(prefers-reduced-motion: reduce)').matches;
+
+      /* Header ganha fundo ao rolar */
+      var header = document.get Element By Id('site-header');
+      var on Scroll = function () {
+        header.class List.toggle('is-scrolled', window.scrollY > 40);
+      };
+      on Scroll();
+      window.add Event Listener('scroll', on Scroll, { passive: true });
+
+      /* Scroll reveal discreto via Intersection Observer */
+      var reveals = document.query Selector All('.reveal');
+      if (reduce Motion || !('Intersection Observer' in window)) {
+        reveals.for Each(function (el) { el.class List.add('is-visible'); });
+      } else {
+        var io = new Intersection Observer(function (entries) {
+          entries.for Each(function (entry) {
+            if (entry.is Intersecting) {
+              entry.target.class List.add('is-visible');
+              io.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.12, root Margin: '0px 0px -40px 0px' });
+        reveals.for Each(function (el) { io.observe(el); });
+      }
+
+      /* Formulário de orçamento — demo de protótipo (sem backend) */
+      var form = document.get Element By Id('form-orcamento');
+      var success = document.get Element By Id('form-success');
+      if (form) {
+        form.add Event Listener('submit', function (e) {
+          e.prevent Default();
+          var nome = document.get Element By Id('f-nome');
+          var whats = document.get Element By Id('f-whats');
+          if (!nome.value.trim() || !whats.value.trim()) {
+            nome.focus();
+            return;
+          }
+          success.style.display = 'block';
+          success.scroll Into View({ behavior: reduce Motion ? 'auto' : 'smooth', block: 'nearest' });
+          form.query Selector('button[type="submit"]').text Content = 'Pedido enviado ✓';
+          form.query Selector('button[type="submit"]').disabled = true;
+        });
+      }
+    })();
+  </script>
+</body>
+</html>
