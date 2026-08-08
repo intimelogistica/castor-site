@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "siteName": "Castor Casas de Madera",
+    "defaultTitle": "Casas de Madera en Minas Gerais — Lagoa Santa y Matozinhos",
+    "defaultDescription": "Constructora de casas de madera en Minas Gerais, Brasil: 47 modelos, proyecto a medida, garantía estructural y presupuesto sin compromiso. Showrooms en Lagoa Santa y Matozinhos."
+  },
+  "nav": {
+    "home": "Inicio",
+    "models": "Modelos",
+    "about": "Nosotros",
+    "howItWorks": "Cómo funciona",
+    "projects": "Obras realizadas",
+    "testimonials": "Testimonios",
+    "contact": "Contacto",
+    "blog": "Blog",
+    "faq": "Preguntas frecuentes",
+    "getQuote": "Solicitar presupuesto"
+  },
+  "localeSwitcher": {
+    "label": "Idioma",
+    "pt": "PT",
+    "en": "EN",
+    "es": "ES"
+  },
+  "home": {
+    "heroKicker": "Casas de madera en Minas Gerais",
+    "heroTitle": "Construye tu casa de madera con quien entiende del tema",
+    "heroLead": "Más de 47 modelos, proyecto a medida y garantía estructural. Showrooms en Lagoa Santa y Matozinhos.",
+    "heroCtaPrimary": "Ver modelos",
+    "heroCtaSecondary": "Escríbete por WhatsApp",
+    "modelsSectionTitle": "Encuentra el modelo ideal",
+    "modelsSectionLead": "Filtra por metros, dormitorios y pisos. Cada modelo puede personalizarse.",
+    "trustTitle": "Por qué elegir Castor",
+    "trustYears": "años de experiencia",
+    "trustModels": "modelos disponibles",
+    "trustWarranty": "años de garantía estructural"
+  },
+  "model": {
+    "areaTotal": "Área total",
+    "areaCovered": "Área cubierta",
+    "areaBalcony": "Área de terraza",
+    "bedrooms": "Dormitorios",
+    "suites": "Suites",
+    "bathrooms": "Baños",
+    "floors": "Pisos",
+    "hasLaundry": "Lavandería",
+    "hasBalcony": "Terraza",
+    "hasAmericanKitchen": "Cocina americana",
+    "viewModel": "Ver modelo",
+    "getQuote": "Quiero un presupuesto para este modelo",
+    "floorPlan": "Plano",
+    "gallery": "Galería",
+    "includes": "Qué está incluido",
+    "faqTitle": "Dudas sobre este modelo"
+  },
+  "contact": {
+    "title": "Solicita tu presupuesto",
+    "lead": "Completa el formulario o escríbete por WhatsApp. Respondemos en hasta 24 horas hábiles.",
+    "nameLabel": "Nombre",
+    "emailLabel": "Correo electrónico",
+    "phoneLabel": "Teléfono / WhatsApp",
+    "cityLabel": "Ciudad",
+    "messageLabel": "Mensaje",
+    "messagePlaceholder": "Me interesó el modelo...",
+    "submit": "Enviar solicitud de presupuesto",
+    "success": "¡Recibimos tu mensaje! Nos pondremos en contacto pronto.",
+    "error": "Hubo un error al enviar. Inténtalo de nuevo o escríbete por WhatsApp.",
+    "whatsappCta": "¿Prefieres WhatsApp?"
+  },
+  "cookieConsent": {
+    "title": "Tu privacidad",
+    "description": "Usamos cookies para mejorar tu experiencia y medir el rendimiento del sitio.",
+    "accept": "Aceptar",
+    "reject": "Rechazar",
+    "preferences": "Preferencias"
+  },
+  "footer": {
+    "tagline": "Casas de madera con garantía estructural y proyecto a medida.",
+    "copyright": "© {year} Castor Casas de Madera. Todos los derechos reservados."
+  }
+}

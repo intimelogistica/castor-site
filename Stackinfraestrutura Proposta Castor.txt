@@ -1,0 +1,30 @@
+**Stack/infraestrutura Proposta Castor**
+- Next.js 16.2.4 + React 19 + Tailwind v4 + App Router
+- Strapi 5.50 CMS (pode reutilizar a mesma instância? ou criar novo content-type)
+- Resend para email
+- Turnstile Cloudflare para anti-spam
+- Vercel Analytics + Speed Insights
+- GTM + CookieConsent + dataLayer
+- Notion para CRM de leads, Google sheet
+- Cloudinary para imagens
+- Sitemap/robots/manifest/feed dinâmicos
+- Schema JSON-LD (Organization/LocalBusiness)
+- Sistema de Landing Pages configuráveis (lib/landing-pages) — reutilizável
+- Componentes: ContactForm, WhatsAppFloat, WhatsAppLeadGate, SiteHeader/Footer
+- Validação de LPs via Zod
+- llms.txt
+- Redirects legados
+- Rate limiting
+- Honeypot
+- WhatsAppLeadGate / WhatsAppFloat
+- JsonLd component
+- llms.txt
+- robots.ts
+- 5 landing- LandingPageTemplate.tsx
+- 12 Artigos- ArtigosPageTemplate.tsx
+- Migrar as 14 páginas principais + 55 modelos de casa
+- Manter domínio casademadeira.com.br com redirects 301
+- Configuração GTM, GA4, GSC, Ads
+- Testes profundo de invasão 
+- Entrega 100% do código fonte no GitHub e acessos Vercel, Strapi, Resend,Cloudflare
+

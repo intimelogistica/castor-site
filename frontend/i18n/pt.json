@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "siteName": "Castor Casas de Madeira",
+    "defaultTitle": "Casas de Madeira em MG — Lagoa Santa e Matozinhos",
+    "defaultDescription": "Construtora de casas de madeira em Minas Gerais: 47 modelos, projeto sob medida, garantia estrutural e orçamento sem compromisso."
+  },
+  "nav": {
+    "home": "Início",
+    "models": "Modelos",
+    "about": "Sobre",
+    "howItWorks": "Como funciona",
+    "projects": "Obras realizadas",
+    "testimonials": "Depoimentos",
+    "contact": "Contato",
+    "blog": "Blog",
+    "faq": "Dúvidas frequentes",
+    "getQuote": "Solicitar orçamento"
+  },
+  "localeSwitcher": {
+    "label": "Idioma",
+    "pt": "PT",
+    "en": "EN",
+    "es": "ES"
+  },
+  "home": {
+    "heroKicker": "Casas de madeira em Minas Gerais",
+    "heroTitle": "Construa sua casa de madeira com quem entende do assunto",
+    "heroLead": "Mais de 47 modelos, projeto sob medida e garantia estrutural. Showrooms em Lagoa Santa e Matozinhos.",
+    "heroCtaPrimary": "Ver modelos",
+    "heroCtaSecondary": "Falar no WhatsApp",
+    "modelsSectionTitle": "Encontre o modelo ideal",
+    "modelsSectionLead": "Filtre por metragem, quartos e pavimentos. Cada modelo pode ser personalizado.",
+    "trustTitle": "Por que escolher a Castor",
+    "trustYears": "anos de experiência",
+    "trustModels": "modelos disponíveis",
+    "trustWarranty": "anos de garantia estrutural"
+  },
+  "model": {
+    "areaTotal": "Área total",
+    "areaCovered": "Área coberta",
+    "areaBalcony": "Área da varanda",
+    "bedrooms": "Quartos",
+    "suites": "Suítes",
+    "bathrooms": "Banheiros",
+    "floors": "Pavimentos",
+    "hasLaundry": "Lavanderia",
+    "hasBalcony": "Varanda",
+    "hasAmericanKitchen": "Cozinha americana",
+    "viewModel": "Ver modelo",
+    "getQuote": "Quero um orçamento para este modelo",
+    "floorPlan": "Planta baixa",
+    "gallery": "Galeria",
+    "includes": "O que está incluso",
+    "faqTitle": "Dúvidas sobre este modelo"
+  },
+  "contact": {
+    "title": "Solicite seu orçamento",
+    "lead": "Preencha o formulário ou fale direto pelo WhatsApp. Retornamos em até 24 horas úteis.",
+    "nameLabel": "Nome",
+    "emailLabel": "E-mail",
+    "phoneLabel": "Telefone / WhatsApp",
+    "cityLabel": "Cidade",
+    "messageLabel": "Mensagem",
+    "messagePlaceholder": "Me interessei pelo modelo...",
+    "submit": "Enviar pedido de orçamento",
+    "success": "Recebemos sua mensagem! Entraremos em contato em breve.",
+    "error": "Houve um erro ao enviar. Tente novamente ou fale pelo WhatsApp.",
+    "whatsappCta": "Prefere pelo WhatsApp?"
+  },
+  "cookieConsent": {
+    "title": "Sua privacidade",
+    "description": "Usamos cookies para melhorar sua experiência e medir o desempenho do site.",
+    "accept": "Aceitar",
+    "reject": "Recusar",
+    "preferences": "Preferências"
+  },
+  "footer": {
+    "tagline": "Casas de madeira com garantia estrutural e projeto sob medida.",
+    "copyright": "© {year} Castor Casas de Madeira. Todos os direitos reservados."
+  }
+}

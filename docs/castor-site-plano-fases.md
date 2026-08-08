@@ -11,6 +11,8 @@ A Castor deve abandonar o WordPress atual (comprometido, Elementor desatualizado
 
 O projeto será executado em **7 fases**. Antes de escrever qualquer linha de código, definiremos arquitetura de informação, design system e estratégia de conteúdo AEO/LLM. Serão construídas **3 versões de layout** para aprovação visual.
 
+**Incremento de internacionalização (i18n)**: o site será multilíngue desde a fundação, com **Português (pt-BR), Inglês (en) e Espanhol (es)** usando subdiretórios (`/pt/`, `/en/`, `/es/`). A estratégia completa está em `planning/internationalization-strategy.md`.
+
 ---
 
 ## 2. O que reaproveitamos do InTime
@@ -143,17 +145,19 @@ Pesquisa automatizada identificou e analisou tecnicamente **10 fabricantes/const
   - Comerciais: modelos de casa, categorias (chalés, casas de campo, residenciais, comerciais).
   - LPs de captura: "casa de madeira BH", "casa de madeira Lagoa Santa", etc.
   - Blog/Base de conhecimento: AEO (respostas diretas, HowTo, FAQ).
-- [ ] **Keyword mapping**: intenção por página (navigational, transactional, informational).
+- [ ] **Mapa de URLs multilíngues**: definir slugs únicos por idioma (pt/en/es) para cada página e modelo.
+- [ ] **Keyword mapping**: intenção por página e por idioma (navigational, transactional, informational).
 - [ ] **Arquitetura Strapi**:
   - Reutilizar `article`, `page`, `faq`, `category`, `tag`, `author`.
   - Criar `house-model` (nome, slug, categoria, metragem, quartos, banheiros, preço, descrição, galeria, planta, destaque, SEO).
   - Criar `testimonial` (nome, cidade, foto, depoimento, obra).
   - Criar `obra-realizada` (título, local, descrição, galeria, modelo relacionado).
-- [ ] **Especificar eventos de conversão** para GTM/GA4/Ads.
+  - Habilitar plugin i18n e localização nos campos de texto/slug/SEO.
+- [ ] **Especificar eventos de conversão** para GTM/GA4/Ads (incluindo parâmetro `locale`).
 - [ ] **Estratégia de AEO/LLM**:
   - `direct_answer` em artigos (igual ao InTime).
   - FAQPage vinculado a cada página e modelo.
-  - `llms.txt` com resumo do negócio, URLs principais e diretrizes de conteúdo.
+  - `llms.txt` com resumo do negócio, URLs principais e diretrizes de conteúdo por idioma.
   - Schema `Product` para modelos de casa (nome, descrição, imagem, oferta, marca).
 
 **Entregável**: documento de arquitetura + schemas do Strapi + keyword map.
@@ -169,6 +173,8 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
 - Filtro de modelos por metragem/quartos/preço.
 - Galeria de imagens lazy-loaded.
 - Tipografia legível e espaçamento generoso.
+- **Seletor de idioma (PT | EN | ES) no header/footer**, mantendo o usuário na página atual ao trocar.
+- **Prever expansão de texto**: EN/ES costumam ocupar 10–30% a mais de espaço que PT; CTAs e títulos precisam de quebra de linha segura.
 
 **Versão A — Premium/Institucional**
 - Estética clean, cores sóbrias (branco, cinza, madeira natural, verde musgo).
@@ -196,11 +202,15 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
 ### FASE 3 — Desenvolvimento frontend/backend base (3–4 semanas)
 
 - [ ] Setup do projeto Next.js com Tailwind v4, shadcn/ui, tipografia e design tokens.
-- [ ] Configurar Strapi 5 com content-types Castor.
+- [ ] Implementar **internacionalização**:
+  - Roteamento com `[locale]`, middleware de detecção e redirecionamento (`/` → `/pt/`, `/en/`, `/es/`).
+  - Dicionários JSON (pt/en/es) para toda a UI.
+  - `generateStaticParams` para todos os locales.
+- [ ] Configurar Strapi 5 com content-types Castor e plugin i18n habilitado.
 - [ ] Adaptar componentes do InTime:
-  - Header/Footer (novo design).
-  - ContactForm + Server Action + Turnstile.
-  - WhatsAppFloat + WhatsAppLeadGate.
+  - Header/Footer (novo design + seletor de idioma).
+  - ContactForm + Server Action + Turnstile (labels/mensagens traduzíveis).
+  - WhatsAppFloat + WhatsAppLeadGate (mensagem pré-preenchida por idioma).
   - CookieConsent + Consent Mode v2.
   - JsonLd, FAQ schema, BreadcrumbList.
 - [ ] Criar componentes novos:
@@ -208,8 +218,9 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
   - `HouseModelDetail` (galeria, planta, especificações, CTA).
   - `ObraRealizadaCard`, `TestimonialCard`.
   - `Hero`, `FeatureSection`, `CTABanner`.
-- [ ] Implementar sistema de LPs configuráveis (reaproveitar `lib/landing-pages`).
-- [ ] Configurar Resend, Notion CRM, eventos `dataLayer`.
+  - `LocaleSwitcher`.
+- [ ] Implementar sistema de LPs configuráveis com suporte a locale.
+- [ ] Configurar Resend, Notion CRM, eventos `dataLayer` com parâmetro `locale`.
 - [ ] Setup Vercel: deploy, previews, variáveis de ambiente.
 
 **Entregável**: site funcional em ambiente de preview com páginas principais.
@@ -224,13 +235,14 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
   - Resposta direta no início.
   - Especificações estruturadas.
   - FAQ por modelo.
-- [ ] Criar páginas institucionais (Sobre, Como Funciona, Obras, Depoimentos).
-- [ ] Produzir/otimizar imagens: compressão WebP/AVIF, alt text descritivo.
-- [ ] Criar artigos iniciais do blog (topo de funil):
-  - "Quanto custa uma casa de madeira em BH?"
-  - "Casa de madeira vs alvenaria: prós e contras"
-  - "Como funciona a construção de uma casa pré-fabricada de madeira"
-- [ ] Gerar `llms.txt`, `robots.txt`, `sitemap.xml`, `manifest.webmanifest`, feeds RSS.
+- [ ] **Tradução dos conteúdos prioritários**:
+  - P0: UI, home, institucionais, nomes e descrições dos 55 modelos, SEO por idioma.
+  - P1: LPs locais, FAQ geral e por modelo.
+  - P2: blog, depoimentos, obras (com fallback pt-BR até tradução).
+- [ ] Criar páginas institucionais em todos os idiomas.
+- [ ] Produzir/otimizar imagens: compressão WebP/AVIF, alt text descritivo localizado.
+- [ ] Criar artigos iniciais do blog (topo de funil) — traduzir sob demanda.
+- [ ] Gerar `llms.txt`, `robots.txt`, `sitemap.xml`, `manifest.webmanifest`, feeds RSS por idioma.
 
 **Entregável**: conteúdo completo populado no CMS + site com todos os modelos.
 
@@ -238,22 +250,26 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
 
 ### FASE 5 — SEO técnico, AEO e performance (1–2 semanas)
 
-- [ ] Metadata única por página/modelo/artigo (title ≤ 60, description ≤ 160).
-- [ ] Schema JSON-LD completo:
+- [ ] Metadata única por página/modelo/artigo/idioma (title ≤ 60, description ≤ 160).
+- [ ] Schema JSON-LD completo por idioma:
   - `Organization`/`LocalBusiness` (com geo, telefone, WhatsApp, horário).
   - `WebSite` + `WebPage` + `BreadcrumbList` em todas as páginas.
   - `Product` em cada modelo de casa.
   - `FAQPage` vinculado a páginas e modelos.
   - `Article` + `HowTo` no blog.
+- [ ] **SEO internacional**:
+  - `hreflang` + `x-default` em todas as páginas públicas.
+  - Sitemaps separados por idioma (`/pt/sitemap.xml`, `/en/sitemap.xml`, `/es/sitemap.xml`) com índice em `/sitemap.xml`.
+  - Canonicals por locale.
 - [ ] URLs amigáveis e canonicals.
-- [ ] Redirecionamentos 301 do site antigo (WordPress → novo Next.js).
+- [ ] Redirecionamentos 301 do site antigo (WordPress → novo Next.js), preservando locale padrão pt.
 - [ ] Otimização Core Web Vitals:
   - Imagens otimizadas (`next/image`, WebP/AVIF).
   - Fontes otimizadas.
   - Code splitting / lazy loading.
   - TTFB < 1s (meta).
-- [ ] `llms.txt` atualizado com todas as URLs e diretrizes.
-- [ ] Testes de acessibilidade (WCAG 2.1 AA) e mobile usability.
+- [ ] `llms.txt` atualizado com todas as URLs e diretrizes por idioma.
+- [ ] Testes de acessibilidade (WCAG 2.1 AA), mobile usability e **testes de idioma/redirect**.
 
 **Entregável**: site otimizado, aprovado nos testes de SEO e performance.
 
@@ -265,10 +281,11 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
 - [ ] Configurar DNS para Vercel.
 - [ ] HTTPS + HSTS + CSP ajustado.
 - [ ] Testes de segurança básicos (headers, formulários, spam).
-- [ ] Testes de usabilidade em formulários, WhatsApp, filtros, galeria.
+- [ ] Testes de usabilidade em formulários, WhatsApp, filtros, galeria e **seletor de idioma**.
+- [ ] **Validar redirecionamentos de locale**: `/` → `/pt/`, `/en/`, `/es/` conforme `accept-language`; x-default apontando para `/`.
 - [ ] Deploy em produção (`casademadeira.com.br`).
-- [ ] Configurar GSC, GA4, GTM (ou reaproveitar contas existentes).
-- [ ] Sitemap enviado ao Google.
+- [ ] Configurar GSC, GA4, GTM (ou reaproveitar contas existentes) — **cadastrar properties por locale** no GSC.
+- [ ] Sitemap enviado ao Google (um índice + 3 sitemaps por idioma).
 
 **Entregável**: site no ar, indexável, monitorado.
 
@@ -308,9 +325,12 @@ Construir 3 propostas visuais modernas (wireframes/protótipos em HTML estático
 ## 7. Próximos passos imediatos
 
 1. **Você aprova a stack e as 3 direções de layout?** Se sim, seguimos para FASE 0/FASE 1.
-2. **Escolha da identidade visual**: a Castor já tem marca (cores, logo, fonte) ou precisamos criar?
-3. **Decisão de repositório**: criar novo repo ou adaptar `intime-site`?
-4. **Acesso às contas**: Vercel, Cloudinary, Resend, Strapi, GA4/GTM/GSC do domínio `casademadeira.com.br`.
-5. **Definição de modelo de casa**: quais campos são obrigatórios por modelo? (ex: metragem, quartos, banheiros, preço, materiais, planta, galeria)
+2. **Internacionalização**: confirma os 3 idiomas (pt/en/es) e a estratégia de subdiretórios? Ou prefere lançar só pt e adicionar en/es depois?
+3. **Glossário**: aprovar termos técnicos em inglês/español (ex: "wood house" / "casa de madera").
+4. **Tradução**: você fornece as traduções ou quer que eu gere rascunho inicial para revisão humana?
+5. **Escolha da identidade visual**: a Castor já tem marca (cores, logo, fonte) ou precisamos criar?
+6. **Decisão de repositório**: criar novo repo ou adaptar `intime-site`?
+7. **Acesso às contas**: Vercel, Cloudinary, Resend, Strapi, GA4/GTM/GSC do domínio `casademadeira.com.br`.
+8. **Definição de modelo de casa**: quais campos são obrigatórios por modelo? (ex: metragem, quartos, banheiros, preço, materiais, planta, galeria)
 
-Assim que você validar esse plano, iniciamos a **FASE 1 (arquitetura + keyword map)** e em seguida a **FASE 2 (3 versões de design)**.
+Assim que você validar esse plano, iniciamos a **FASE 1 (arquitetura + keyword map multilíngue)** e em seguida a **FASE 2 (3 versões de design com seletor de idioma)**.

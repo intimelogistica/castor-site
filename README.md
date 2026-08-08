@@ -26,7 +26,11 @@ castor-site/
 ## Documentos principais
 
 - [Plano estratégico por fases](docs/castor-site-plano-fases.md)
+- [Estratégia de internacionalização pt/en/es](planning/internationalization-strategy.md)
+- [Glossário técnico multilíngue](planning/i18n-glossary.md)
 - [Análise competitiva](research/relatorio_concorrentes_casas_madeira_mg.md)
+- [Arquitetura de informação](planning/information-architecture.md)
+- [Mapeamento de campos do CMS](planning/model-fields-mapping.md)
 
 ## Fases do projeto
 

@@ -1,0 +1,81 @@
+{
+  "meta": {
+    "siteName": "Castor Wood Houses",
+    "defaultTitle": "Wood Houses in Minas Gerais — Lagoa Santa & Matozinhos",
+    "defaultDescription": "Wood house builder in Minas Gerais, Brazil: 47 models, custom projects, structural warranty and free quote. Showrooms in Lagoa Santa and Matozinhos."
+  },
+  "nav": {
+    "home": "Home",
+    "models": "Models",
+    "about": "About",
+    "howItWorks": "How it works",
+    "projects": "Projects",
+    "testimonials": "Testimonials",
+    "contact": "Contact",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "getQuote": "Get a quote"
+  },
+  "localeSwitcher": {
+    "label": "Language",
+    "pt": "PT",
+    "en": "EN",
+    "es": "ES"
+  },
+  "home": {
+    "heroKicker": "Wood houses in Minas Gerais",
+    "heroTitle": "Build your wood house with those who understand it",
+    "heroLead": "More than 47 models, custom projects and structural warranty. Showrooms in Lagoa Santa and Matozinhos.",
+    "heroCtaPrimary": "See models",
+    "heroCtaSecondary": "WhatsApp us",
+    "modelsSectionTitle": "Find the ideal model",
+    "modelsSectionLead": "Filter by area, bedrooms and floors. Every model can be customized.",
+    "trustTitle": "Why choose Castor",
+    "trustYears": "years of experience",
+    "trustModels": "available models",
+    "trustWarranty": "years of structural warranty"
+  },
+  "model": {
+    "areaTotal": "Total area",
+    "areaCovered": "Built area",
+    "areaBalcony": "Balcony area",
+    "bedrooms": "Bedrooms",
+    "suites": "Suites",
+    "bathrooms": "Bathrooms",
+    "floors": "Floors",
+    "hasLaundry": "Laundry",
+    "hasBalcony": "Balcony",
+    "hasAmericanKitchen": "Open kitchen",
+    "viewModel": "View model",
+    "getQuote": "Get a quote for this model",
+    "floorPlan": "Floor plan",
+    "gallery": "Gallery",
+    "includes": "What's included",
+    "faqTitle": "Questions about this model"
+  },
+  "contact": {
+    "title": "Request your quote",
+    "lead": "Fill out the form or reach us on WhatsApp. We reply within 24 business hours.",
+    "nameLabel": "Name",
+    "emailLabel": "Email",
+    "phoneLabel": "Phone / WhatsApp",
+    "cityLabel": "City",
+    "messageLabel": "Message",
+    "messagePlaceholder": "I'm interested in the model...",
+    "submit": "Send quote request",
+    "success": "We received your message! We'll get back to you soon.",
+    "error": "There was an error sending. Please try again or contact us via WhatsApp.",
+    "whatsappCta": "Prefer WhatsApp?"
+  },
+  "cookieConsent": {
+    "title": "Your privacy",
+    "description": "We use cookies to improve your experience and measure site performance.",
+    "accept": "Accept",
+    "reject": "Reject",
+    "preferences": "Preferences"
+  },
+  "footer": {
+    "tagline": "Wood houses with structural warranty and custom design.",
+    "copyright": "© {year} Castor Wood Houses. All rights reserved."
+  }
+}
