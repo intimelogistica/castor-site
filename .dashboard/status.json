@@ -1,44 +1,47 @@
 {
   "projeto": "castor-site",
-  "atualizado_em": "2026-08-06T00:20:00-03:00",
+  "atualizado_em": "2026-08-08T21:50:00-03:00",
   "status": "desenvolvimento",
-  "progresso_pct": 30,
-  "etapa_atual": "protótipos v2 concluídos — aguardando aprovação dos 3 layouts",
-  "resumo": "Novo site para substituir casademadeira.com.br (Castor Casas de Madeira), reaproveitando a stack validada do InTime (Next.js 16 + Vercel + Strapi 5.50 + Resend + Turnstile). Planejamento, arquitetura de informação, mapeamento de campos e extração dos 47 modelos concluídos. SEGUNDA RODADA dos 3 protótipos HTML concluída (05/08 23:50) com design refinado: v2-versao-a-premium (editorial Apple/SpaceX), v2-versao-b-catalogo (20 modelos reais, filtros funcionais), v2-versao-c-conversao (formulário → wa.me). Dados reais dos modelos, WhatsApp real 5531989201655, slop audit 0/10 em todas. index.html atualizado como hub. Próximo passo: aprovação visual de João/André + setup Next.js/Strapi.",
+  "progresso_pct": 35,
+  "etapa_atual": "protótipos v2 publicados com i18n pt/en/es — aguardando aprovação",
+  "resumo": "Novo site para substituir casademadeira.com.br (Castor Casas de Madeira) na stack do InTime (Next.js 16 + Vercel + Strapi 5.50 + Resend + Turnstile). Plano estratégico, arquitetura de informação, mapeamento de campos e extração dos 47 modelos concluídos. Protótipos v2 publicados em três idiomas (PT-BR, EN, ES) com seletor de idioma funcional. Documentação de internacionalização e glossário técnico multilíngue criados. Documento de status e implementação salvo para continuidade.",
   "ultimas_alteracoes": [
-    "2026-08-06 00:20 — protótipos v2 commitados (3 arquivos + hub index.html)",
-    "2026-08-05 23:50 — concluída 2ª rodada dos 3 protótipos HTML v2 (claude-design + popular-web-designs: Apple/SpaceX, Framer/Linear/Airbnb, Stripe)",
-    "2026-08-05 23:15 — skill /salvar-sessao-dashboard instalada e realocada para C:\\Users\\João Batista\\.hermes\\skills\\ (consolidação de home do Hermes)",
-    "2026-08-05 22:30 — criado planning/github-references.md com repositórios GitHub selecionados e commitado no repo",
-    "2026-08-05 17:30 — concluído mapeamento de campos dos modelos de casa em planning/model-fields-mapping.md",
-    "2026-08-05 17:00 — arquitetura de informação e keyword map salvos em planning/information-architecture.md"
+    "2026-08-08 21:45 — protótipos v2 publicados em pt/en/es no GitHub Pages com seletor de idioma",
+    "2026-08-08 20:30 — criados dicionários UI pt/en/es em frontend/i18n/ e documentação i18n em planning/",
+    "2026-08-08 19:00 — adicionada estratégia de internacionalização e glossário técnico multilíngue",
+    "2026-08-08 18:30 — criado docs/project-status-and-implementation-log.md com status técnico completo",
+    "2026-08-08 18:00 — adicionado .gitignore e removidos arquivos __pycache__ do controle de versão",
+    "2026-08-06 00:20 — protótipos v2 commitados (3 arquivos + hub index.html)"
   ],
   "pendencias_joao": [
+    "Aprovar os 3 layouts HTML v2 junto com o irmão André (PT-BR já publicado; EN/ES para validação de tradução)",
+    "Salvar identidade visual da Castor na pasta brand/ (logo, cores, fontes, fotos, vídeos)",
+    "Confirmar se traduções EN/ES serão feitas por tradutor profissional ou revisadas sobre o rascunho automático",
     "Concluir acesso/administração de DNS/GSC/GA4/GTM para casademadeira.com.br",
-    "Aprovar os 3 novos layouts HTML junto com o irmão André",
-    "Salvar identidade visual da Castor na pasta brand/ (logo, cores, fontes, fotos, vídeos)"
+    "Decidir: criar novo repo ou adaptar/forkar intime-site"
   ],
   "pendencias_tecnicas": [
-    "Concluir segunda rodada dos 3 protótipos HTML standalone (premium, catálogo, conversão)",
     "Setup inicial do frontend Next.js 16.2.4 e CMS Strapi 5.50",
-    "Migração de conteúdo e produção de novos textos AEO",
-    "SEO técnico: schemas, performance, sitemap dinâmico, robots.txt, redirects 301",
-    "Segurança, testes e deploy em casademadeira.com.br"
+    "Configurar plugin i18n do Strapi e content-types Castor (house-model, category, faq, testimonial, obra-realizada)",
+    "Migrar 47 modelos do conteúdo original para o Strapi com traduções",
+    "Implementar middleware de locale, roteamento [locale] e dicionários JSON no Next.js",
+    "SEO técnico: hreflang, sitemaps por idioma, schemas JSON-LD, performance, redirects 301",
+    "Segurança, testes e deploy em produção no domínio casademadeira.com.br"
   ],
-  "proximo_passo": "Concluir a segunda rodada dos 3 protótipos HTML standalone aplicando claude-design + popular-web-designs + referências GitHub",
+  "proximo_passo": "Aguardar aprovação dos 3 layouts v2 e identidade visual para iniciar o setup do Next.js + Strapi",
   "recursos_usados": [
-    {"nome": "claude-design", "tipo": "skill", "data": "2026-08-05"},
-    {"nome": "popular-web-designs", "tipo": "skill", "data": "2026-08-05"},
-    {"nome": "sketch", "tipo": "skill", "data": "2026-08-05"},
-    {"nome": "website-redesign-strategy", "tipo": "skill", "data": "2026-08-05"},
-    {"nome": "github-repo-management", "tipo": "skill", "data": "2026-08-05"},
-    {"nome": "salvar-sessao-dashboard", "tipo": "skill", "data": "2026-08-05"},
-    {"nome": "git", "tipo": "ferramenta", "data": "2026-08-05"}
+    {"nome": "static-site-publishing", "tipo": "skill", "data": "2026-08-08"},
+    {"nome": "salvar-sessao-dashboard", "tipo": "skill", "data": "2026-08-08"},
+    {"nome": "deep-translator", "tipo": "biblioteca", "data": "2026-08-08"},
+    {"nome": "GitHub Pages", "tipo": "plataforma", "data": "2026-08-08"},
+    {"nome": "git", "tipo": "ferramenta", "data": "2026-08-08"},
+    {"nome": "BeautifulSoup", "tipo": "biblioteca", "data": "2026-08-08"}
   ],
   "metricas": {
     "modelos_castor_extraidos": 47,
-    "prototipos_versao_1": 3,
-    "repositorios_github_referencia": 19,
-    "commits_realizados": 5
+    "prototipos_versao_2": 3,
+    "idiomas_prototipos": 3,
+    "commits_realizados": 8,
+    "documentos_planejamento": 7
   }
 }
