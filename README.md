@@ -26,6 +26,7 @@ castor-site/
 ## Documentos principais
 
 - [Plano estratégico por fases](docs/castor-site-plano-fases.md)
+- [Registro de implementação e status técnico](docs/project-status-and-implementation-log.md)
 - [Estratégia de internacionalização pt/en/es](planning/internationalization-strategy.md)
 - [Glossário técnico multilíngue](planning/i18n-glossary.md)
 - [Análise competitiva](research/relatorio_concorrentes_casas_madeira_mg.md)
