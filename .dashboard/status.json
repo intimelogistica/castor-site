@@ -1,47 +1,46 @@
 {
   "projeto": "castor-site",
-  "atualizado_em": "2026-08-08T21:50:00-03:00",
-  "status": "desenvolvimento",
-  "progresso_pct": 35,
-  "etapa_atual": "protótipos v2 publicados com i18n pt/en/es — aguardando aprovação",
-  "resumo": "Novo site para substituir casademadeira.com.br (Castor Casas de Madeira) na stack do InTime (Next.js 16 + Vercel + Strapi 5.50 + Resend + Turnstile). Plano estratégico, arquitetura de informação, mapeamento de campos e extração dos 47 modelos concluídos. Protótipos v2 publicados em três idiomas (PT-BR, EN, ES) com seletor de idioma funcional. Documentação de internacionalização e glossário técnico multilíngue criados. Documento de status e implementação salvo para continuidade.",
+  "atualizado_em": "2026-08-09T00:03:00-03:00",
+  "status": "aguardando-joao",
+  "progresso_pct": 42,
+  "etapa_atual": "comparação pública da direção Caderno de fabricação preparada; três composições aguardam escolha",
+  "resumo": "O novo site substituirá o WordPress comprometido por uma implementação limpa. Os protótipos v2 anteriores foram rejeitados por aparência genérica e substituídos pela direção Caderno de fabricação, que posiciona a Castor como fabricante mineira. O PRODUCT.md registra públicos, atendimento atual em Minas Gerais, expansão desejada e limites de conteúdo. Três composições visuais da nova direção foram reunidas em uma página pública responsiva, sem iniciar a implementação do site final.",
   "ultimas_alteracoes": [
-    "2026-08-08 21:45 — protótipos v2 publicados em pt/en/es no GitHub Pages com seletor de idioma",
-    "2026-08-08 20:30 — criados dicionários UI pt/en/es em frontend/i18n/ e documentação i18n em planning/",
-    "2026-08-08 19:00 — adicionada estratégia de internacionalização e glossário técnico multilíngue",
-    "2026-08-08 18:30 — criado docs/project-status-and-implementation-log.md com status técnico completo",
-    "2026-08-08 18:00 — adicionado .gitignore e removidos arquivos __pycache__ do controle de versão",
-    "2026-08-06 00:20 — protótipos v2 commitados (3 arquivos + hub index.html)"
+    "2026-08-09 00:03 — criada página pública responsiva para comparar as composições A, B e C",
+    "2026-08-08 23:44 — criadas três composições visuais da home na direção Caderno de fabricação",
+    "2026-08-08 23:30 — direção Caderno de fabricação aprovada por João",
+    "2026-08-08 23:15 — criado PRODUCT.md com públicos, posicionamento, evidências e restrições confirmadas",
+    "2026-08-08 22:50 — concluída auditoria anti-IA dos três protótipos v2",
+    "2026-08-08 21:45 — protótipos v2 publicados em pt/en/es no GitHub Pages"
   ],
   "pendencias_joao": [
-    "Aprovar os 3 layouts HTML v2 junto com o irmão André (PT-BR já publicado; EN/ES para validação de tradução)",
-    "Salvar identidade visual da Castor na pasta brand/ (logo, cores, fontes, fotos, vídeos)",
-    "Confirmar se traduções EN/ES serão feitas por tradutor profissional ou revisadas sobre o rascunho automático",
-    "Concluir acesso/administração de DNS/GSC/GA4/GTM para casademadeira.com.br",
-    "Decidir: criar novo repo ou adaptar/forkar intime-site"
+    "Escolher a composição A, B, C ou indicar quais partes devem ser combinadas",
+    "Organizar fotos reais da fábrica, equipe, modelos e obras entregues",
+    "Fornecer cinco casos e depoimentos reais para substituir os exemplos simulados",
+    "Confirmar garantia, prazo praticado e escopo da entrega da Castor",
+    "Comprovar antes da publicação a alegação de única fábrica de Minas Gerais que produz 100% do produto final",
+    "Fornecer logo, cores e demais ativos oficiais da identidade visual"
   ],
   "pendencias_tecnicas": [
-    "Setup inicial do frontend Next.js 16.2.4 e CMS Strapi 5.50",
-    "Configurar plugin i18n do Strapi e content-types Castor (house-model, category, faq, testimonial, obra-realizada)",
-    "Migrar 47 modelos do conteúdo original para o Strapi com traduções",
-    "Implementar middleware de locale, roteamento [locale] e dicionários JSON no Next.js",
-    "SEO técnico: hreflang, sitemaps por idioma, schemas JSON-LD, performance, redirects 301",
-    "Segurança, testes e deploy em produção no domínio casademadeira.com.br"
+    "Marcar a composição escolhida como aprovada e registrar o briefing da home",
+    "Criar protótipo único da home somente após a escolha visual",
+    "Manter inglês e espanhol suspensos até aprovação e revisão humana do conteúdo em português",
+    "Iniciar Next.js e Strapi somente depois da aprovação do protótipo único",
+    "Planejar migração limpa e redirects do WordPress comprometido"
   ],
-  "proximo_passo": "Aguardar aprovação dos 3 layouts v2 e identidade visual para iniciar o setup do Next.js + Strapi",
+  "proximo_passo": "João escolher ou combinar uma das três composições visuais da home",
   "recursos_usados": [
-    {"nome": "static-site-publishing", "tipo": "skill", "data": "2026-08-08"},
-    {"nome": "salvar-sessao-dashboard", "tipo": "skill", "data": "2026-08-08"},
-    {"nome": "deep-translator", "tipo": "biblioteca", "data": "2026-08-08"},
-    {"nome": "GitHub Pages", "tipo": "plataforma", "data": "2026-08-08"},
-    {"nome": "git", "tipo": "ferramenta", "data": "2026-08-08"},
-    {"nome": "BeautifulSoup", "tipo": "biblioteca", "data": "2026-08-08"}
+    {"nome": "website-redesign-strategy", "tipo": "skill", "data": "2026-08-08"},
+    {"nome": "impeccable", "tipo": "skill", "data": "2026-08-08"},
+    {"nome": "humanizar", "tipo": "skill", "data": "2026-08-08"},
+    {"nome": "imagegen", "tipo": "skill", "data": "2026-08-08"},
+    {"nome": "salvar-sessao-dashboard", "tipo": "skill", "data": "2026-08-09"},
+    {"nome": "github:yeet", "tipo": "skill", "data": "2026-08-09"},
+    {"nome": "pesquisa web ao vivo", "tipo": "cli", "data": "2026-08-08"}
   ],
   "metricas": {
     "modelos_castor_extraidos": 47,
-    "prototipos_versao_2": 3,
-    "idiomas_prototipos": 3,
-    "commits_realizados": 8,
-    "documentos_planejamento": 7
+    "composicoes_nova_direcao": 3,
+    "documentos_de_produto": 1
   }
 }

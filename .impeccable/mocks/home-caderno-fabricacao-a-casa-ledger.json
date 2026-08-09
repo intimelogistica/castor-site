@@ -1,0 +1,9 @@
+{
+  "name": "A — Casa + caderno técnico",
+  "path": ".impeccable/mocks/home-caderno-fabricacao-a-casa-ledger.png",
+  "direction": "Caderno de fabricação",
+  "composition": "Coluna técnica escura à esquerda, casa em grande escala à direita e início do seletor por finalidade no segundo fold.",
+  "prompt": "Homepage Castor em interface editorial-industrial. Primeira tela 35/65 com caderno técnico, título Casas de madeira feitas em Minas Gerais, foto sintética provisória de casa e acesso ao catálogo. Sem serifas, itálicos, bento, bege ou verde-musgo.",
+  "synthetic_imagery": true,
+  "approved": false
+}

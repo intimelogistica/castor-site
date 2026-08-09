@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Três composições da direção visual Caderno de fabricação para o novo site da Castor Casas de Madeira.">
+  <title>Castor — Caderno de fabricação</title>
+  <style>
+    :root{
+      --paper:#f2f3f1;
+      --surface:#fff;
+      --ink:#202120;
+      --muted:#666966;
+      --line:#c9cbc8;
+      --accent:#dc5b18;
+      --dark:#1c1e1d;
+      --max:1480px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth;overflow-x:clip}
+    body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.5;overflow-x:clip}
+    a{color:inherit}
+    .topbar{position:sticky;top:0;z-index:10;background:rgba(242,243,241,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+    .topbar-inner{max-width:var(--max);margin:auto;min-height:64px;padding:0 24px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{font-weight:800;letter-spacing:-.03em;text-decoration:none;white-space:nowrap}
+    nav{display:flex;align-items:center;gap:24px;font-size:14px}
+    nav a{text-decoration:none;white-space:nowrap}
+    nav a:last-child{color:var(--accent);font-weight:700}
+    .intro{max-width:var(--max);margin:auto;padding:80px 24px 56px;display:grid;grid-template-columns:minmax(0,1.2fr) minmax(280px,.8fr);gap:64px;align-items:end}
+    .intro h1{font-size:clamp(42px,7vw,104px);line-height:.92;letter-spacing:-.065em;margin:0;max-width:11ch;overflow-wrap:anywhere}
+    .intro-copy{max-width:52ch;min-width:0}
+    .intro-copy p{font-size:18px;color:var(--muted);margin:0 0 18px}
+    .status{display:inline-block;border-top:2px solid var(--accent);padding-top:12px;font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+    .recommendation{background:var(--dark);color:#f7f7f4}
+    .recommendation-inner{max-width:var(--max);margin:auto;padding:28px 24px;display:grid;grid-template-columns:180px 1fr;gap:32px;align-items:start}
+    .recommendation strong{color:#ff7a31;text-transform:uppercase;letter-spacing:.1em;font-size:12px}
+    .recommendation p{font-size:20px;line-height:1.35;margin:0;max-width:70ch;overflow-wrap:anywhere}
+    main{max-width:var(--max);margin:auto;padding:0 24px 96px}
+    .option{padding:72px 0;border-bottom:1px solid var(--line);scroll-margin-top:64px}
+    .option-head{display:grid;grid-template-columns:110px minmax(0,1fr) minmax(240px,.55fr);gap:32px;margin-bottom:28px;align-items:start}
+    .letter{font-size:68px;line-height:.9;font-weight:900;color:var(--accent);letter-spacing:-.06em}
+    .option h2{font-size:clamp(30px,4vw,58px);line-height:1;letter-spacing:-.045em;margin:0;min-width:0;overflow-wrap:anywhere}
+    .option-copy{color:var(--muted);margin:0;max-width:45ch;min-width:0}
+    figure{margin:0;background:var(--surface);border:1px solid var(--line)}
+    figure img{display:block;width:100%;height:auto}
+    figcaption{padding:12px 16px;border-top:1px solid var(--line);font-size:12px;color:var(--muted)}
+    .warning{max-width:var(--max);margin:0 auto;padding:28px 24px 64px;color:var(--muted);font-size:13px}
+    .warning strong{color:var(--ink)}
+    .old{display:inline-block;margin-top:12px;color:var(--accent)}
+    @media(max-width:780px){
+      .topbar-inner{min-height:56px}.topbar nav a:not(:last-child){display:none}
+      .intro{padding-top:52px;grid-template-columns:1fr;gap:32px}.intro h1{font-size:clamp(44px,15vw,72px)}
+      .recommendation-inner{grid-template-columns:1fr;gap:10px}
+      .option{padding:52px 0}.option-head{grid-template-columns:64px 1fr}.letter{font-size:48px}.option-copy{grid-column:2}
+    }
+    @media(max-width:520px){
+      .topbar nav{display:none}
+      .intro,.topbar-inner,main,.warning{padding-left:20px;padding-right:20px}
+      .intro h1{font-size:clamp(42px,14vw,62px)}
+      .status{font-size:11px;letter-spacing:.05em}
+      .recommendation-inner{padding-left:20px;padding-right:20px}
+      .option-head{grid-template-columns:48px minmax(0,1fr);gap:16px}
+      .letter{font-size:42px}
+      .option h2{font-size:34px}
+      .option-copy{grid-column:2}
+    }
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="#top">Castor Casas de Madeira</a>
+      <nav aria-label="Composições">
+        <a href="#opcao-a">Opção A</a>
+        <a href="#opcao-b">Opção B</a>
+        <a href="#opcao-c">Opção C</a>
+        <a href="#recomendacao">Recomendação</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="intro" id="top">
+    <h1>Caderno de fabricação</h1>
+    <div class="intro-copy">
+      <p>Uma única direção visual para posicionar a Castor como fabricante mineira. As três opções abaixo testam somente a composição da primeira tela.</p>
+      <span class="status">Direção aprovada · composição em escolha</span>
+    </div>
+  </section>
+
+  <section class="recommendation" id="recomendacao">
+    <div class="recommendation-inner">
+      <strong>Recomendação</strong>
+      <p>Usar a composição C na abertura e levar a fábrica da composição B para a sequência da home.</p>
+    </div>
+  </section>
+
+  <main>
+    <section class="option" id="opcao-a">
+      <div class="option-head">
+        <div class="letter" aria-hidden="true">A</div>
+        <h2>Casa + caderno técnico</h2>
+        <p class="option-copy">Maior impacto visual. A casa domina a página, enquanto a coluna lateral registra origem, material e dados do catálogo.</p>
+      </div>
+      <figure>
+        <img src="../../../.impeccable/mocks/home-caderno-fabricacao-a-casa-ledger.png" alt="Composição A da home Castor: casa em destaque e coluna de caderno técnico" width="1536" height="1024">
+        <figcaption>Imagem sintética para avaliação de composição. Não representa obra ou modelo real da Castor.</figcaption>
+      </figure>
+    </section>
+
+    <section class="option" id="opcao-b">
+      <div class="option-head">
+        <div class="letter" aria-hidden="true">B</div>
+        <h2>Fábrica protagonista</h2>
+        <p class="option-copy">A capacidade de fabricação lidera a mensagem. É a composição mais forte para demonstrar processo, equipe e estrutura industrial.</p>
+      </div>
+      <figure>
+        <img src="../../../.impeccable/mocks/home-caderno-fabricacao-b-fabrica.png" alt="Composição B da home Castor: fábrica em destaque e comparação de modelos" width="1536" height="1024">
+        <figcaption>Imagem sintética para avaliação de composição. Funcionários, uniformes e fábrica devem ser substituídos por fotografias reais.</figcaption>
+      </figure>
+    </section>
+
+    <section class="option" id="opcao-c">
+      <div class="option-head">
+        <div class="letter" aria-hidden="true">C</div>
+        <h2>Dossiê do modelo</h2>
+        <p class="option-copy">Melhor equilíbrio entre produto e orientação comercial. O visitante escolhe a finalidade e entra no catálogo sem depender de uma grade genérica de cards.</p>
+      </div>
+      <figure>
+        <img src="../../../.impeccable/mocks/home-caderno-fabricacao-c-dossie.png" alt="Composição C da home Castor: seletor por finalidade, casa e desenho arquitetônico" width="1536" height="1024">
+        <figcaption>Imagem sintética para avaliação de composição. A casa e o desenho serão substituídos por materiais reais do catálogo.</figcaption>
+      </figure>
+    </section>
+  </main>
+
+  <footer class="warning">
+    <strong>Importante:</strong> estas imagens avaliam hierarquia, ritmo e composição. Não são o site final e não devem ser usadas como prova comercial.
+    <br><a class="old" href="../">Consultar os protótipos anteriores arquivados</a>
+  </footer>
+</body>
+</html>

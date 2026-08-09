@@ -1,0 +1,9 @@
+{
+  "name": "B — Fábrica em primeiro plano",
+  "path": ".impeccable/mocks/home-caderno-fabricacao-b-fabrica.png",
+  "direction": "Caderno de fabricação",
+  "composition": "Imagem da produção ocupa 60% da primeira tela, mensagem comercial ocupa 40% e a comparação de modelos abre o segundo fold.",
+  "prompt": "Homepage Castor em interface editorial-industrial. Fábrica como protagonista, título Da fábrica para o seu terreno, fatos confirmados e comparação técnica de modelos. Sem alegações comerciais inventadas.",
+  "synthetic_imagery": true,
+  "approved": false
+}
